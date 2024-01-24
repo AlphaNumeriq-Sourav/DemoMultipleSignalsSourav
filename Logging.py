@@ -14,7 +14,7 @@ def setup_logger(FileName , LoggerName):
 
     # Create console handler and set level to INFO
     ch = logging.StreamHandler()
-    ch.setLevel(logging.INFO)
+    ch.setLevel(logging.DEBUG)
 
     # Define a formatter for both handlers
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
@@ -27,7 +27,7 @@ def setup_logger(FileName , LoggerName):
         BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE = range(8)
         COLORS = {
             'DEBUG': BLUE,
-            'INFO': WHITE,
+            'INFO': GREEN,
             'WARNING': YELLOW,
             'ERROR': RED,
             'CRITICAL': RED,

@@ -28,11 +28,11 @@ import logging
 import math
 
 '''Function to Run Instrument Signal file with a Independent Thread'''
-def run_script(script_name,symbol , RISK , ds ,TP,SL,pip):
+def run_script(script_name,symbol , RISK , ds ,TP,SL,pip ,Choices , ChoicesExitModels, login , password , server ):
     logger = logging.getLogger(symbol)
     try:
         script_module = importlib.import_module(script_name)
-        script_module.Execution(script_name,symbol , RISK , ds ,TP,SL,pip,logger)
+        script_module.Execution(script_name,symbol , RISK , ds ,TP,SL,pip,logger ,Choices , ChoicesExitModels,  login , password , server)
     except ImportError:
         logger.error(f"Failed to Import : {script_name}")
 
@@ -40,11 +40,14 @@ def run_script(script_name,symbol , RISK , ds ,TP,SL,pip):
 
 
 '''Function to create EntrySignalCsv Files and Logger File'''
-def files(script_name,symbol , RISK , ds ,TP,SL,pip):
+def files(script_name,symbol , RISK , ds ,TP,SL,pip, Choices , ChoicesExitModels):
     df_cols = ['signals','orderid','volume','price_open','TP','SL']
         
     df_entry = pd.DataFrame(columns= df_cols) 
     df_entry.to_csv(f'{script_name}_entry_signals.csv',index= False)
+    
+    df_open_signal = pd.DataFrame(columns = ['ActiveChoice'])
+    df_open_signal.to_csv(f'{script_name}_open_signals.csv' , index=False)
     
     setup_logger(f'{symbol}_BA_H4_AddedBySourav.log' , symbol)
 
@@ -53,13 +56,8 @@ def files(script_name,symbol , RISK , ds ,TP,SL,pip):
      
 ''''Main Function to run the Signal Script File Every 4 Hour from Monday to Friday'''
 def PreMain():
-    
-
-    # login = 25024739
-    # password = 'T52wjqWh@7Rv'
-    # server = 'Tickmill-Demo'
-    login = 25071028
-    password = 'pB+#3#6FS3%j'
+    login = 25088141
+    password = 'N3W*f%Ts??kF'
     server = 'Tickmill-Demo'
     path = r'C:\Program Files\MetaTrader 5\terminal64.exe'
     mt5.initialize( login = login , password = password, server = server)
@@ -69,24 +67,24 @@ def PreMain():
     
     
     script_args = {
-        "EURUSD_Short_H4" : ('EURUSD' , 0.002 , 0.001 , 2 , 3 , 10),
-        "GBPUSD_trail_Short_H4" : ('GBPUSD' , 0.002 , 0.001 , 2 , 3 , 10) ,
-        "NZDUSD_trail_Short_H4" : ('NZDUSD' , 0.002 , 0.001 , 2 , 3 , 10) 
+        "EURUSD_Short_H4" : ('EURUSD' , 0.002 , 0.0001 , 2 , 3 , 10 ),
+        "GBPUSD_trail_Short_H4" : ('GBPUSD' , 0.002 , 0.0001 , 2 , 3 , 10) ,
+        "NZDUSD_trail_Short_H4" : ('NZDUSD' , 0.002 , 0.0001 , 2 , 3 , 10) 
     }
     
-    # script_args = {
-    #     "NZDUSD_trail_Short_H4" : ('NZDUSD' , 0.002 , 0.001 , 2 , 3 , 10) 
-    # }
+    script_args = {
+        "EURUSD_Short_H4" : ('EURUSD' , 0.002 , 0.001 , 2 , 3 , 10 , [2] , ['Trail'])
+    }
 
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name,*args)
-    #     thread = threading.Thread(target=run_script, args=(script_name, *args))
-    #     thread.start()
+        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        thread.start()
 
-    # for thread in threading.enumerate():
-    #     if thread != threading.current_thread():
-    #         thread.join()
+    for thread in threading.enumerate():
+        if thread != threading.current_thread():
+            thread.join()
         
 
 
@@ -118,12 +116,10 @@ def PreMain():
                                         logger = logging.getLogger(symbol)
                                         #setup_logger(f'{symbol}_BA_H4_AddedBySourav.log')
                                         logger.debug(f'AT the next Hour InTime -- SymbolName : {symbol} BrokerTime : {time1}')
-                                        thread = threading.Thread(target=run_script, args=(script_name, *args))
+                                        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
                                         thread.start()
 
-                                    for thread in threading.enumerate():
-                                        if thread != threading.current_thread():
-                                            thread.join()
+                                    
                                     
                                     logger.debug(f'AT the next Hour OutTime -- SymbolName : {symbol} BrokerTime : {time1}')
                         
@@ -142,9 +138,7 @@ def PreMain():
                                             thread = threading.Thread(target=run_script, args=(script_name, *args))
                                             thread.start()
 
-                                        for thread in threading.enumerate():
-                                            if thread != threading.current_thread():
-                                                thread.join()
+                                        
                                         break
                                     elif time1.hour >= 1:
                                          break

@@ -14,7 +14,7 @@ warnings.filterwarnings("ignore")
 import importlib
 import sig_lib as sig
 importlib.reload(sig)
-
+from ba_signals import entry_signal1
 
 
 
@@ -85,30 +85,32 @@ def close_order(ticket):
 # Signal 1 = high[2] > close[9]; low[5] > open[9]; open[6] > close[8]; low[4] <= high[8]; ValueHigh(5)[0] <= ValueOpen(5)[5]
 # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
 
-def entry_signal1(data,choice,index):
-    index = index
-    variable = None
-    '''
-    high[2] > close[9]; low[5] > open[9]; open[6] > close[8]; low[4] <= high[8]; ValueHigh(5)[0] <= ValueOpen(5)[5]; 
-    WinsLast(close;5)[0] >= 1
-    '''
+# def entry_signal1(data,choice,index):
+#     index = index
+#     variable = None
+#     '''
+#     high[2] > close[9]; low[5] > open[9]; open[6] > close[8]; low[4] <= high[8]; ValueHigh(5)[0] <= ValueOpen(5)[5]; 
+#     WinsLast(close;5)[0] >= 1
+#     '''
     
-    if choice == 1:
-        condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
-                    (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
-                    (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
-                    (data.iloc[index-4]['low'] <= data.iloc[index-8]['high'] ) and \
-                    (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
-                    (data.iloc[index-0]['WinsLast'] >= 1)
+#     if choice == 1:
+#         condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
+#                     (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
+#                     (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
+#                     (data.iloc[index-4]['low'] <= data.iloc[index-8]['high'] ) and \
+#                     (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
+#                     (data.iloc[index-0]['WinsLast'] >= 1)
                     
-        variable = 'Trail'    
-    else:
-        condition =  False
+#         condition = (data.iloc[index-1]['rsi_14'] > 1)
+                    
+#         variable = 'Trail'    
+#     else:
+#         condition =  False
 
-    if condition:
-         return True,variable
-    else:
-         return False,variable
+#     if condition:
+#          return True,variable
+#     else:
+#          return False,variable
 
 
 
@@ -125,7 +127,7 @@ def entry_signal1(data,choice,index):
 # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
 
 
-def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,logger):
+def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,logger ,Choices , ChoicesExitModels,  login , password , server):
     NoOfSignals = 1
     NoOfSignals +=1
     time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
@@ -180,7 +182,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
 
         except AttributeError:
             if mt5.initialize():
-                logger.success(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}')
+                logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}')
             else:
                 logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}  Again Trying......')
                 login = 25071028
@@ -200,106 +202,61 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
     
     
     
-    df.to_csv(f'{script_name}_dataframe')
-    df_entry = pd.read_csv(f'{script_name}_entry_signals.csv')
-    if 'TP1' not in df_entry.columns:
-         df_entry['TP1'] = None
-    if 'flag' not in df_entry.columns:
-         df_entry['flag'] = None
-         
-    #df_entry = pd.DataFrame(columns =  ['signals','orderid','volume','price_open','TP','SL','TP1' , 'flag'])
+    df.to_csv(f'{script_name}_dataframe')         
+    df_entry = pd.DataFrame(columns =  ['signals','orderid','volume','price_open','TP','SL','TP1' , 'flag'])
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     # Logic to Push the Market Order to the Broker One we got any signals if we don't have active trade from the signals
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-    if df_entry.empty:
+    
         
-        for i in range(1,NoOfSignals):
-            
-            
-            signal = f'signal{i}'
-            condition, variable = entry_signal1(df,i,index)
-            if df_entry['signals'].eq(i).any():
-                logger.debug(f'Signal{i} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))}')
-                continue
+    for i in range(len(Choices)):
+        df_open_signals = pd.read_csv(f'{script_name}_open_signals.csv' )
+        signal = f'signal{Choices[i]}'
+        
+        if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
+            logger.debug(f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))}')
+            continue
+        
+        condition = entry_signal1(df,Choices[i],index)
 
-            if condition:
-                # Got Indication Candle
-                if variable == 'Trail':
-                    flag = 0
-                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
-                    logger.debug(f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1}')
-                    data = df.copy()
-                    logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['ATR']} ")
+        if condition:
+            variable = ChoicesExitModels[i]
+            # Got a Short Entry 
+            if variable == 'Trail':
+                flag = 0
+                time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
+                logger.debug(f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1}')
+                data = df.copy()
+                logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['ATR']} ")
 
 
-                    SL_dis = 50
-                    LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*50),2)
-                    
-                    order= market_order(symbol , LotSize,'sell',signal,3001+i )
-                    tick = mt5.symbol_info_tick(symbol)
-                    Price = tick.ask
-                    
-                    ATR = df.iloc[index]['ATR']
-                    StopLoss = Price + (SL_dis * SL_TpRatio)
-                    TP_val = Price - (30 * SL_TpRatio)
-                    order_id = order.order
-                    order_price = order.price
-                    logger.success(f'Entry at {time1} for {symbol}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, comment : {order.comment}  {flag}')
-                    df_entry.loc[len(df_entry)] = [i,order_id,order.volume,Price,TP_val,StopLoss,0,flag]
-                    df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
+                SL_dis = 50
+                LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*50),2)
                 
+                order= market_order(symbol , LotSize,'sell',signal,3001+Choices[i] )
+                tick = mt5.symbol_info_tick(symbol)
+                Price = tick.ask
                 
-            else:
+                ATR = df.iloc[index]['ATR']
+                StopLoss = Price + (SL_dis * SL_TpRatio)
+                TP_val = Price - (30 * SL_TpRatio)
+                order_id = order.order
+                order_price = order.price
+                logger.info(f'Entry at {time1} for {symbol}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
                 
-                logger.debug(f"No entry for {signal} of Instrument : {symbol}  close : {df.iloc[index]['close']} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}")  
+                '''Updating the Entry DF'''
+                df_entry.loc[len(df_entry)] = [Choices[i],order_id,order.volume,Price,TP_val,StopLoss,0,flag]
+                
+                '''Updating and Saving the ActiveSignals DF'''
+                df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
+                df_open_signals.to_csv(f'{script_name}_open_signals.csv' , index=False)
             
             
-    # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-    # Logic to Push the Market Order to the Broker One we got any signal2 if we  have active trade from the signal1 and Vice versa
-    # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-     
-    else:
-        column_name = 'signals'
-        for i in range(1,NoOfSignals):
+        else:
             
-            signal = f'signal{i}'
-            if df_entry[column_name].eq(i).any():
-                logger.debug(f"The {signal} entry exists ")      
-
-            else:
-                condition, variable = entry_signal1(df,i,index)
-
-                if condition:
-                    # Got Indication Candle
-                    
-                    if variable == 'Trail':
-                        flag = 0
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
-                        logger.debug(f'Got Short Indication Candle for {signal} {symbol} at {time1}')
-                        # index = -2
-                        data = df.copy()
-                        logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['ATR']} ")
-
-
-                        SL_dis = 50
-                        LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*50),2)
-                        
-                        order= market_order(symbol , LotSize,'sell',signal,3001+i )
-                        tick = mt5.symbol_info_tick(symbol)
-                        Price = tick.ask
-                        
-                        ATR = df.iloc[index]['ATR']
-                        StopLoss = Price + (SL_dis * SL_TpRatio)
-                        TP_val = Price - (30 * SL_TpRatio)
-                        order_id = order.order
-                        order_price = order.price
-                        logger.success(f'Entry at {time1} for {symbol}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, comment : {order.comment}  {flag}')
-                        df_entry.loc[len(df_entry)] = [i,order_id,order.volume,Price,TP_val,StopLoss,0,flag]
-                        df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
-                    
-                else:
-                
-                    logger.debug(f"No entry for {signal}  close : {df.iloc[index]['close']} {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}")  
+            logger.debug(f"No entry for {signal} of Instrument : {symbol}  close : {df.iloc[index]['close']} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}")  
+        
+            
             
                     
                     
@@ -309,7 +266,6 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
     # Logic to Exit the Short Trades if hits SL and also the trailing Part
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     if not df_entry.empty:
-        rows_to_delete = []
         logger.debug(f'Entry happened for {symbol} , Checking for Exit.....')
                         
         while True:
@@ -324,7 +280,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                             file.write(f'\n symbol = {symbol},')
                             
                             file.write(f'Time = {time1}')
-                file.close
+                file.close()
                 time.sleep(10)
                 login = 25071028
                 password = 'pB+#3#6FS3%j'
@@ -334,123 +290,60 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 
                 
                 
-                
-            
             for index, row in df_entry.iterrows(): 
                 try:
+                    
+                    # If the Price hit SL
                     if Price >= row['SL']:
                             time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
                             print(f'SL Hit at{time_s} ')
                             close = close_order(row['orderid'])
-                            logger.success(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
+                            logger.info(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
                             if close.comment == 'Request executed':
+                                
+                                '''Delete the Signals Trade from df_entry when we exit our Order'''
                                 df_entry = df_entry.drop(index)
+                                
+                                
+                                '''Update the OpenSignals Df to take the New trade from now on'''
+                                df_open_signals = pd.read_csv(f'{script_name}_open_signals.csv' )
                                 df_entry.reset_index(inplace= True)
                                 df_entry.drop('index', axis=1, inplace=True)
-                                df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
-                                #df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
+                                df_open_signals = df_open_signals[df_open_signals.ActiveChoice!= row['signals']].reset_index(drop=True)
+                                df_open_signals.to_csv(f'{script_name}_open_signals.csv' , index=False)
                                 
+                    
+                    # First Trailing Step            
                     elif (Price <= row['TP']) and (row['flag'] == 0):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
                         row['SL'] = row['price_open'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
                         row['flag'] = 1
-                        logger.debug(f"Trail 1  hit Short {time_s} SL at {row['SL']} PT {row['TP']},{row['signals']}  ")
+                        logger.debug(f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        
+                    # Trailing SL and TP when we reaches new TP (note - this line of code will work only when First Trailing Step happened )
                     elif (Price <= row['TP']) and (row['flag'] == 1):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
                         row['SL'] = row['SL'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
-                        logger.debug(f"Trail next  hit Short {time_s} SL at {row['SL']} PT {row['TP']},{row['signals']} ")
-                except:
+                        logger.debug(f"Trailing at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        
+                        
+                except Exception as e:
+                    logger.error(f'Error : {e}  When We are Exiting a Trade for {symbol}')
                     continue
                 
                 
                 
             if len(df_entry) == 0:
-                logger.debug(f'Function Out after the Exit trade of {symbol} NextSignalCheckTime : {dd_time} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}')
-                return
+                logger.debug(f'Function Out after the Exit trade of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}')
+                break
                 
     else:
-        df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
-        logger.debug(f'Function Out of {symbol} NextSignalCheckTime {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
-        time.sleep(20)
+        logger.debug(f'Function Out of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
+        time.sleep(1200)
                     
         
-    # # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-    # # Logic to Exit the Short Trades if hits SL and also the trailing Part
-    # # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-    # if not df_entry.empty:
-    #     rows_to_delete = []
-    #     logger.debug(f'Entry happened for {symbol} , Checking for Exit.....')
-                        
-    #     while True:
-    #         if time_hr.minute  ==  0:
-    #             dd_time = 4*60*60 - 20
-    #         elif time_hr.minute >= 19:
-    #             dd_time = 4*60*60 - 21*60 - 10
-    #         elif time_hr.minute >= 10:
-    #             dd_time = 4*60*60 - 15*60
-    #         elif time_hr.minute >= 5:
-    #             dd_time = 4*60*60 - 12*60
-    #         elif time_hr.minute >= 2:
-    #             dd_time = 4*60*60 - 5*60
-            
-    #         else:
-    #             dd_time = 4*60*60 - 70
-                    
-            
-    #         if (  (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)) - time_hr).seconds < dd_time:
-
-    #             if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() !=5 and (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() !=6:
-                        
-    #                     # SL , TP check
-                        
-    #                 Price = mt5.symbol_info_tick(symbol).bid
-    #                 Price1 = mt5.symbol_info_tick(symbol).ask
-    #                         # SL Hit
-    #                 for index, row in df_entry.iterrows():  
-    #                     try:
-    #                         if index not in rows_to_delete:
-                                
-    #                             if Price >= row['SL']:
-    #                                     time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
-    #                                     print(f'SL Hit at{time_s} ')
-    #                                     close = close_order(row['orderid'])
-    #                                     logger.success(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
-    #                                     if close.comment == 'Request executed':
-    #                                         rows_to_delete.append(index)
-    #                             elif (Price <= row['TP']) and (row['flag'] == 0):
-    #                                 time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
-    #                                 row['SL'] = row['price_open'] - 1*(SL_TpRatio)
-    #                                 row['TP'] = row['TP'] - 1*(SL_TpRatio)
-    #                                 row['flag'] = 1
-    #                                 logger.debug(f"Trail 1  hit Short {time_s} SL at {row['SL']} PT {row['TP']},{row['signals']}  ")
-    #                             elif (Price <= row['TP']) and (row['flag'] == 1):
-    #                                 time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
-    #                                 row['SL'] = row['SL'] - 1*(SL_TpRatio)
-    #                                 row['TP'] = row['TP'] - 1*(SL_TpRatio)
-    #                                 logger.debug(f"Trail next  hit Short {time_s} SL at {row['SL']} PT {row['TP']},{row['signals']} ")
-
-                                        
-                                    
-
-    #                     except:
-    #                             continue
-
-                                
-    #         else:
-    #             df_entry = df_entry.drop(rows_to_delete)
-    #             df_entry.reset_index(inplace= True)
-    #             df_entry.drop('index', axis=1, inplace=True)
-    #             df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
-    #             logger.debug(f'Function Out after the Exit trade of {symbol} NextSignalCheckTime : {dd_time} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
-    #             return
-    # else:
-    #     df_entry.to_csv(f'{script_name}_entry_signals.csv',index = False)
-    #     logger.debug(f'Function Out of {symbol} NextSignalCheckTime {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
-    #     time.sleep(20)
-    #     return
-                        
                                         
                                         
 
