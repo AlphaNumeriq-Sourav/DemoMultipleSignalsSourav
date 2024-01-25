@@ -94,3 +94,125 @@
 2024-01-25 12:56:45,135 - DEBUG - 1.2721 atr: 0.0030226237589780006 
 2024-01-25 12:56:45,385 - INFO - Entry at 2024-01-25 11:56:44 for GBPUSD  , SL : 1.27264 , TP : 1.27184 ,Lotsize : 0.04 , OrderPrice : 1.27214, comment : Request executed Flag : 0 OrderID : 33363180
 2024-01-25 12:56:45,431 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:27:37,490 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:27:37.490064  BrokerTime : 2024-01-25 13:27:36  for the New Short Signal Modified by Sourav
+2024-01-25 14:27:37,495 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:27:37,500 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:27:36
+2024-01-25 14:27:37,504 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:27:36
+2024-01-25 14:27:37,508 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:27:36
+2024-01-25 14:27:37,523 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:27:36
+2024-01-25 14:27:37,527 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:27:36 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:27:36
+2024-01-25 14:27:43,342 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27295 at BrokerTime : 2024-01-25 13:27:43
+2024-01-25 14:27:43,388 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27295 at BrokerTime : 2024-01-25 13:27:43
+2024-01-25 14:27:43,498 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27295 at BrokerTime : 2024-01-25 13:27:43
+2024-01-25 14:27:43,597 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:27:43
+2024-01-25 14:27:43,900 - DEBUG - 1.27295 atr: 0.0031426237589779935 
+2024-01-25 14:27:44,136 - INFO - Entry at 2024-01-25 13:27:43 for GBPUSD  , SL : 1.27335 , TP : 1.27255 ,Lotsize : 0.04 , OrderPrice : 1.27285, comment : Request executed Flag : 0 OrderID : 33366740
+2024-01-25 14:27:44,200 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:52:59,216 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:52:59.216172  BrokerTime : 2024-01-25 13:52:55  for the New Short Signal Modified by Sourav
+2024-01-25 14:52:59,231 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:52:59,237 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:52:55
+2024-01-25 14:52:59,245 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:52:55
+2024-01-25 14:52:59,253 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:52:55
+2024-01-25 14:52:59,258 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:52:55
+2024-01-25 14:52:59,266 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:52:55 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:52:55
+2024-01-25 14:53:06,951 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27338 at BrokerTime : 2024-01-25 13:53:06
+2024-01-25 14:53:07,018 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27338 at BrokerTime : 2024-01-25 13:53:06
+2024-01-25 14:53:07,061 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27338 at BrokerTime : 2024-01-25 13:53:06
+2024-01-25 14:53:07,133 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:53:06
+2024-01-25 14:53:07,747 - DEBUG - 1.27338 atr: 0.0031426237589779935 
+2024-01-25 14:53:12,855 - INFO - Entry at 2024-01-25 13:53:06 for GBPUSD  , SL : 1.27376 , TP : 1.27326 ,Lotsize : 0.04 , OrderPrice : 1.27346, comment : Request executed Flag : 0 OrderID : 33367591
+2024-01-25 14:53:12,931 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:53:37,847 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:53:37.847543  BrokerTime : 2024-01-25 13:53:37  for the New Short Signal Modified by Sourav
+2024-01-25 14:53:37,847 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:53:37,863 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:53:37
+2024-01-25 14:53:37,872 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:53:37
+2024-01-25 14:53:37,888 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:53:37
+2024-01-25 14:53:37,947 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:53:37
+2024-01-25 14:53:37,988 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:53:37 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:53:37
+2024-01-25 14:53:45,986 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27344 at BrokerTime : 2024-01-25 13:53:45
+2024-01-25 14:53:46,047 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27344 at BrokerTime : 2024-01-25 13:53:45
+2024-01-25 14:53:46,073 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27344 at BrokerTime : 2024-01-25 13:53:45
+2024-01-25 14:53:46,146 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:53:45
+2024-01-25 14:53:46,556 - DEBUG - 1.27344 atr: 0.0031426237589779935 
+2024-01-25 14:53:46,846 - INFO - Entry at 2024-01-25 13:53:45 for GBPUSD  , SL : 1.27368 , TP : 1.27318 ,Lotsize : 0.04 , OrderPrice : 1.27338, comment : Request executed Flag : 0 OrderID : 33367627
+2024-01-25 14:53:46,948 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:54:35,049 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:54:35.049505  BrokerTime : 2024-01-25 13:54:33  for the New Short Signal Modified by Sourav
+2024-01-25 14:54:35,061 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:54:35,065 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:54:33
+2024-01-25 14:54:35,068 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:54:33
+2024-01-25 14:54:35,080 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:54:33
+2024-01-25 14:54:35,095 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:54:33
+2024-01-25 14:54:35,098 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:54:33 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:54:33
+2024-01-25 14:54:41,610 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27337 at BrokerTime : 2024-01-25 13:54:41
+2024-01-25 14:54:41,727 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27337 at BrokerTime : 2024-01-25 13:54:41
+2024-01-25 14:54:41,802 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27337 at BrokerTime : 2024-01-25 13:54:41
+2024-01-25 14:54:41,894 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:54:41
+2024-01-25 14:54:42,339 - DEBUG - 1.27337 atr: 0.0031426237589779935 
+2024-01-25 14:54:42,625 - INFO - Entry at 2024-01-25 13:54:41 for GBPUSD  , SL : 1.27354 , TP : 1.27304 ,Lotsize : 0.04 , OrderPrice : 1.27324, comment : Request executed Flag : 0 OrderID : 33367633
+2024-01-25 14:54:51,968 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:56:35,394 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:56:35.394504  BrokerTime : 2024-01-25 13:56:34  for the New Short Signal Modified by Sourav
+2024-01-25 14:56:35,394 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:56:35,410 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:56:34
+2024-01-25 14:56:35,410 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:56:34
+2024-01-25 14:56:35,428 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:56:34
+2024-01-25 14:56:35,443 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:56:34
+2024-01-25 14:56:35,457 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:56:34 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:56:34
+2024-01-25 14:56:42,580 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27311 at BrokerTime : 2024-01-25 13:56:42
+2024-01-25 14:56:42,604 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27311 at BrokerTime : 2024-01-25 13:56:42
+2024-01-25 14:56:42,640 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27311 at BrokerTime : 2024-01-25 13:56:42
+2024-01-25 14:56:42,753 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:56:42
+2024-01-25 14:56:43,010 - DEBUG - 1.27311 atr: 0.0031426237589779935 
+2024-01-25 14:56:43,282 - INFO - Entry at 2024-01-25 13:56:42 for GBPUSD  , SL : 1.27338 , TP : 1.27288 ,Lotsize : 0.04 , OrderPrice : 1.27308, comment : Request executed Flag : 0 OrderID : 33367673
+2024-01-25 14:56:45,997 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:57:31,691 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 14:57:31.691267  BrokerTime : 2024-01-25 13:57:31  for the New Short Signal Modified by Sourav
+2024-01-25 14:57:31,710 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 14:57:31,710 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:57:31
+2024-01-25 14:57:31,710 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:57:31
+2024-01-25 14:57:31,724 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:57:31
+2024-01-25 14:57:31,738 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:57:31
+2024-01-25 14:57:31,742 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 13:57:31 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 13:57:31
+2024-01-25 14:57:35,445 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2730299999999999 at BrokerTime : 2024-01-25 13:57:34
+2024-01-25 14:57:35,461 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.2730299999999999 at BrokerTime : 2024-01-25 13:57:34
+2024-01-25 14:57:35,494 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2730299999999999 at BrokerTime : 2024-01-25 13:57:34
+2024-01-25 14:57:35,510 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 13:57:34
+2024-01-25 14:57:35,805 - DEBUG - 1.2730299999999999 atr: 0.0031426237589779935 
+2024-01-25 14:57:36,060 - INFO - Entry at 2024-01-25 13:57:34 for GBPUSD  , SL : 1.27338 , TP : 1.27288 ,Lotsize : 0.04 , OrderPrice : 1.27308, comment : Request executed Flag : 0 OrderID : 33367691
+2024-01-25 14:57:36,155 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 14:58:54,385 - DEBUG - First Trailing Step Hit at BrokerTime : 2024-01-25 13:58:54 at CMP : 1.27288 , NewSL : 1.27298 NewTP : 1.27278 Flag : 1.0 of OrderID : 33367691.0
+2024-01-25 14:59:10,485 - INFO - SL hit Short BrokerTime : 2024-01-25 13:59:10 SL : 1.27298 TP : 1.27278 ,5.0,Request executed  
+2024-01-25 14:59:10,531 - ERROR - Error : [Errno 2] No such file or directory: 'Short_H4_1_open_signals.csv'  When We are Exiting a Trade for GBPUSD
+2024-01-25 14:59:10,568 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-01-25 13:59:10
+2024-01-25 15:00:50,929 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 15:00:50.929870  BrokerTime : 2024-01-25 14:00:51  for the New Short Signal Modified by Sourav
+2024-01-25 15:00:50,938 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 15:00:50,947 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:00:51
+2024-01-25 15:00:50,968 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:00:51
+2024-01-25 15:00:51,014 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:00:51
+2024-01-25 15:00:51,064 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:00:51
+2024-01-25 15:00:51,189 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:00:51 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:00:51
+2024-01-25 15:00:57,841 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27298 at BrokerTime : 2024-01-25 14:00:56
+2024-01-25 15:00:57,864 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27298 at BrokerTime : 2024-01-25 14:00:56
+2024-01-25 15:00:57,973 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27298 at BrokerTime : 2024-01-25 14:00:56
+2024-01-25 15:00:58,005 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 14:00:56
+2024-01-25 15:00:58,647 - DEBUG - 1.27298 atr: 0.0031426237589779935 
+2024-01-25 15:00:58,882 - INFO - Entry at 2024-01-25 14:00:56 for GBPUSD  , SL : 1.27325 , TP : 1.27275 ,Lotsize : 0.04 , OrderPrice : 1.27295, comment : Request executed Flag : 0 OrderID : 33367825
+2024-01-25 15:00:58,949 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 15:04:12,239 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-25 15:04:12.239613  BrokerTime : 2024-01-25 14:04:12  for the New Short Signal Modified by Sourav
+2024-01-25 15:04:12,239 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 15:04:12,255 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:04:12
+2024-01-25 15:04:12,255 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:04:12
+2024-01-25 15:04:12,264 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:04:12
+2024-01-25 15:04:12,264 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:04:12
+2024-01-25 15:04:12,275 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-25 14:04:12 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 14:04:12
+2024-01-25 15:04:18,831 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27285 at BrokerTime : 2024-01-25 14:04:17
+2024-01-25 15:04:18,888 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27285 at BrokerTime : 2024-01-25 14:04:17
+2024-01-25 15:04:18,933 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27285 at BrokerTime : 2024-01-25 14:04:17
+2024-01-25 15:04:19,020 - DEBUG - Got Short Indication Candle for signal5 GBPUSD at BrokerTime : 2024-01-25 14:04:17
+2024-01-25 15:04:19,441 - DEBUG - 1.27285 atr: 0.0031426237589779935 
+2024-01-25 15:04:19,687 - INFO - Entry at 2024-01-25 14:04:17 for GBPUSD  , SL : 1.2733299999999999 , TP : 1.27253 ,Lotsize : 0.04 , OrderPrice : 1.27283, comment : Request executed Flag : 0 OrderID : 33368000
+2024-01-25 15:04:19,753 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-01-25 15:14:17,012 - DEBUG - First Trailing Step Hit at BrokerTime : 2024-01-25 14:14:17 at CMP : 1.27253 , NewSL : 1.27273 NewTP : 1.27243 Flag : 1.0 of OrderID : 33368000.0
+2024-01-25 15:17:35,338 - DEBUG - Trailing at BrokerTime : 2024-01-25 14:17:35 at CMP : 1.27243 , NewSL : 1.27263 NewTP : 1.27233 Flag : 1.0 of OrderID : 33368000.0
+2024-01-25 15:19:48,831 - DEBUG - Trailing at BrokerTime : 2024-01-25 14:19:49 at CMP : 1.27233 , NewSL : 1.27253 NewTP : 1.27223 Flag : 1.0 of OrderID : 33368000.0
+2024-01-25 15:20:48,798 - DEBUG - Trailing at BrokerTime : 2024-01-25 14:20:49 at CMP : 1.27223 , NewSL : 1.27243 NewTP : 1.27213 Flag : 1.0 of OrderID : 33368000.0
+2024-01-25 15:24:36,790 - INFO - SL hit Short BrokerTime : 2024-01-25 14:24:36 SL : 1.27243 TP : 1.27213 ,5.0,Request executed  
+2024-01-25 15:24:36,913 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-01-25 14:24:36

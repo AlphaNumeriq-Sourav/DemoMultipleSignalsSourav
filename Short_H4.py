@@ -171,9 +171,6 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}')
             else:
                 logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}  Again Trying......')
-                login = 25071028
-                password = 'pB+#3#6FS3%j'
-                server = 'Tickmill-Demo'
 
                 mt5.initialize(login = login , password = password, server = server)
                 #time.sleep(20)
@@ -216,7 +213,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']} ")
 
 
-                SL_dis = 5
+                SL_dis = SL
                 LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*50),2)
                 
                 order= market_order(symbol , LotSize,'sell',signal,3001+Choices[i] )
@@ -225,7 +222,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 
                 ATR = df.iloc[index]['atr_7']
                 StopLoss = Price + (SL_dis * SL_TpRatio)
-                TP_val = Price - (3 * SL_TpRatio)
+                TP_val = Price - (TP * SL_TpRatio)
                 order_id = order.order
                 order_price = order.price
                 logger.info(f'Entry at {time1} for {symbol}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
@@ -258,9 +255,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() == 5 or (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() ==6:
                 continue
             
-            if mt5.initialize():
-                continue
-            else:
+            if not  mt5.initialize():
                 logger.debug("Mt5 Terminal Got Disconnected...")
                     
                 time1 = (datetime.now())
@@ -270,12 +265,11 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                             file.write(f'Time = {time1}')
                 file.close()
                 time.sleep(10)
-                login = 25071028
-                password = 'pB+#3#6FS3%j'
-                server = 'Tickmill-Demo'
                 cd = mt5.initialize(login = login , password = password, server = server)
                 logger.debug(f'Is Connected : {cd}')
-                
+                continue
+            
+            
             Price = mt5.symbol_info_tick(symbol).ask
                 
             for index, row in df_entry.iterrows(): 
@@ -284,7 +278,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                     # If the Price hit SL
                     if Price >= row['SL']:
                             time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
-                            print(f'SL Hit at{time_s} ')
+                            #print(f'SL Hit at{time_s} ')
                             close = close_order(row['orderid'])
                             logger.info(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
                             if close.comment == 'Request executed':
@@ -294,7 +288,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                                 
                                 
                                 '''Update the OpenSignals Df to take the New trade from now on'''
-                                df_open_signals = pd.read_csv(f'{script_name}_open_signals.csv' )
+                                df_open_signals = pd.read_csv(f'{symbol}_{script_name}_open_signals.csv' )
                                 df_entry.reset_index(inplace= True)
                                 df_entry.drop('index', axis=1, inplace=True)
                                 df_open_signals = df_open_signals[df_open_signals.ActiveChoice!= row['signals']].reset_index(drop=True)
@@ -307,14 +301,14 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                         row['SL'] = row['price_open'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
                         row['flag'] = 1
-                        logger.debug(f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        logger.info(f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
                         
                     # Trailing SL and TP when we reaches new TP (note - this line of code will work only when First Trailing Step happened )
                     elif (Price <= row['TP']) and (row['flag'] == 1):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
                         row['SL'] = row['SL'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
-                        logger.debug(f"Trailing at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        logger.info(f"Trailing at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
                         
                         
                 except Exception as e:
