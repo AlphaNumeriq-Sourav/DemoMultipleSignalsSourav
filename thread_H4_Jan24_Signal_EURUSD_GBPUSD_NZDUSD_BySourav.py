@@ -13,26 +13,27 @@ from multiprocessing import pool , Process
 from statsmodels.tsa.stattools import adfuller
 import statsmodels.api as sm
 import schedule
-
 import pandas_ta as ta
-
-
 import warnings
 warnings.filterwarnings("ignore")
 import importlib
 import sig_lib as sig
-
 importlib.reload(sig)
 from Logging import setup_logger
 import logging
 import math
+from config import thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav
+from Short_H4 import Execution
+
+
+
 
 '''Function to Run Instrument Signal file with a Independent Thread'''
 def run_script(script_name,symbol , RISK , ds ,TP,SL,pip ,Choices , ChoicesExitModels, login , password , server ):
     logger = logging.getLogger(symbol)
     try:
-        script_module = importlib.import_module(script_name)
-        script_module.Execution(script_name,symbol , RISK , ds ,TP,SL,pip,logger ,Choices , ChoicesExitModels,  login , password , server)
+        #script_module = importlib.import_module(script_name)
+        Execution(script_name,symbol , RISK , ds ,TP,SL,pip,logger ,Choices , ChoicesExitModels,  login , password , server)
     except ImportError:
         logger.error(f"Failed to Import : {script_name}")
 
@@ -47,7 +48,7 @@ def files(script_name,symbol , RISK , ds ,TP,SL,pip, Choices , ChoicesExitModels
     df_entry.to_csv(f'{script_name}_entry_signals.csv',index= False)
     
     df_open_signal = pd.DataFrame(columns = ['ActiveChoice'])
-    df_open_signal.to_csv(f'{script_name}_open_signals.csv' , index=False)
+    df_open_signal.to_csv(f'{symbol}_{script_name}_open_signals.csv' , index=False)
     
     setup_logger(f'{symbol}_BA_H4_AddedBySourav.log' , symbol)
 
@@ -66,25 +67,14 @@ def PreMain():
     #MainLogger.error('sss')
     
     
-    script_args = {
-        "EURUSD_Short_H4" : ('EURUSD' , 0.002 , 0.0001 , 2 , 3 , 10 ),
-        "GBPUSD_trail_Short_H4" : ('GBPUSD' , 0.002 , 0.0001 , 2 , 3 , 10) ,
-        "NZDUSD_trail_Short_H4" : ('NZDUSD' , 0.002 , 0.0001 , 2 , 3 , 10) 
-    }
-    
-    script_args = {
-        "EURUSD_Short_H4" : ('EURUSD' , 0.002 , 0.001 , 2 , 3 , 10 , [2] , ['Trail'])
-    }
-
+    script_args = thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav
+    print(script_args)
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name,*args)
         thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
         thread.start()
 
-    for thread in threading.enumerate():
-        if thread != threading.current_thread():
-            thread.join()
         
 
 

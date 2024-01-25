@@ -1,112 +1,60 @@
-2024-01-24 13:19:15,465 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:19:15.465047  BrokerTime : 2024-01-24 12:19:15  for the New Short Signal Modified by Sourav
-2024-01-24 13:19:15,472 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-23 10:30:00
-2024-01-24 13:19:15,478 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-23 10:30:00 NowBrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,485 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-23 10:30:00 NowBrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,493 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-23 10:30:00 NowBrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,497 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-23 10:30:00 NowBrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,515 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:19:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,803 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08776 at BrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:19:15,804 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:19:15
-2024-01-24 13:24:08,687 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:24:08.687546  BrokerTime : 2024-01-24 12:24:08  for the New Short Signal Modified by Sourav
-2024-01-24 13:24:08,688 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:24:08,688 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,695 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,695 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,704 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,704 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:08 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,924 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08734 at BrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:08,924 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:24:08
-2024-01-24 13:24:37,517 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:24:37.517914  BrokerTime : 2024-01-24 12:24:38  for the New Short Signal Modified by Sourav
-2024-01-24 13:24:37,517 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:24:37,517 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,532 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,532 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,532 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,532 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:24:38 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,848 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08703 at BrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:24:37,848 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:24:38
-2024-01-24 13:26:28,275 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:26:28.275979  BrokerTime : 2024-01-24 12:26:29  for the New Short Signal Modified by Sourav
-2024-01-24 13:26:28,275 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:26:28,282 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,285 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,288 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,291 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,294 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:26:29 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,506 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08741 at BrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:26:28,506 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:26:29
-2024-01-24 13:27:36,681 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:27:36.681631  BrokerTime : 2024-01-24 12:27:36  for the New Short Signal Modified by Sourav
-2024-01-24 13:27:36,683 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:27:36,683 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,690 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,692 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,692 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,699 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:27:36 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,916 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08745 at BrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:27:36,916 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:27:36
-2024-01-24 13:29:23,958 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:29:23.958906  BrokerTime : 2024-01-24 12:29:25  for the New Short Signal Modified by Sourav
-2024-01-24 13:29:23,958 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:29:23,964 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:23,964 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:23,969 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:23,974 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:23,974 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:29:25 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:24,184 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08723 at BrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:29:24,184 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-24 12:29:25
-2024-01-24 13:31:17,879 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:31:17.879280  BrokerTime : 2024-01-24 12:31:19  for the New Short Signal Modified by Sourav
-2024-01-24 13:31:17,881 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:31:17,886 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:17,888 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:17,893 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:17,896 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:17,902 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:31:19 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:18,151 - DEBUG - Got Short Indication Candle for signal1 EURUSD at BrokerTime : 2024-01-24 12:31:19
-2024-01-24 13:31:18,152 - DEBUG - 1.08774 atr: 0.0022735189648300782 
-2024-01-24 13:32:14,449 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:32:14.448729  BrokerTime : 2024-01-24 12:32:15  for the New Short Signal Modified by Sourav
-2024-01-24 13:32:14,452 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:32:14,454 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,457 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,461 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,463 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,466 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:15 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,690 - DEBUG - Got Short Indication Candle for signal1 EURUSD at BrokerTime : 2024-01-24 12:32:15
-2024-01-24 13:32:14,690 - DEBUG - 1.08779 atr: 0.0022735189648300782 
-2024-01-24 13:32:45,370 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:32:45.370731  BrokerTime : 2024-01-24 12:32:46  for the New Short Signal Modified by Sourav
-2024-01-24 13:32:45,373 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:32:45,373 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,381 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,382 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,387 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,388 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:46 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,613 - DEBUG - Got Short Indication Candle for signal1 EURUSD at BrokerTime : 2024-01-24 12:32:46
-2024-01-24 13:32:45,613 - DEBUG - 1.08777 atr: 0.0022735189648300782 
-2024-01-24 13:32:53,733 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:32:53.733575  BrokerTime : 2024-01-24 12:32:53  for the New Short Signal Modified by Sourav
-2024-01-24 13:32:53,738 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:32:53,743 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:53
-2024-01-24 13:32:53,748 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:53
-2024-01-24 13:32:53,752 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:53
-2024-01-24 13:32:53,757 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:53
-2024-01-24 13:32:53,762 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:32:53 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:32:53
-2024-01-24 13:33:11,663 - DEBUG - Got Short Indication Candle for signal1 EURUSD at BrokerTime : 2024-01-24 12:33:12
-2024-01-24 13:33:24,248 - DEBUG - 1.08789 atr: 0.0022735189648300782 
-2024-01-24 13:35:18,980 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 13:35:18.980859  BrokerTime : 2024-01-24 12:35:20  for the New Short Signal Modified by Sourav
-2024-01-24 13:35:18,980 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00
-2024-01-24 13:35:18,987 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:18,988 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:18,988 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:18,996 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:18,996 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 12:35:20 H4DfLastIndex : 2024-01-24 10:30:00 NowBrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:19,244 - DEBUG - Got Short Indication Candle for signal1 EURUSD at BrokerTime : 2024-01-24 12:35:20
-2024-01-24 13:35:19,245 - DEBUG - 1.08774 atr: 0.0022735189648300782 
-2024-01-24 13:35:19,450 - INFO - Entry at 2024-01-24 12:35:20 for EURUSD  , SL : 1.13774 , TP : 1.05774 ,Lotsize : 0.04 , OrderPrice : 1.08774, comment : Request executed Flag : 0 OrderID : 33296026
-2024-01-24 13:35:19,453 - DEBUG - Entry happened for EURUSD , Checking for Exit.....
-2024-01-24 16:13:15,797 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-24 16:13:15.797662  BrokerTime : 2024-01-24 15:13:11  for the New Short Signal Modified by Sourav
-2024-01-24 16:13:15,801 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00
-2024-01-24 16:13:15,804 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00 NowBrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:15,807 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00 NowBrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:15,810 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00 NowBrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:15,813 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00 NowBrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:15,816 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-24 15:13:11 H4DfLastIndex : 2024-01-24 14:30:00 NowBrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:16,084 - DEBUG - Got Short Indication Candle for signal2 EURUSD at BrokerTime : 2024-01-24 15:13:11
-2024-01-24 16:13:16,085 - DEBUG - 1.08982 atr: 0.002456689724956386 
-2024-01-24 16:13:16,321 - INFO - Entry at 2024-01-24 15:13:11 for EURUSD  , SL : 1.13982 , TP : 1.05982 ,Lotsize : 0.04 , OrderPrice : 1.08982, comment : Request executed Flag : 0 OrderID : 33305546
-2024-01-24 16:13:16,324 - DEBUG - Entry happened for EURUSD , Checking for Exit.....
+2024-01-25 12:47:46,115 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-25 12:47:46.114831  BrokerTime : 2024-01-25 11:47:41  for the New Short Signal Modified by Sourav
+2024-01-25 12:47:46,125 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 12:47:46,135 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:46,147 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:46,242 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:46,328 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:46,371 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:47:41 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:51,373 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.089 at BrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:51,487 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.089 at BrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:51,579 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.089 at BrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:51,655 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.089 at BrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:47:51,672 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-25 11:47:41
+2024-01-25 12:48:59,289 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-25 12:48:59.289826  BrokerTime : 2024-01-25 11:48:38  for the New Short Signal Modified by Sourav
+2024-01-25 12:48:59,294 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 12:48:59,309 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:48:38
+2024-01-25 12:48:59,475 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:48:38
+2024-01-25 12:48:59,504 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:48:38
+2024-01-25 12:48:59,595 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:48:38
+2024-01-25 12:48:59,674 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:48:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:48:38
+2024-01-25 12:49:06,728 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08904 at BrokerTime : 2024-01-25 11:49:00
+2024-01-25 12:49:06,822 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08904 at BrokerTime : 2024-01-25 11:49:00
+2024-01-25 12:49:07,073 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08904 at BrokerTime : 2024-01-25 11:49:00
+2024-01-25 12:49:07,167 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08904 at BrokerTime : 2024-01-25 11:49:00
+2024-01-25 12:49:07,179 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-25 11:49:00
+2024-01-25 12:51:38,162 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-25 12:51:38.162385  BrokerTime : 2024-01-25 11:51:38  for the New Short Signal Modified by Sourav
+2024-01-25 12:51:38,168 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 12:51:38,207 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:51:38
+2024-01-25 12:51:38,533 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:51:38
+2024-01-25 12:51:38,728 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:51:38
+2024-01-25 12:51:38,973 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:51:38
+2024-01-25 12:51:39,082 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:51:38 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:51:39
+2024-01-25 12:51:45,495 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08888 at BrokerTime : 2024-01-25 11:51:41
+2024-01-25 12:51:45,551 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08888 at BrokerTime : 2024-01-25 11:51:41
+2024-01-25 12:51:45,738 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08888 at BrokerTime : 2024-01-25 11:51:41
+2024-01-25 12:51:45,884 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08888 at BrokerTime : 2024-01-25 11:51:41
+2024-01-25 12:51:45,941 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-25 11:51:41
+2024-01-25 12:55:25,120 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-25 12:55:25.120761  BrokerTime : 2024-01-25 11:55:25  for the New Short Signal Modified by Sourav
+2024-01-25 12:55:25,147 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 12:55:25,347 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:55:25
+2024-01-25 12:55:25,384 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:55:25
+2024-01-25 12:55:25,432 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:55:25
+2024-01-25 12:55:25,462 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:55:25
+2024-01-25 12:55:25,472 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:55:25 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:55:25
+2024-01-25 12:55:34,282 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:55:34
+2024-01-25 12:55:34,450 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:55:34
+2024-01-25 12:55:34,540 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:55:34
+2024-01-25 12:55:34,705 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:55:34
+2024-01-25 12:55:34,746 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-25 11:55:34
+2024-01-25 12:56:39,938 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-25 12:56:39.938496  BrokerTime : 2024-01-25 11:56:35  for the New Short Signal Modified by Sourav
+2024-01-25 12:56:39,941 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00
+2024-01-25 12:56:39,943 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:56:35
+2024-01-25 12:56:39,947 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:56:35
+2024-01-25 12:56:39,956 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:56:35
+2024-01-25 12:56:39,974 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:56:35
+2024-01-25 12:56:40,131 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-25 11:56:35 H4DfLastIndex : 2024-01-25 10:30:00 NowBrokerTime : 2024-01-25 11:56:35
+2024-01-25 12:56:46,618 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:56:44
+2024-01-25 12:56:46,805 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:56:44
+2024-01-25 12:56:46,919 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:56:44
+2024-01-25 12:56:47,185 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08875 at BrokerTime : 2024-01-25 11:56:44
+2024-01-25 12:56:47,200 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-25 11:56:44

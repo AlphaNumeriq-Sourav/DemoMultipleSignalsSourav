@@ -183,7 +183,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             df['roc_10'] = sig.rateOfChange(df,10,(1/SL_TpRatio))
             df['roc_5'] = sig.rateOfChange(df,5,(1/SL_TpRatio))
             df['psar'] = sig.parbolsar(df,0.02,0.2)
-            df['CompositeATR'] = sig.CompositeATR(df , 2 , 24)
+            df['CompositeATR_2_24'] = sig.CompositeATR(df , 2 , 24)
             
            
            
