@@ -322,7 +322,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 break
                 
     else:
-        time.sleep(1200)
+        time.sleep(10)
         logger.debug(f'Function Out of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
         
                     

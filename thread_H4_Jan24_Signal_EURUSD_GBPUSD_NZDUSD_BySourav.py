@@ -42,10 +42,10 @@ def run_script(script_name,symbol , RISK , ds ,TP,SL,pip ,Choices , ChoicesExitM
 
 '''Function to create EntrySignalCsv Files and Logger File'''
 def files(script_name,symbol , RISK , ds ,TP,SL,pip, Choices , ChoicesExitModels):
-    df_cols = ['signals','orderid','volume','price_open','TP','SL']
+    # df_cols = ['signals','orderid','volume','price_open','TP','SL']
         
-    df_entry = pd.DataFrame(columns= df_cols) 
-    df_entry.to_csv(f'{script_name}_entry_signals.csv',index= False)
+    # df_entry = pd.DataFrame(columns= df_cols) 
+    # df_entry.to_csv(f'{script_name}_entry_signals.csv',index= False)
     
     df_open_signal = pd.DataFrame(columns = ['ActiveChoice'])
     df_open_signal.to_csv(f'{symbol}_{script_name}_open_signals.csv' , index=False)
@@ -68,12 +68,12 @@ def PreMain():
     
     
     script_args = thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav
-    print(script_args)
+    #print(script_args)
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name,*args)
-        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        thread.start()
+        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        # thread.start()
 
         
 
@@ -128,7 +128,7 @@ def PreMain():
                                             thread = threading.Thread(target=run_script, args=(script_name, *args))
                                             thread.start()
 
-                                        
+                                            time.sleep(1300)
                                         break
                                     elif time1.hour >= 1:
                                          break
