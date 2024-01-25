@@ -1,0 +1,37 @@
+Variable Trail - 
+
+Risk - Percentage Model
+First SL - 50 Pips
+First TP - 30 Pips
+Trailing - Every 1 Pip when we First TP  and SL become - Entry + 1 Pip
+
+
+Variable ATR - 
+
+Risk - Percentage
+First SL - 3x of Last Candle ATR 7
+First TP - 2x of Last Candle ATR 7
+Trailing - No Trailing
+When we hit SL or TP we exit
+
+
+
+Variable Trail ATR - 
+
+Risk - Percentage Model
+First SL - 3x of Last Candle ATR 7
+First TP - 2x of Last Candle ATR 7
+Trailing - Every 1 Pip when we First TP  and SL become - Entry + 1 Pip
+
+
+
+Variable SL Trail -
+
+Risk - Percentage Model
+First SL - OpenPrice - o.5 % of OpenPrice
+First TP - OpenPrice + o.5 % of OpenPrice
+Virtual TP 1 - OpenPrice + o.25 % of OpenPrice
+Trailing 1st Step - When We Hit Virtual TP 1 , My New SL = (Tp 1 - 10 Pips) and My New TP = (First TP + 1 Pip)
+Trailing - After 1st Trail Step when we reach New Tp then New SL = (Old SL + 1 Pip) , New TP = (Old TP + 1 Pip)
+
+
