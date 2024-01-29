@@ -57,6 +57,7 @@ def files(script_name,symbol , RISK , ds ,TP,SL,pip, Choices , ChoicesExitModels
      
 ''''Main Function to run the Signal Script File Every 4 Hour from Monday to Friday'''
 def PreMain():
+    HoursDelay = 1
     login = 25088141
     password = 'N3W*f%Ts??kF'
     server = 'Tickmill-Demo'
@@ -86,10 +87,10 @@ def PreMain():
                         (datetime.now().weekday()) != 6:
                 if mt5.initialize():
                 
-                    if ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday()) != 6:
+                    if ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 6:
             
                         try:
-                            time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
+                            time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
                             time2 = mt5.symbol_info_tick(symbol).time
                             time3 = mt5.symbol_info_tick(symbol).time
                         except AttributeError:
@@ -117,7 +118,7 @@ def PreMain():
                         if  (time1.hour == 0)  :
                                 while True:
                                     time2 = mt5.symbol_info_tick(symbol).time
-                                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
+                                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
                                     if (time2 % (3600*4)  < 50) or (time2 % (3600 *4)  < 1200) or (time2 % (3600 *4)  < 600) :
                                         for script_name, args in script_args.items():
                                             # create_file(script_name)  # Create a file for each script

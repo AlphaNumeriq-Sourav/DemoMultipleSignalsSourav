@@ -88,11 +88,12 @@ def close_order(ticket):
 def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,logger ,Choices , ChoicesExitModels,  login , password , server):
     NoOfSignals = 1
     NoOfSignals +=1
-    time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
+    HoursDelay = 1
+    time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
 
     df = pd.DataFrame(mt5.copy_rates_from_pos(symbol ,mt5.TIMEFRAME_H4 , 0 , 2700))
 
-    logger.debug(f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}  for the New Short Signal Modified by Sourav')
+    logger.debug(f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  for the New Short Signal Modified by Sourav')
 
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     # Logic to Get the H4 DataFrame for the Instrument
@@ -101,9 +102,9 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
     for i in range(2):
         try: 
             df = pd.DataFrame(mt5.copy_rates_from_pos(symbol ,mt5.TIMEFRAME_H4 , 0 , 2700))
-            df['time']= df['time'].map(lambda Date : datetime.fromtimestamp(Date) -  timedelta(hours= 3))
+            df['time']= df['time'].map(lambda Date : datetime.fromtimestamp(Date) -  timedelta(hours= HoursDelay))
 
-            time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
+            time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
             logger.debug(f"Checking DataFrameLastIndex and BrokerTime of Instrument : {symbol} BrokerTime: {time_hr} H4DfLastIndex : {df.iloc[-1]['time']}")
 
             for i in range(5):
@@ -113,8 +114,8 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 else:
                     df = pd.DataFrame(mt5.copy_rates_from_pos(symbol ,mt5.TIMEFRAME_H4, 0 , 2700))
                     index = -1
-                    df['time']= df['time'].map(lambda Date : datetime.fromtimestamp(Date) -  timedelta(hours= 3))
-                    time_false = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
+                    df['time']= df['time'].map(lambda Date : datetime.fromtimestamp(Date) -  timedelta(hours= HoursDelay))
+                    time_false = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
                     logger.debug(f"Retrying getting Latest candle for H4data of Instrument : {symbol} FalseBrokerTime: {time_hr} H4DfLastIndex : {df.iloc[-1]['time']} NowBrokerTime : {time_false}")
                     if  (df.iloc[-1]['time'].hour == time_hr.hour) or (df.iloc[-1]['time'].hour > time_hr.hour) or ((df.iloc[-1]['time'].hour == 0) and (time_hr.hour >=23)):
                         index = -2
@@ -168,13 +169,13 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
 
         except AttributeError:
             if mt5.initialize():
-                logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}')
+                logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
             else:
-                logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}  Again Trying......')
+                logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......')
 
                 mt5.initialize(login = login , password = password, server = server)
                 #time.sleep(20)
-                logger.debug(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)}')
+                logger.debug(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
             continue
         break
     
@@ -197,7 +198,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
         signal = f'signal{Choices[i]}'
         
         if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
-            logger.debug(f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))}')
+            logger.debug(f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))}')
             continue
         
         condition = entry_signal1(df,Choices[i],index)
@@ -207,7 +208,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             # Got a Short Entry 
             if variable == 'Trail':
                 flag = 0
-                time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=3))
+                time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
                 logger.debug(f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1}')
                 data = df.copy()
                 logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']} ")
@@ -237,7 +238,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             
         else:
             
-            logger.debug(f"No entry for {signal} of Instrument : {symbol}  close : {df.iloc[index]['close']} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}")  
+            logger.debug(f"No entry for {signal} of Instrument : {symbol}  close : {df.iloc[index]['close']} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))}")  
         
             
             
@@ -252,7 +253,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
         logger.debug(f'Entry happened for {symbol} , Checking for Exit.....')
                         
         while True:
-            if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() == 5 or (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday() ==6:
+            if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() == 5 or (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() ==6:
                 continue
             
             if not  mt5.initialize():
@@ -277,7 +278,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                     
                     # If the Price hit SL
                     if Price >= row['SL']:
-                            time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
+                            time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
                             #print(f'SL Hit at{time_s} ')
                             close = close_order(row['orderid'])
                             logger.info(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
@@ -309,7 +310,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                     
                     # First Trailing Step            
                     elif (Price <= row['TP']) and (row['flag'] == 0):
-                        time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
+                        time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
                         row['SL'] = row['price_open'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
                         row['flag'] = 1
@@ -317,7 +318,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                         
                     # Trailing SL and TP when we reaches new TP (note - this line of code will work only when First Trailing Step happened )
                     elif (Price <= row['TP']) and (row['flag'] == 1):
-                        time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
+                        time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
                         row['SL'] = row['SL'] - 1*(SL_TpRatio)
                         row['TP'] = row['TP'] - 1*(SL_TpRatio)
                         logger.info(f"Trailing at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
@@ -330,12 +331,12 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 
                 
             if len(df_entry) == 0:
-                logger.debug(f'Function Out after the Exit trade of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}')
+                logger.debug(f'Function Out after the Exit trade of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))}')
                 break
                 
     else:
         time.sleep(10)
-        logger.debug(f'Function Out of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))}') 
+        logger.debug(f'Function Out of {symbol} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))}') 
         
                     
         
