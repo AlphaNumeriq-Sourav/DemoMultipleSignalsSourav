@@ -90,7 +90,6 @@ def PreMain():
             
                         try:
                             time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
-                            print(time1)
                             time2 = mt5.symbol_info_tick(symbol).time
                             time3 = mt5.symbol_info_tick(symbol).time
                         except AttributeError:
