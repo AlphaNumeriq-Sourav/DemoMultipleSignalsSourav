@@ -1,0 +1,109 @@
+2024-01-29 10:59:59,396 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 10:59:59,453 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 10:59:59,463 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 10:59:59.463563  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 10:59:59,468 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-25 06:00:00
+2024-01-29 10:59:59,512 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00 NowBrokerTime : 2024-01-29 10:00:00
+2024-01-29 10:59:59,545 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 10:59:59,648 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 10:59:59,970 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 10:59:59.970358  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:00,105 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,144 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:00,155 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,229 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:00.229718  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:00,352 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,475 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,511 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:00,528 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:00.528021  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:00,672 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:00,706 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,753 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,796 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:00.796133  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:00,822 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,898 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:00,997 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:01,092 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:01.092817  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:01,392 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:01,534 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:01,566 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:01,657 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:01.657536  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:02,148 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:02,245 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:02,327 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:02,480 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:02.480395  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:02,731 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:02,752 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:02,847 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:02,969 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:02.969079  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:03,421 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:03,791 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,212 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,247 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:04.247413  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:04,338 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:04,555 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,622 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,656 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:04.656040  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:04,731 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,794 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-29 12:00:00
+2024-01-29 11:00:04,842 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:00 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:04,872 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-29 11:00:04.872912  BrokerTime : 2024-01-29 10:00:00  for the New Short Signal Modified by Sourav
+2024-01-29 11:00:05,767 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-29 10:00:05 H4DfLastIndex : 2024-01-29 10:00:00
+2024-01-29 11:00:13,544 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,624 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,680 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,809 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,847 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,863 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,946 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:13,957 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:14,007 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:12
+2024-01-29 11:00:14,187 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:14
+2024-01-29 11:00:14,321 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:14
+2024-01-29 11:00:14,371 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:14,472 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:14,597 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:14,679 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:14,948 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:14,988 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,007 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,338 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,428 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,498 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,686 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,686 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,703 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,770 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:15,987 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,018 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,019 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,203 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,252 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,502 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,661 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,678 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:16,838 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:17,160 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:17,295 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:17,329 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:15
+2024-01-29 11:00:17,421 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:18
+2024-01-29 11:00:17,541 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:18
+2024-01-29 11:00:17,696 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:18
+2024-01-29 11:00:18,161 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:18
+2024-01-29 11:00:18,333 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:18
+2024-01-29 11:00:18,534 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:18,647 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:18,891 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:18,951 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:19,202 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:19,307 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61148 at BrokerTime : 2024-01-29 10:00:19
+2024-01-29 11:00:27,008 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:27
+2024-01-29 11:00:27,574 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:27
+2024-01-29 11:00:27,823 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:27
+2024-01-29 11:00:27,984 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:27
+2024-01-29 11:00:28,369 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:29
+2024-01-29 11:00:28,611 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:29
+2024-01-29 11:00:28,689 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:29
+2024-01-29 11:00:28,822 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:29
+2024-01-29 11:00:29,381 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:29
+2024-01-29 11:00:29,537 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:30
+2024-01-29 11:00:29,567 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:30
+2024-01-29 11:00:29,638 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-29 10:00:30

@@ -89,7 +89,8 @@ def PreMain():
                     if ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3)).weekday()) != 6:
             
                         try:
-                            time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=3))
+                            time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
+                            print(time1)
                             time2 = mt5.symbol_info_tick(symbol).time
                             time3 = mt5.symbol_info_tick(symbol).time
                         except AttributeError:
@@ -99,7 +100,7 @@ def PreMain():
                         '''For all 4 Hour Timeframe apart from 0th Hour'''
                         if  (time2 % (3600 *24)  != 0) :  #not 00:00
 
-                            if (time2 % (3600*4)  == 0) or (time2 % (3600*4)  < 3):
+                            if (time2 % (3600*4)  == 0) or (time2 % (3600*4)  < 30):
                                     for script_name, args in script_args.items():
                                         # create_file(script_name)  # Create a file for each script
                                         symbol = args[0]
@@ -108,9 +109,8 @@ def PreMain():
                                         logger.debug(f'AT the next Hour InTime -- SymbolName : {symbol} BrokerTime : {time1}')
                                         thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
                                         thread.start()
-
                                     
-                                    
+                                    time.sleep(60)
                                     logger.debug(f'AT the next Hour OutTime -- SymbolName : {symbol} BrokerTime : {time1}')
                         
                         
@@ -128,7 +128,7 @@ def PreMain():
                                             thread = threading.Thread(target=run_script, args=(script_name, *args))
                                             thread.start()
 
-                                            time.sleep(1300)
+                                        time.sleep(1400)
                                         break
                                     elif time1.hour >= 1:
                                          break

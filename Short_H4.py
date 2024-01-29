@@ -294,6 +294,18 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                                 df_open_signals = df_open_signals[df_open_signals.ActiveChoice!= row['signals']].reset_index(drop=True)
                                 df_open_signals.to_csv(f'{symbol}_{script_name}_open_signals.csv' , index=False)
                                 
+                            elif close.comment == 'Ticket does not exist':
+                                '''Delete the Signals Trade from df_entry when we exit our Order'''
+                                df_entry = df_entry.drop(index)
+                                logger.info(f'Manually Closed the order for {symbol} of OrderID : {row["orderid"]}')
+                                
+                                '''Update the OpenSignals Df to take the New trade from now on'''
+                                df_open_signals = pd.read_csv(f'{symbol}_{script_name}_open_signals.csv' )
+                                df_entry.reset_index(inplace= True)
+                                df_entry.drop('index', axis=1, inplace=True)
+                                df_open_signals = df_open_signals[df_open_signals.ActiveChoice!= row['signals']].reset_index(drop=True)
+                                df_open_signals.to_csv(f'{symbol}_{script_name}_open_signals.csv' , index=False)
+                                
                     
                     # First Trailing Step            
                     elif (Price <= row['TP']) and (row['flag'] == 0):
