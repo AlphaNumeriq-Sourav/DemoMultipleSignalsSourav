@@ -73,8 +73,8 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name,*args)
-        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        # thread.start()
+        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        thread.start()
 
         
 
@@ -125,7 +125,7 @@ def PreMain():
                                             symbol = args[0]
                                             logger = logging.getLogger(symbol)
                                             logger.debug(f'AT the next Hour InTime -- SymbolName : {symbol} BrokerTime : {time1}')
-                                            thread = threading.Thread(target=run_script, args=(script_name, *args))
+                                            thread = threading.Thread(target=run_script, args=(script_name, *args, login , password , server))
                                             thread.start()
 
                                         time.sleep(1400)

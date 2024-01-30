@@ -102,3 +102,27 @@
 2024-01-29 11:02:04,599 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27037 at BrokerTime : 2024-01-29 10:02:04
 2024-01-29 11:02:04,607 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27037 at BrokerTime : 2024-01-29 10:02:04
 2024-01-29 11:02:14,612 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-29 10:02:15
+2024-01-30 12:28:11,483 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 12:28:11.483373  BrokerTime : 2024-01-30 13:28:09  for the New Short Signal Modified by Sourav
+2024-01-30 12:28:11,499 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00
+2024-01-30 12:28:11,558 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:09
+2024-01-30 12:28:11,623 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:09
+2024-01-30 12:28:11,849 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:09
+2024-01-30 12:28:11,950 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:09
+2024-01-30 12:28:12,074 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:28:09 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:12
+2024-01-30 12:28:16,905 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26929 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:17,006 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26929 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:17,098 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26929 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:17,114 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26929 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:27,164 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 13:28:24
+2024-01-30 12:29:28,792 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 12:29:28.792497  BrokerTime : 2024-01-30 13:29:29  for the New Short Signal Modified by Sourav
+2024-01-30 12:29:28,808 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00
+2024-01-30 12:29:28,808 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:29
+2024-01-30 12:29:28,823 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:29
+2024-01-30 12:29:28,848 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:29
+2024-01-30 12:29:28,855 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:29
+2024-01-30 12:29:29,015 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 13:29:29 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:29
+2024-01-30 12:29:34,980 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:35,016 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:35,080 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:35,156 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:45,187 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 13:29:45

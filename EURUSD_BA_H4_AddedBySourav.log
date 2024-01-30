@@ -328,3 +328,27 @@
 2024-01-29 11:00:29,652 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-29 10:00:30
 2024-01-29 11:00:29,699 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-29 10:00:30
 2024-01-29 11:00:29,722 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-29 10:00:30
+2024-01-30 12:28:11,483 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-30 12:28:11.483373  BrokerTime : 2024-01-30 13:28:11  for the New Short Signal Modified by Sourav
+2024-01-30 12:28:11,499 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00
+2024-01-30 12:28:11,557 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:11
+2024-01-30 12:28:11,592 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:11
+2024-01-30 12:28:11,804 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:11
+2024-01-30 12:28:11,975 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:12
+2024-01-30 12:28:12,140 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:28:11 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:28:12
+2024-01-30 12:28:16,618 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08141 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:16,669 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08141 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:16,716 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08141 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:16,733 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08141 at BrokerTime : 2024-01-30 13:28:16
+2024-01-30 12:28:26,756 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-30 13:28:27
+2024-01-30 12:29:28,808 - DEBUG - Running Event Loop of Instrument:EURUSD at ServerTime : 2024-01-30 12:29:28.808233  BrokerTime : 2024-01-30 13:29:17  for the New Short Signal Modified by Sourav
+2024-01-30 12:29:28,859 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : EURUSD BrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00
+2024-01-30 12:29:28,972 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:17
+2024-01-30 12:29:29,047 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:17
+2024-01-30 12:29:29,124 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:17
+2024-01-30 12:29:29,223 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:17
+2024-01-30 12:29:29,238 - DEBUG - Retrying getting Latest candle for H4data of Instrument : EURUSD FalseBrokerTime: 2024-01-30 13:29:17 H4DfLastIndex : 2024-01-30 12:30:00 NowBrokerTime : 2024-01-30 13:29:17
+2024-01-30 12:29:34,655 - DEBUG - No entry for signal1 of Instrument : EURUSD  close : 1.08167 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:34,716 - DEBUG - No entry for signal3 of Instrument : EURUSD  close : 1.08167 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:34,730 - DEBUG - No entry for signal4 of Instrument : EURUSD  close : 1.08167 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:34,765 - DEBUG - No entry for signal5 of Instrument : EURUSD  close : 1.08167 at BrokerTime : 2024-01-30 13:29:35
+2024-01-30 12:29:44,820 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-01-30 13:29:45

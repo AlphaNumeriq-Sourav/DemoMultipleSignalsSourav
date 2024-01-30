@@ -130,7 +130,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             
             # ATR
             df['atr_7'] = sig.AvgTrueRange(df,7)
-            df['CompositeATR'] = sig.CompositeATR(df , 2 , 24)
+            df['CompositeATR_2_24'] = sig.CompositeATR(df , 2 , 24)
             
             
             # RSI
