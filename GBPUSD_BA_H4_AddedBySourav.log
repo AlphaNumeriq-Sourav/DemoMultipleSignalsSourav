@@ -126,3 +126,353 @@
 2024-01-30 12:29:35,080 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
 2024-01-30 12:29:35,156 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26944 at BrokerTime : 2024-01-30 13:29:35
 2024-01-30 12:29:45,187 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 13:29:45
+2024-01-30 08:37:03,907 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 08:37:03.907707  BrokerTime : 2024-01-30 09:37:00  for the New Short Signal Modified by Sourav
+2024-01-30 08:37:03,907 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00
+2024-01-30 08:37:03,923 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:00
+2024-01-30 08:37:03,970 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:00
+2024-01-30 08:37:04,032 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:00
+2024-01-30 08:37:04,251 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:00
+2024-01-30 08:37:04,563 - DEBUG - Retrying getting Latest candle for H4data of Instrument : GBPUSD FalseBrokerTime: 2024-01-30 09:37:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:04
+2024-01-30 08:37:22,625 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26897 at BrokerTime : 2024-01-30 09:37:21
+2024-01-30 08:37:22,750 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26897 at BrokerTime : 2024-01-30 09:37:21
+2024-01-30 08:37:22,859 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26897 at BrokerTime : 2024-01-30 09:37:21
+2024-01-30 08:37:23,000 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26897 at BrokerTime : 2024-01-30 09:37:21
+2024-01-30 08:37:33,046 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 09:37:32
+2024-01-30 11:00:00,093 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-30 12:00:00
+2024-01-30 11:00:00,131 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 11:00:00.131312  BrokerTime : 2024-01-30 12:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 11:00:00,172 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 12:00:00 H4DfLastIndex : 2024-01-30 12:00:00
+2024-01-30 11:00:03,474 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2681 at BrokerTime : 2024-01-30 12:00:02
+2024-01-30 11:00:03,490 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.2681 at BrokerTime : 2024-01-30 12:00:02
+2024-01-30 11:00:03,490 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2681 at BrokerTime : 2024-01-30 12:00:02
+2024-01-30 11:00:03,505 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.2681 at BrokerTime : 2024-01-30 12:00:02
+2024-01-30 11:00:13,536 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 12:00:12
+2024-01-30 15:00:00,068 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-30 16:00:00
+2024-01-30 15:00:00,099 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 15:00:00.099819  BrokerTime : 2024-01-30 16:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 15:00:00,177 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 16:00:00 H4DfLastIndex : 2024-01-30 16:00:00
+2024-01-30 15:00:03,146 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2675 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,162 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.2675 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,177 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2675 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,287 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.2675 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:13,317 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 16:00:13
+2024-01-30 19:00:00,093 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-30 20:00:00
+2024-01-30 19:00:00,468 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 19:00:00.468373  BrokerTime : 2024-01-30 20:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 19:00:00,702 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-30 20:00:00 H4DfLastIndex : 2024-01-30 20:00:00
+2024-01-30 19:00:30,310 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26809 at BrokerTime : 2024-01-30 20:00:30
+2024-01-30 19:00:30,575 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26809 at BrokerTime : 2024-01-30 20:00:30
+2024-01-30 19:00:31,497 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26809 at BrokerTime : 2024-01-30 20:00:30
+2024-01-30 19:00:31,685 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26809 at BrokerTime : 2024-01-30 20:00:30
+2024-01-30 19:00:46,543 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-30 20:00:45
+2024-01-30 23:02:00,158 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 00:02:00
+2024-01-30 23:02:01,799 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-30 23:02:01.799157  BrokerTime : 2024-01-31 00:02:00  for the New Short Signal Modified by Sourav
+2024-01-30 23:02:02,314 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 00:02:00 H4DfLastIndex : 2024-01-31 00:00:00
+2024-01-30 23:19:52,485 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26997 at BrokerTime : 2024-01-31 00:19:48
+2024-01-30 23:19:52,720 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26997 at BrokerTime : 2024-01-31 00:19:48
+2024-01-30 23:19:54,095 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26997 at BrokerTime : 2024-01-31 00:19:52
+2024-01-30 23:19:54,501 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26997 at BrokerTime : 2024-01-31 00:19:52
+2024-01-30 23:20:04,610 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 00:19:57
+2024-01-31 03:00:00,489 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 04:00:00
+2024-01-31 03:00:01,864 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 03:00:01.864319  BrokerTime : 2024-01-31 04:00:01  for the New Short Signal Modified by Sourav
+2024-01-31 03:00:14,988 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 04:00:14 H4DfLastIndex : 2024-01-31 04:00:00
+2024-01-31 03:39:00,084 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26847 at BrokerTime : 2024-01-31 04:38:59
+2024-01-31 03:39:25,973 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26847 at BrokerTime : 2024-01-31 04:39:25
+2024-01-31 03:39:26,270 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26847 at BrokerTime : 2024-01-31 04:39:25
+2024-01-31 03:39:26,536 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26847 at BrokerTime : 2024-01-31 04:39:25
+2024-01-31 03:39:37,379 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 04:39:36
+2024-01-31 07:00:00,042 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 08:00:00
+2024-01-31 07:00:01,590 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 07:00:01.590483  BrokerTime : 2024-01-31 08:00:01  for the New Short Signal Modified by Sourav
+2024-01-31 07:00:02,104 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 08:00:01 H4DfLastIndex : 2024-01-31 08:00:00
+2024-01-31 07:58:09,626 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2677800000000001 at BrokerTime : 2024-01-31 08:58:08
+2024-01-31 07:58:09,782 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.2677800000000001 at BrokerTime : 2024-01-31 08:58:08
+2024-01-31 07:58:10,157 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2677800000000001 at BrokerTime : 2024-01-31 08:58:08
+2024-01-31 07:58:10,423 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.2677800000000001 at BrokerTime : 2024-01-31 08:58:08
+2024-01-31 07:58:20,750 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 08:58:20
+2024-01-31 11:00:00,047 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 12:00:00
+2024-01-31 11:00:00,313 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 11:00:00.313189  BrokerTime : 2024-01-31 12:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 11:00:00,453 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 12:00:00 H4DfLastIndex : 2024-01-31 12:00:00
+2024-01-31 11:00:19,171 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26697 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:19,312 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26697 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:19,405 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26697 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:19,483 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26697 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:29,545 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 12:00:29
+2024-01-31 15:00:00,108 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 16:00:00
+2024-01-31 15:00:00,592 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 15:00:00.592658  BrokerTime : 2024-01-31 16:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 15:00:00,733 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 16:00:00 H4DfLastIndex : 2024-01-31 16:00:00
+2024-01-31 15:00:20,013 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27054 at BrokerTime : 2024-01-31 16:00:19
+2024-01-31 15:00:20,075 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27054 at BrokerTime : 2024-01-31 16:00:19
+2024-01-31 15:00:20,232 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27054 at BrokerTime : 2024-01-31 16:00:19
+2024-01-31 15:00:20,341 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27054 at BrokerTime : 2024-01-31 16:00:19
+2024-01-31 15:00:30,419 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 16:00:30
+2024-01-31 19:00:00,092 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-01-31 20:00:00
+2024-01-31 19:00:00,201 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 19:00:00.201593  BrokerTime : 2024-01-31 20:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 19:00:00,217 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-01-31 20:00:00 H4DfLastIndex : 2024-01-31 20:00:00
+2024-01-31 19:00:03,357 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27184 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,373 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27184 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,388 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27184 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,404 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27184 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:13,419 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-01-31 20:00:12
+2024-01-31 23:02:00,246 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:00,340 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-01-31 23:02:00.340004  BrokerTime : 2024-02-01 00:02:00  for the New Short Signal Modified by Sourav
+2024-01-31 23:02:00,386 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 00:02:00 H4DfLastIndex : 2024-02-01 00:00:00
+2024-01-31 23:02:03,933 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26858 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:03,949 - DEBUG - Got Short Indication Candle for signal3 GBPUSD at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:03,964 - DEBUG - 1.26858 atr: 0.00393031580796565 
+2024-01-31 23:02:04,277 - INFO - Entry at 2024-02-01 00:02:00 for GBPUSD  , SL : 1.2738399999999999 , TP : 1.26584 ,Lotsize : 0.04 , OrderPrice : 1.26884, comment : Request executed Flag : 0 OrderID : 33705948
+2024-01-31 23:02:04,324 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26858 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:04,339 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26858 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:04,339 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-02-01 03:00:00,189 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 04:00:00
+2024-02-01 03:00:01,252 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 03:00:01.252409  BrokerTime : 2024-02-01 04:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 03:00:04,377 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 04:00:04 H4DfLastIndex : 2024-02-01 04:00:00
+2024-02-01 03:54:22,654 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26798 at BrokerTime : 2024-02-01 04:54:22
+2024-02-01 03:54:22,904 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-01 04:54:22
+2024-02-01 03:54:48,762 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26798 at BrokerTime : 2024-02-01 04:54:47
+2024-02-01 03:54:49,043 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26798 at BrokerTime : 2024-02-01 04:54:47
+2024-02-01 03:55:00,605 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-01 04:55:00
+2024-02-01 07:00:00,125 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 08:00:00
+2024-02-01 07:00:00,359 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 07:00:00.359493  BrokerTime : 2024-02-01 08:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 07:00:01,129 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 08:00:01 H4DfLastIndex : 2024-02-01 08:00:00
+2024-02-01 07:51:01,851 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26679 at BrokerTime : 2024-02-01 08:51:00
+2024-02-01 07:51:02,179 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-01 08:51:02
+2024-02-01 07:51:03,290 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26679 at BrokerTime : 2024-02-01 08:51:02
+2024-02-01 07:51:17,444 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26679 at BrokerTime : 2024-02-01 08:51:16
+2024-02-01 07:51:31,006 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-01 08:51:30
+2024-02-01 08:05:17,691 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-01 09:05:17 at CMP : 1.26584 , NewSL : 1.26874 NewTP : 1.26574 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:05:41,549 - INFO - Trailing at BrokerTime : 2024-02-01 09:05:41 at CMP : 1.26574 , NewSL : 1.26864 NewTP : 1.26564 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:06:23,297 - INFO - Trailing at BrokerTime : 2024-02-01 09:06:23 at CMP : 1.2656399999999999 , NewSL : 1.26854 NewTP : 1.26554 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:06:42,343 - INFO - Trailing at BrokerTime : 2024-02-01 09:06:42 at CMP : 1.26554 , NewSL : 1.26844 NewTP : 1.2654400000000001 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:09:05,084 - INFO - Trailing at BrokerTime : 2024-02-01 09:09:05 at CMP : 1.26544 , NewSL : 1.26834 NewTP : 1.2653400000000001 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:09:10,303 - INFO - Trailing at BrokerTime : 2024-02-01 09:09:10 at CMP : 1.2653400000000001 , NewSL : 1.26824 NewTP : 1.2652400000000001 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:09:46,285 - INFO - Trailing at BrokerTime : 2024-02-01 09:09:46 at CMP : 1.26524 , NewSL : 1.26814 NewTP : 1.2651400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:12:08,386 - INFO - Trailing at BrokerTime : 2024-02-01 09:12:08 at CMP : 1.26514 , NewSL : 1.26804 NewTP : 1.2650400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:18:01,740 - INFO - Trailing at BrokerTime : 2024-02-01 09:18:01 at CMP : 1.26504 , NewSL : 1.26794 NewTP : 1.2649400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:18:10,771 - INFO - Trailing at BrokerTime : 2024-02-01 09:18:10 at CMP : 1.26493 , NewSL : 1.26784 NewTP : 1.2648400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:18:25,145 - INFO - Trailing at BrokerTime : 2024-02-01 09:18:25 at CMP : 1.26484 , NewSL : 1.26774 NewTP : 1.2647400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:18:55,049 - INFO - Trailing at BrokerTime : 2024-02-01 09:18:54 at CMP : 1.26474 , NewSL : 1.26764 NewTP : 1.2646400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:21:51,633 - INFO - Trailing at BrokerTime : 2024-02-01 09:21:51 at CMP : 1.26464 , NewSL : 1.2675400000000001 NewTP : 1.2645400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:22:20,350 - INFO - Trailing at BrokerTime : 2024-02-01 09:22:20 at CMP : 1.26454 , NewSL : 1.2674400000000001 NewTP : 1.2644400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:24:09,359 - INFO - Trailing at BrokerTime : 2024-02-01 09:24:09 at CMP : 1.26444 , NewSL : 1.2673400000000001 NewTP : 1.2643400000000002 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:30:02,057 - INFO - Trailing at BrokerTime : 2024-02-01 09:30:02 at CMP : 1.26434 , NewSL : 1.2672400000000001 NewTP : 1.2642400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 08:48:56,490 - INFO - Trailing at BrokerTime : 2024-02-01 09:48:56 at CMP : 1.26424 , NewSL : 1.2671400000000002 NewTP : 1.2641400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:00:00,090 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 12:00:00
+2024-02-01 11:00:02,639 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 11:00:02.639031  BrokerTime : 2024-02-01 12:00:02  for the New Short Signal Modified by Sourav
+2024-02-01 11:00:06,090 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 12:00:06 H4DfLastIndex : 2024-02-01 12:00:00
+2024-02-01 11:41:11,807 - INFO - Trailing at BrokerTime : 2024-02-01 12:41:11 at CMP : 1.26414 , NewSL : 1.2670400000000002 NewTP : 1.2640400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:41:11,932 - INFO - Trailing at BrokerTime : 2024-02-01 12:41:11 at CMP : 1.26401 , NewSL : 1.2669400000000002 NewTP : 1.2639400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:41:55,086 - INFO - Trailing at BrokerTime : 2024-02-01 12:41:55 at CMP : 1.26394 , NewSL : 1.2668400000000002 NewTP : 1.2638400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:42:12,038 - INFO - Trailing at BrokerTime : 2024-02-01 12:42:11 at CMP : 1.26384 , NewSL : 1.2667400000000002 NewTP : 1.2637400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:42:58,848 - INFO - Trailing at BrokerTime : 2024-02-01 12:42:58 at CMP : 1.2637399999999999 , NewSL : 1.2666400000000002 NewTP : 1.2636400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:43:14,941 - INFO - Trailing at BrokerTime : 2024-02-01 12:43:14 at CMP : 1.26364 , NewSL : 1.2665400000000002 NewTP : 1.2635400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:44:36,951 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26556 at BrokerTime : 2024-02-01 12:44:36
+2024-02-01 11:44:37,342 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-01 12:44:36
+2024-02-01 11:44:38,686 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26556 at BrokerTime : 2024-02-01 12:44:36
+2024-02-01 11:44:38,998 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26556 at BrokerTime : 2024-02-01 12:44:38
+2024-02-01 11:44:49,810 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-01 12:44:48
+2024-02-01 11:49:28,357 - INFO - Trailing at BrokerTime : 2024-02-01 12:49:28 at CMP : 1.2635399999999999 , NewSL : 1.2664400000000002 NewTP : 1.2634400000000003 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:51:49,302 - INFO - Trailing at BrokerTime : 2024-02-01 12:51:49 at CMP : 1.2634400000000001 , NewSL : 1.2663400000000002 NewTP : 1.2633400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:52:10,410 - INFO - Trailing at BrokerTime : 2024-02-01 12:52:10 at CMP : 1.26334 , NewSL : 1.2662400000000003 NewTP : 1.2632400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:56:07,662 - INFO - Trailing at BrokerTime : 2024-02-01 12:56:07 at CMP : 1.26323 , NewSL : 1.2661400000000003 NewTP : 1.2631400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:56:20,942 - INFO - Trailing at BrokerTime : 2024-02-01 12:56:20 at CMP : 1.26314 , NewSL : 1.2660400000000003 NewTP : 1.2630400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 11:57:02,143 - INFO - Trailing at BrokerTime : 2024-02-01 12:57:02 at CMP : 1.26304 , NewSL : 1.2659400000000003 NewTP : 1.2629400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 12:02:01,328 - INFO - Trailing at BrokerTime : 2024-02-01 13:02:01 at CMP : 1.26294 , NewSL : 1.2658400000000003 NewTP : 1.2628400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 12:02:03,141 - INFO - Trailing at BrokerTime : 2024-02-01 13:02:03 at CMP : 1.26284 , NewSL : 1.2657400000000003 NewTP : 1.2627400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 12:02:44,638 - INFO - Trailing at BrokerTime : 2024-02-01 13:02:44 at CMP : 1.26274 , NewSL : 1.2656400000000003 NewTP : 1.2626400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 12:23:53,675 - INFO - Trailing at BrokerTime : 2024-02-01 13:23:53 at CMP : 1.26264 , NewSL : 1.2655400000000003 NewTP : 1.2625400000000004 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 12:24:03,018 - INFO - Trailing at BrokerTime : 2024-02-01 13:24:02 at CMP : 1.26254 , NewSL : 1.2654400000000003 NewTP : 1.2624400000000005 Flag : 1.0 of OrderID : 33705948.0
+2024-02-01 13:00:48,229 - INFO - SL hit Short BrokerTime : 2024-02-01 14:00:48 SL : 1.2654400000000003 TP : 1.2624400000000005 ,3.0,Request executed  
+2024-02-01 13:00:48,495 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-02-01 14:00:48
+2024-02-01 15:00:00,076 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 16:00:00
+2024-02-01 15:00:00,201 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 15:00:00.201640  BrokerTime : 2024-02-01 16:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 15:00:00,326 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 16:00:00 H4DfLastIndex : 2024-02-01 16:00:00
+2024-02-01 15:00:04,123 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2659099999999999 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,138 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.2659099999999999 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,138 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2659099999999999 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,154 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.2659099999999999 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:14,185 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-01 16:00:13
+2024-02-01 19:00:00,053 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-01 20:00:00
+2024-02-01 19:00:00,303 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 19:00:00.303256  BrokerTime : 2024-02-01 20:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 19:00:00,508 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-01 20:00:00 H4DfLastIndex : 2024-02-01 20:00:00
+2024-02-01 19:00:19,224 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27363 at BrokerTime : 2024-02-01 20:00:18
+2024-02-01 19:00:19,317 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.27363 at BrokerTime : 2024-02-01 20:00:18
+2024-02-01 19:00:19,427 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27363 at BrokerTime : 2024-02-01 20:00:18
+2024-02-01 19:00:19,567 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27363 at BrokerTime : 2024-02-01 20:00:18
+2024-02-01 19:00:29,629 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-01 20:00:29
+2024-02-01 23:02:00,135 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:00,167 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-01 23:02:00.167483  BrokerTime : 2024-02-02 00:02:00  for the New Short Signal Modified by Sourav
+2024-02-01 23:02:00,198 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 00:02:00 H4DfLastIndex : 2024-02-02 00:00:00
+2024-02-01 23:02:04,182 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27426 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:04,323 - DEBUG - Got Short Indication Candle for signal3 GBPUSD at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:04,385 - DEBUG - 1.27426 atr: 0.004464612400755105 
+2024-02-01 23:02:04,510 - INFO - Entry at 2024-02-02 00:02:00 for GBPUSD  , SL : 1.27999 , TP : 1.2719900000000002 ,Lotsize : 0.04 , OrderPrice : 1.27499, comment : Request executed Flag : 0 OrderID : 33766324
+2024-02-01 23:02:04,760 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27426 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:04,885 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27426 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:04,901 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-02-02 03:00:00,168 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 04:00:00
+2024-02-02 03:00:01,778 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-02 03:00:01.778137  BrokerTime : 2024-02-02 04:00:01  for the New Short Signal Modified by Sourav
+2024-02-02 03:00:02,043 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 04:00:01 H4DfLastIndex : 2024-02-02 04:00:00
+2024-02-02 04:02:20,552 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.2746 at BrokerTime : 2024-02-02 05:02:16
+2024-02-02 04:02:22,568 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-02 05:02:16
+2024-02-02 04:02:41,442 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.2746 at BrokerTime : 2024-02-02 05:02:39
+2024-02-02 04:02:41,785 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.2746 at BrokerTime : 2024-02-02 05:02:39
+2024-02-02 04:02:52,597 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-02 05:02:49
+2024-02-02 07:00:00,074 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 08:00:00
+2024-02-02 07:00:05,980 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-02 07:00:05.980736  BrokerTime : 2024-02-02 08:00:05  for the New Short Signal Modified by Sourav
+2024-02-02 07:00:09,886 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 08:00:08 H4DfLastIndex : 2024-02-02 08:00:00
+2024-02-02 08:13:32,339 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27495 at BrokerTime : 2024-02-02 09:13:31
+2024-02-02 08:13:32,667 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-02 09:13:31
+2024-02-02 08:13:32,917 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27495 at BrokerTime : 2024-02-02 09:13:31
+2024-02-02 08:13:39,433 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27495 at BrokerTime : 2024-02-02 09:13:35
+2024-02-02 08:13:51,401 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-02 09:13:50
+2024-02-02 11:00:00,286 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 12:00:00
+2024-02-02 11:00:05,989 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-02 11:00:05.989402  BrokerTime : 2024-02-02 12:00:03  for the New Short Signal Modified by Sourav
+2024-02-02 11:01:00,658 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 12:01:00 H4DfLastIndex : 2024-02-02 12:00:00
+2024-02-02 11:58:02,155 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.27575 at BrokerTime : 2024-02-02 12:58:00
+2024-02-02 11:58:02,639 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-02 12:58:00
+2024-02-02 11:58:03,608 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.27575 at BrokerTime : 2024-02-02 12:58:00
+2024-02-02 11:58:04,217 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.27575 at BrokerTime : 2024-02-02 12:58:04
+2024-02-02 11:58:19,747 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-02 12:58:18
+2024-02-02 14:30:01,669 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-02 15:30:01 at CMP : 1.27194 , NewSL : 1.27489 NewTP : 1.2718900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:07,934 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:07 at CMP : 1.27163 , NewSL : 1.27479 NewTP : 1.2717900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:07,965 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:07 at CMP : 1.27172 , NewSL : 1.27469 NewTP : 1.2716900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:09,153 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:09 at CMP : 1.27164 , NewSL : 1.2745900000000001 NewTP : 1.2715900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:09,278 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:09 at CMP : 1.27153 , NewSL : 1.2744900000000001 NewTP : 1.2714900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,075 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.271 , NewSL : 1.2743900000000001 NewTP : 1.2713900000000002 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,200 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.27101 , NewSL : 1.2742900000000001 NewTP : 1.2712900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,278 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.27101 , NewSL : 1.2741900000000002 NewTP : 1.2711900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,387 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.27101 , NewSL : 1.2740900000000002 NewTP : 1.2710900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,434 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.27101 , NewSL : 1.2739900000000002 NewTP : 1.2709900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:11,512 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:11 at CMP : 1.27099 , NewSL : 1.2738900000000002 NewTP : 1.2708900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:12,106 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:12 at CMP : 1.2708300000000001 , NewSL : 1.2737900000000002 NewTP : 1.2707900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:15,121 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:15 at CMP : 1.2707899999999999 , NewSL : 1.2736900000000002 NewTP : 1.2706900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:16,262 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:16 at CMP : 1.27064 , NewSL : 1.2735900000000002 NewTP : 1.2705900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:22,730 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:22 at CMP : 1.2705199999999999 , NewSL : 1.2734900000000002 NewTP : 1.2704900000000003 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:24,199 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:24 at CMP : 1.27048 , NewSL : 1.2733900000000002 NewTP : 1.2703900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:30:25,308 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:25 at CMP : 1.27039 , NewSL : 1.2732900000000003 NewTP : 1.2702900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:31:02,025 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:01 at CMP : 1.27029 , NewSL : 1.2731900000000003 NewTP : 1.2701900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:31:06,431 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:06 at CMP : 1.27016 , NewSL : 1.2730900000000003 NewTP : 1.2700900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:31:08,102 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:08 at CMP : 1.27009 , NewSL : 1.2729900000000003 NewTP : 1.2699900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:31:08,399 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:08 at CMP : 1.26999 , NewSL : 1.2728900000000003 NewTP : 1.2698900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:31:13,352 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:13 at CMP : 1.26986 , NewSL : 1.2727900000000003 NewTP : 1.2697900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:16,045 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:15 at CMP : 1.26968 , NewSL : 1.2726900000000003 NewTP : 1.2696900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:16,247 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:16 at CMP : 1.26969 , NewSL : 1.2725900000000003 NewTP : 1.2695900000000004 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:18,810 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:18 at CMP : 1.2695699999999999 , NewSL : 1.2724900000000003 NewTP : 1.2694900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:37,199 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:37 at CMP : 1.26943 , NewSL : 1.2723900000000004 NewTP : 1.2693900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:41,590 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:41 at CMP : 1.26939 , NewSL : 1.2722900000000004 NewTP : 1.2692900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:34:47,667 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:47 at CMP : 1.26929 , NewSL : 1.2721900000000004 NewTP : 1.2691900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:27,931 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:27 at CMP : 1.26919 , NewSL : 1.2720900000000004 NewTP : 1.2690900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:30,290 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:30 at CMP : 1.26907 , NewSL : 1.2719900000000004 NewTP : 1.2689900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:41,618 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:41 at CMP : 1.26898 , NewSL : 1.2718900000000004 NewTP : 1.2688900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:42,633 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:42 at CMP : 1.26888 , NewSL : 1.2717900000000004 NewTP : 1.2687900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:51,773 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:51 at CMP : 1.26879 , NewSL : 1.2716900000000004 NewTP : 1.2686900000000005 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:35:52,038 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:51 at CMP : 1.2686899999999999 , NewSL : 1.2715900000000004 NewTP : 1.2685900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:36:00,507 - INFO - Trailing at BrokerTime : 2024-02-02 15:36:00 at CMP : 1.26859 , NewSL : 1.2714900000000005 NewTP : 1.2684900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:37:15,002 - INFO - Trailing at BrokerTime : 2024-02-02 15:37:14 at CMP : 1.26848 , NewSL : 1.2713900000000005 NewTP : 1.2683900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:37:15,455 - INFO - Trailing at BrokerTime : 2024-02-02 15:37:15 at CMP : 1.26837 , NewSL : 1.2712900000000005 NewTP : 1.2682900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:37:20,814 - INFO - Trailing at BrokerTime : 2024-02-02 15:37:20 at CMP : 1.26828 , NewSL : 1.2711900000000005 NewTP : 1.2681900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:49:09,398 - INFO - Trailing at BrokerTime : 2024-02-02 15:49:09 at CMP : 1.26819 , NewSL : 1.2710900000000005 NewTP : 1.2680900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:49:10,523 - INFO - Trailing at BrokerTime : 2024-02-02 15:49:10 at CMP : 1.26809 , NewSL : 1.2709900000000005 NewTP : 1.2679900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:49:45,583 - INFO - Trailing at BrokerTime : 2024-02-02 15:49:45 at CMP : 1.26799 , NewSL : 1.2708900000000005 NewTP : 1.2678900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:49:46,880 - INFO - Trailing at BrokerTime : 2024-02-02 15:49:46 at CMP : 1.26786 , NewSL : 1.2707900000000005 NewTP : 1.2677900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:49:47,067 - INFO - Trailing at BrokerTime : 2024-02-02 15:49:47 at CMP : 1.26779 , NewSL : 1.2706900000000005 NewTP : 1.2676900000000006 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:50:17,847 - INFO - Trailing at BrokerTime : 2024-02-02 15:50:17 at CMP : 1.26769 , NewSL : 1.2705900000000006 NewTP : 1.2675900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:51:44,327 - INFO - Trailing at BrokerTime : 2024-02-02 15:51:44 at CMP : 1.26759 , NewSL : 1.2704900000000006 NewTP : 1.2674900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:52:01,637 - INFO - Trailing at BrokerTime : 2024-02-02 15:52:01 at CMP : 1.26749 , NewSL : 1.2703900000000006 NewTP : 1.2673900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:53:54,042 - INFO - Trailing at BrokerTime : 2024-02-02 15:53:53 at CMP : 1.26739 , NewSL : 1.2702900000000006 NewTP : 1.2672900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:55:00,742 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:00 at CMP : 1.26728 , NewSL : 1.2701900000000006 NewTP : 1.2671900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:55:25,288 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:25 at CMP : 1.26719 , NewSL : 1.2700900000000006 NewTP : 1.2670900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:55:26,178 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:26 at CMP : 1.26709 , NewSL : 1.2699900000000006 NewTP : 1.2669900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:56:20,613 - INFO - Trailing at BrokerTime : 2024-02-02 15:56:20 at CMP : 1.26699 , NewSL : 1.2698900000000006 NewTP : 1.2668900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 14:58:08,312 - INFO - Trailing at BrokerTime : 2024-02-02 15:58:08 at CMP : 1.26689 , NewSL : 1.2697900000000006 NewTP : 1.2667900000000007 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:00:00,072 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 16:00:00
+2024-02-02 15:00:06,524 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-02 15:00:06.524935  BrokerTime : 2024-02-02 16:00:06  for the New Short Signal Modified by Sourav
+2024-02-02 15:00:07,946 - INFO - Trailing at BrokerTime : 2024-02-02 16:00:07 at CMP : 1.26679 , NewSL : 1.2696900000000007 NewTP : 1.2666900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:00:10,853 - INFO - Trailing at BrokerTime : 2024-02-02 16:00:10 at CMP : 1.26669 , NewSL : 1.2695900000000007 NewTP : 1.2665900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:00:12,212 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 16:00:11 H4DfLastIndex : 2024-02-02 16:00:00
+2024-02-02 15:02:08,034 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:07 at CMP : 1.26658 , NewSL : 1.2694900000000007 NewTP : 1.2664900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:02:19,236 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:19 at CMP : 1.2664900000000001 , NewSL : 1.2693900000000007 NewTP : 1.2663900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:02:58,250 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:58 at CMP : 1.26638 , NewSL : 1.2692900000000007 NewTP : 1.2662900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:02:58,406 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:58 at CMP : 1.2662900000000001 , NewSL : 1.2691900000000007 NewTP : 1.2661900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:02:59,203 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:59 at CMP : 1.26612 , NewSL : 1.2690900000000007 NewTP : 1.2660900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:02:59,656 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:59 at CMP : 1.26609 , NewSL : 1.2689900000000007 NewTP : 1.2659900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:04:00,980 - INFO - Trailing at BrokerTime : 2024-02-02 16:04:00 at CMP : 1.2659500000000001 , NewSL : 1.2688900000000007 NewTP : 1.2658900000000008 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:04:04,121 - INFO - Trailing at BrokerTime : 2024-02-02 16:04:04 at CMP : 1.26586 , NewSL : 1.2687900000000008 NewTP : 1.2657900000000009 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:04:04,761 - INFO - Trailing at BrokerTime : 2024-02-02 16:04:04 at CMP : 1.26577 , NewSL : 1.2686900000000008 NewTP : 1.2656900000000009 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:04:07,136 - INFO - Trailing at BrokerTime : 2024-02-02 16:04:07 at CMP : 1.26569 , NewSL : 1.2685900000000008 NewTP : 1.2655900000000009 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:35:27,308 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26716 at BrokerTime : 2024-02-02 16:35:27
+2024-02-02 15:35:32,433 - DEBUG - Signal3 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-02 16:35:32
+2024-02-02 15:35:41,557 - DEBUG - Got Short Indication Candle for signal4 GBPUSD at BrokerTime : 2024-02-02 16:35:41
+2024-02-02 15:36:57,974 - DEBUG - 1.26716 atr: 0.004523709983914439 
+2024-02-02 15:37:05,005 - INFO - Entry at 2024-02-02 16:35:41 for GBPUSD  , SL : 1.27066 , TP : 1.2626600000000001 ,Lotsize : 0.04 , OrderPrice : 1.26566, comment : Request executed Flag : 0 OrderID : 33800593
+2024-02-02 15:37:06,005 - INFO - Trailing at BrokerTime : 2024-02-02 16:37:05 at CMP : 1.26559 , NewSL : 1.2684900000000008 NewTP : 1.265490000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:37:26,645 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26716 at BrokerTime : 2024-02-02 16:37:26
+2024-02-02 15:37:26,691 - DEBUG - Entry happened for GBPUSD , Checking for Exit.....
+2024-02-02 15:40:25,025 - INFO - Trailing at BrokerTime : 2024-02-02 16:40:24 at CMP : 1.26543 , NewSL : 1.2683900000000008 NewTP : 1.265390000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:40:25,509 - INFO - Trailing at BrokerTime : 2024-02-02 16:40:25 at CMP : 1.26539 , NewSL : 1.2682900000000008 NewTP : 1.265290000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:40:29,727 - INFO - Trailing at BrokerTime : 2024-02-02 16:40:29 at CMP : 1.26529 , NewSL : 1.2681900000000008 NewTP : 1.265190000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 15:41:23,849 - INFO - Trailing at BrokerTime : 2024-02-02 16:41:23 at CMP : 1.26519 , NewSL : 1.2680900000000008 NewTP : 1.265090000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:02:15,624 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:15 at CMP : 1.26509 , NewSL : 1.2679900000000008 NewTP : 1.264990000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:02:23,924 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:23 at CMP : 1.26499 , NewSL : 1.2678900000000008 NewTP : 1.264890000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:04:42,585 - INFO - Trailing at BrokerTime : 2024-02-02 17:04:42 at CMP : 1.26475 , NewSL : 1.2677900000000009 NewTP : 1.264790000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:04:44,741 - INFO - Trailing at BrokerTime : 2024-02-02 17:04:44 at CMP : 1.26479 , NewSL : 1.2676900000000009 NewTP : 1.264690000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:04:48,444 - INFO - Trailing at BrokerTime : 2024-02-02 17:04:48 at CMP : 1.26467 , NewSL : 1.2675900000000009 NewTP : 1.264590000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:00,677 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:00 at CMP : 1.26459 , NewSL : 1.267490000000001 NewTP : 1.264490000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:19,379 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:19 at CMP : 1.26447 , NewSL : 1.267390000000001 NewTP : 1.264390000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:19,614 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:19 at CMP : 1.26438 , NewSL : 1.267290000000001 NewTP : 1.264290000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:23,410 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:23 at CMP : 1.26429 , NewSL : 1.267190000000001 NewTP : 1.264190000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:30,644 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:30 at CMP : 1.26419 , NewSL : 1.267090000000001 NewTP : 1.264090000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:05:42,784 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:42 at CMP : 1.26406 , NewSL : 1.266990000000001 NewTP : 1.263990000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:16:25,652 - INFO - Trailing at BrokerTime : 2024-02-02 17:16:25 at CMP : 1.26395 , NewSL : 1.266890000000001 NewTP : 1.263890000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:19:11,815 - INFO - Trailing at BrokerTime : 2024-02-02 17:19:11 at CMP : 1.26388 , NewSL : 1.266790000000001 NewTP : 1.263790000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:19:13,846 - INFO - Trailing at BrokerTime : 2024-02-02 17:19:13 at CMP : 1.26377 , NewSL : 1.266690000000001 NewTP : 1.263690000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:23:17,550 - INFO - Trailing at BrokerTime : 2024-02-02 17:23:17 at CMP : 1.26368 , NewSL : 1.266590000000001 NewTP : 1.263590000000001 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:26:38,929 - INFO - Trailing at BrokerTime : 2024-02-02 17:26:38 at CMP : 1.26359 , NewSL : 1.266490000000001 NewTP : 1.2634900000000011 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:29:16,560 - INFO - Trailing at BrokerTime : 2024-02-02 17:29:16 at CMP : 1.26346 , NewSL : 1.266390000000001 NewTP : 1.2633900000000011 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:29:23,263 - INFO - Trailing at BrokerTime : 2024-02-02 17:29:23 at CMP : 1.26338 , NewSL : 1.266290000000001 NewTP : 1.2632900000000011 Flag : 1.0 of OrderID : 33766324.0
+2024-02-02 16:48:15,503 - INFO - SL hit Short BrokerTime : 2024-02-02 17:48:15 SL : 1.266290000000001 TP : 1.2632900000000011 ,3.0,Request executed  
+2024-02-02 16:48:51,423 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-02-02 17:48:51
+2024-02-02 17:54:38,302 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-02 18:54:38 at CMP : 1.26266 , NewSL : 1.26556 NewTP : 1.2625600000000001 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 17:55:38,033 - INFO - Trailing at BrokerTime : 2024-02-02 18:55:37 at CMP : 1.2625600000000001 , NewSL : 1.26546 NewTP : 1.2624600000000001 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 17:56:46,467 - INFO - Trailing at BrokerTime : 2024-02-02 18:56:46 at CMP : 1.26246 , NewSL : 1.26536 NewTP : 1.2623600000000001 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 17:56:59,185 - INFO - Trailing at BrokerTime : 2024-02-02 18:56:57 at CMP : 1.26233 , NewSL : 1.26526 NewTP : 1.2622600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 17:57:08,544 - INFO - Trailing at BrokerTime : 2024-02-02 18:57:07 at CMP : 1.2622 , NewSL : 1.26516 NewTP : 1.2621600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 17:58:17,665 - INFO - Trailing at BrokerTime : 2024-02-02 18:58:17 at CMP : 1.26216 , NewSL : 1.26506 NewTP : 1.2620600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:07:42,479 - INFO - Trailing at BrokerTime : 2024-02-02 19:07:42 at CMP : 1.26206 , NewSL : 1.26496 NewTP : 1.2619600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:09:41,926 - INFO - Trailing at BrokerTime : 2024-02-02 19:09:41 at CMP : 1.26192 , NewSL : 1.26486 NewTP : 1.2618600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:44:42,579 - INFO - Trailing at BrokerTime : 2024-02-02 19:44:42 at CMP : 1.26186 , NewSL : 1.26476 NewTP : 1.2617600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:44:43,389 - INFO - Trailing at BrokerTime : 2024-02-02 19:44:43 at CMP : 1.26174 , NewSL : 1.2646600000000001 NewTP : 1.2616600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:46:20,509 - INFO - Trailing at BrokerTime : 2024-02-02 19:46:20 at CMP : 1.26165 , NewSL : 1.2645600000000001 NewTP : 1.2615600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:51:03,383 - INFO - Trailing at BrokerTime : 2024-02-02 19:51:03 at CMP : 1.26156 , NewSL : 1.2644600000000001 NewTP : 1.2614600000000002 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 18:54:13,917 - INFO - Trailing at BrokerTime : 2024-02-02 19:54:13 at CMP : 1.26142 , NewSL : 1.2643600000000002 NewTP : 1.2613600000000003 Flag : 1.0 of OrderID : 33800593.0
+2024-02-02 19:00:00,083 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-02 20:00:00
+2024-02-02 19:00:17,191 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-02 19:00:17.191443  BrokerTime : 2024-02-02 20:00:16  for the New Short Signal Modified by Sourav
+2024-02-02 19:00:22,472 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-02 20:00:21 H4DfLastIndex : 2024-02-02 20:00:00
+2024-02-02 19:59:21,641 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26186 at BrokerTime : 2024-02-02 20:59:20
+2024-02-02 19:59:46,060 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26186 at BrokerTime : 2024-02-02 20:59:45
+2024-02-02 19:59:46,310 - DEBUG - Signal4 Already have an active Trade of Instrument : GBPUSD BrokerTime : 2024-02-02 20:59:45
+2024-02-02 19:59:46,638 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26186 at BrokerTime : 2024-02-02 20:59:45
+2024-02-02 20:00:04,215 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-02 21:00:03
+2024-02-02 20:45:51,413 - INFO - SL hit Short BrokerTime : 2024-02-02 21:45:51 SL : 1.2643600000000002 TP : 1.2613600000000003 ,4.0,Request executed  
+2024-02-02 20:46:13,193 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-02-02 21:46:12
+2024-02-05 03:00:00,151 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-05 04:00:00
+2024-02-05 03:00:00,667 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-05 03:00:00.667350  BrokerTime : 2024-02-05 04:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 03:00:00,776 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-05 04:00:00 H4DfLastIndex : 2024-02-05 04:00:00
+2024-02-05 03:00:04,870 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26112 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,885 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26112 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,901 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26112 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,901 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26112 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:14,916 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-05 04:00:14
+2024-02-05 07:00:00,244 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-05 08:00:00
+2024-02-05 07:00:00,384 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-05 07:00:00.384772  BrokerTime : 2024-02-05 08:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 07:00:00,400 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-05 08:00:00 H4DfLastIndex : 2024-02-05 08:00:00
+2024-02-05 07:00:03,884 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26114 at BrokerTime : 2024-02-05 08:00:03
+2024-02-05 07:00:03,884 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26114 at BrokerTime : 2024-02-05 08:00:03
+2024-02-05 07:00:03,884 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26114 at BrokerTime : 2024-02-05 08:00:03
+2024-02-05 07:00:03,900 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26114 at BrokerTime : 2024-02-05 08:00:03
+2024-02-05 07:00:13,915 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-05 08:00:13
+2024-02-05 11:00:00,075 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-05 12:00:00
+2024-02-05 11:00:00,168 - DEBUG - Running Event Loop of Instrument:GBPUSD at ServerTime : 2024-02-05 11:00:00.168837  BrokerTime : 2024-02-05 12:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 11:00:00,202 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : GBPUSD BrokerTime: 2024-02-05 12:00:00 H4DfLastIndex : 2024-02-05 12:00:00
+2024-02-05 11:00:03,496 - DEBUG - No entry for signal1 of Instrument : GBPUSD  close : 1.26011 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,512 - DEBUG - No entry for signal3 of Instrument : GBPUSD  close : 1.26011 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,528 - DEBUG - No entry for signal4 of Instrument : GBPUSD  close : 1.26011 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,528 - DEBUG - No entry for signal5 of Instrument : GBPUSD  close : 1.26011 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:13,543 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-05 12:00:13

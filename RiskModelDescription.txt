@@ -25,7 +25,7 @@ Trailing - Every 1 Pip when we First TP  and SL become - Entry + 1 Pip
 
 
 
-Variable SL Trail -
+Variable SL Trail - 
 
 Risk - Percentage Model
 First SL - OpenPrice - o.5 % of OpenPrice

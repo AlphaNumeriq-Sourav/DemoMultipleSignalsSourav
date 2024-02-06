@@ -126,3 +126,318 @@
 2024-01-30 12:29:34,466 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61395 at BrokerTime : 2024-01-30 13:29:35
 2024-01-30 12:29:34,530 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61395 at BrokerTime : 2024-01-30 13:29:35
 2024-01-30 12:29:44,582 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-30 13:29:43
+2024-01-30 08:37:03,954 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-30 08:37:03.954585  BrokerTime : 2024-01-30 09:37:03  for the New Short Signal Modified by Sourav
+2024-01-30 08:37:03,985 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00
+2024-01-30 08:37:04,110 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:03
+2024-01-30 08:37:04,220 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:03
+2024-01-30 08:37:04,423 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:03
+2024-01-30 08:37:04,485 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:03
+2024-01-30 08:37:04,626 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 09:37:03 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 09:37:04
+2024-01-30 08:37:22,844 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61428 at BrokerTime : 2024-01-30 09:37:22
+2024-01-30 08:37:22,906 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61428 at BrokerTime : 2024-01-30 09:37:22
+2024-01-30 08:37:23,078 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61428 at BrokerTime : 2024-01-30 09:37:22
+2024-01-30 08:37:23,219 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61428 at BrokerTime : 2024-01-30 09:37:23
+2024-01-30 08:37:33,281 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-30 09:37:32
+2024-01-30 11:00:00,140 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 12:00:00
+2024-01-30 11:00:00,172 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-30 11:00:00.172542  BrokerTime : 2024-01-30 12:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 11:00:00,204 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-30 12:00:00 H4DfLastIndex : 2024-01-30 08:00:00
+2024-01-30 11:00:00,235 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 12:00:00 H4DfLastIndex : 2024-01-30 08:00:00 NowBrokerTime : 2024-01-30 12:00:00
+2024-01-30 11:00:00,412 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 12:00:00 H4DfLastIndex : 2024-01-30 12:00:00 NowBrokerTime : 2024-01-30 12:00:00
+2024-01-30 11:00:03,521 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61334 at BrokerTime : 2024-01-30 12:00:01
+2024-01-30 11:00:03,521 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61334 at BrokerTime : 2024-01-30 12:00:01
+2024-01-30 11:00:03,537 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61334 at BrokerTime : 2024-01-30 12:00:01
+2024-01-30 11:00:03,537 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61334 at BrokerTime : 2024-01-30 12:00:01
+2024-01-30 11:00:13,552 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-30 12:00:12
+2024-01-30 11:01:00,158 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 12:00:00
+2024-01-30 15:00:00,099 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 16:00:00
+2024-01-30 15:00:00,193 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-30 15:00:00.193511  BrokerTime : 2024-01-30 16:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 15:00:00,209 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-30 16:00:00 H4DfLastIndex : 2024-01-30 12:00:00
+2024-01-30 15:00:00,240 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 16:00:00 H4DfLastIndex : 2024-01-30 12:00:00 NowBrokerTime : 2024-01-30 16:00:00
+2024-01-30 15:00:00,427 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-30 16:00:00 H4DfLastIndex : 2024-01-30 16:00:00 NowBrokerTime : 2024-01-30 16:00:00
+2024-01-30 15:00:03,162 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,177 - DEBUG - 0.61211 atr: 0.002052348441210105 
+2024-01-30 15:00:03,271 - INFO - Entry at 2024-01-30 16:00:02 for NZDUSD  , SL : 0.61717 , TP : 0.60917 ,Lotsize : 0.04 , OrderPrice : 0.61217, comment : Request executed Flag : 0 OrderID : 33616963
+2024-01-30 15:00:03,302 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61211 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,318 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61211 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,318 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61211 at BrokerTime : 2024-01-30 16:00:02
+2024-01-30 15:00:03,318 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-01-30 15:01:00,205 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 16:00:00
+2024-01-30 19:00:00,327 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 20:00:00
+2024-01-30 19:00:00,577 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-30 19:00:00.577732  BrokerTime : 2024-01-30 20:00:00  for the New Short Signal Modified by Sourav
+2024-01-30 19:00:00,780 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-30 20:00:00 H4DfLastIndex : 2024-01-30 20:00:00
+2024-01-30 19:00:18,311 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-30 20:00:17
+2024-01-30 19:00:18,482 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61221 at BrokerTime : 2024-01-30 20:00:17
+2024-01-30 19:00:18,623 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61221 at BrokerTime : 2024-01-30 20:00:17
+2024-01-30 19:00:18,748 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61221 at BrokerTime : 2024-01-30 20:00:17
+2024-01-30 19:00:28,997 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-30 20:00:27
+2024-01-30 19:01:01,870 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-30 20:00:00
+2024-01-30 23:02:02,377 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 00:02:00
+2024-01-30 23:02:13,329 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-30 23:02:13.329729  BrokerTime : 2024-01-31 00:02:12  for the New Short Signal Modified by Sourav
+2024-01-30 23:02:13,782 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 00:02:12 H4DfLastIndex : 2024-01-31 00:00:00
+2024-01-30 23:18:37,724 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-31 00:18:14
+2024-01-30 23:18:58,114 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61352 at BrokerTime : 2024-01-31 00:18:14
+2024-01-30 23:18:59,863 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61352 at BrokerTime : 2024-01-31 00:18:14
+2024-01-30 23:19:00,176 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61352 at BrokerTime : 2024-01-31 00:18:14
+2024-01-30 23:19:14,066 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 00:18:14
+2024-01-31 03:00:04,379 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 04:00:00
+2024-01-31 03:00:08,254 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 03:00:08.254575  BrokerTime : 2024-01-31 04:00:07  for the New Short Signal Modified by Sourav
+2024-01-31 03:00:08,504 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 04:00:07 H4DfLastIndex : 2024-01-31 04:00:00
+2024-01-31 03:01:09,250 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 04:00:00
+2024-01-31 03:40:13,705 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-31 04:40:13
+2024-01-31 03:40:13,768 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61236 at BrokerTime : 2024-01-31 04:40:13
+2024-01-31 03:40:13,986 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61236 at BrokerTime : 2024-01-31 04:40:13
+2024-01-31 03:40:14,314 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61236 at BrokerTime : 2024-01-31 04:40:14
+2024-01-31 03:40:25,032 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 04:40:24
+2024-01-31 07:00:01,901 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 08:00:00
+2024-01-31 07:00:06,042 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 07:00:06.042913  BrokerTime : 2024-01-31 08:00:05  for the New Short Signal Modified by Sourav
+2024-01-31 07:00:15,119 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 08:00:05 H4DfLastIndex : 2024-01-31 08:00:00
+2024-01-31 07:01:06,038 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 08:00:00
+2024-01-31 07:58:35,796 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-31 08:58:35
+2024-01-31 07:58:36,046 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61131 at BrokerTime : 2024-01-31 08:58:35
+2024-01-31 07:58:36,359 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61131 at BrokerTime : 2024-01-31 08:58:35
+2024-01-31 07:58:36,796 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61131 at BrokerTime : 2024-01-31 08:58:36
+2024-01-31 07:58:51,764 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 08:58:51
+2024-01-31 11:00:00,188 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 12:00:00
+2024-01-31 11:00:00,438 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 11:00:00.438182  BrokerTime : 2024-01-31 12:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 11:00:00,703 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 12:00:00 H4DfLastIndex : 2024-01-31 12:00:00
+2024-01-31 11:00:17,843 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-31 12:00:16
+2024-01-31 11:00:17,984 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61258 at BrokerTime : 2024-01-31 12:00:16
+2024-01-31 11:00:18,109 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61258 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:18,202 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61258 at BrokerTime : 2024-01-31 12:00:18
+2024-01-31 11:00:28,264 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 12:00:27
+2024-01-31 11:01:00,309 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 12:00:00
+2024-01-31 15:00:00,358 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 16:00:00
+2024-01-31 15:00:00,623 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 15:00:00.623883  BrokerTime : 2024-01-31 16:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 15:00:00,905 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 16:00:00 H4DfLastIndex : 2024-01-31 16:00:00
+2024-01-31 15:00:20,716 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-01-31 16:00:20
+2024-01-31 15:00:20,841 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61397 at BrokerTime : 2024-01-31 16:00:20
+2024-01-31 15:00:20,997 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61397 at BrokerTime : 2024-01-31 16:00:20
+2024-01-31 15:00:21,122 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61397 at BrokerTime : 2024-01-31 16:00:21
+2024-01-31 15:00:31,184 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 16:00:31
+2024-01-31 15:01:00,542 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 16:00:00
+2024-01-31 15:53:31,575 - INFO - SL hit Short BrokerTime : 2024-01-31 16:53:31 SL : 0.61717 TP : 0.60917 ,1.0,Request executed  
+2024-01-31 15:53:31,794 - DEBUG - Function Out after the Exit trade of NZDUSD at BrokerTime : 2024-01-31 16:53:31
+2024-01-31 19:00:00,201 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 20:00:00
+2024-01-31 19:00:00,295 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 19:00:00.295333  BrokerTime : 2024-01-31 20:00:00  for the New Short Signal Modified by Sourav
+2024-01-31 19:00:00,343 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-01-31 20:00:00 H4DfLastIndex : 2024-01-31 16:00:00
+2024-01-31 19:00:00,357 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-31 20:00:00 H4DfLastIndex : 2024-01-31 16:00:00 NowBrokerTime : 2024-01-31 20:00:00
+2024-01-31 19:00:00,389 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-01-31 20:00:00 H4DfLastIndex : 2024-01-31 20:00:00 NowBrokerTime : 2024-01-31 20:00:00
+2024-01-31 19:00:03,435 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,435 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,435 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:03,451 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-01-31 20:00:03
+2024-01-31 19:00:13,466 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-01-31 20:00:12
+2024-01-31 19:01:00,307 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-01-31 20:00:00
+2024-01-31 23:02:00,386 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:00,433 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-01-31 23:02:00.433744  BrokerTime : 2024-02-01 00:02:00  for the New Short Signal Modified by Sourav
+2024-01-31 23:02:00,464 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 00:02:00 H4DfLastIndex : 2024-01-31 20:00:00
+2024-01-31 23:02:04,308 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:04,324 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:04,339 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:04,355 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61394 at BrokerTime : 2024-02-01 00:02:00
+2024-01-31 23:02:14,464 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-01 00:02:13
+2024-02-01 03:00:04,580 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 04:00:00
+2024-02-01 03:00:07,595 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 03:00:07.595786  BrokerTime : 2024-02-01 04:00:07  for the New Short Signal Modified by Sourav
+2024-02-01 03:00:08,330 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 04:00:07 H4DfLastIndex : 2024-02-01 04:00:00
+2024-02-01 03:01:07,436 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 04:00:00
+2024-02-01 03:54:22,748 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61243 at BrokerTime : 2024-02-01 04:54:21
+2024-02-01 03:54:22,998 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61243 at BrokerTime : 2024-02-01 04:54:21
+2024-02-01 03:54:34,513 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61243 at BrokerTime : 2024-02-01 04:54:33
+2024-02-01 03:54:35,060 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61243 at BrokerTime : 2024-02-01 04:54:35
+2024-02-01 03:54:45,919 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-01 04:54:45
+2024-02-01 07:00:01,171 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 08:00:00
+2024-02-01 07:00:04,109 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 07:00:04.109438  BrokerTime : 2024-02-01 08:00:04  for the New Short Signal Modified by Sourav
+2024-02-01 07:00:04,406 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 08:00:04 H4DfLastIndex : 2024-02-01 08:00:00
+2024-02-01 07:01:05,746 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 08:00:00
+2024-02-01 07:48:26,485 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61094 at BrokerTime : 2024-02-01 08:48:25
+2024-02-01 07:48:26,704 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61094 at BrokerTime : 2024-02-01 08:48:25
+2024-02-01 07:48:27,251 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61094 at BrokerTime : 2024-02-01 08:48:25
+2024-02-01 07:48:27,532 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61094 at BrokerTime : 2024-02-01 08:48:25
+2024-02-01 07:48:38,391 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-01 08:48:37
+2024-02-01 11:00:02,465 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 12:00:00
+2024-02-01 11:00:15,902 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 11:00:15.902301  BrokerTime : 2024-02-01 12:00:15  for the New Short Signal Modified by Sourav
+2024-02-01 11:00:16,199 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 12:00:16 H4DfLastIndex : 2024-02-01 12:00:00
+2024-02-01 11:01:16,742 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 12:00:00
+2024-02-01 11:41:55,008 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.60933 at BrokerTime : 2024-02-01 12:41:53
+2024-02-01 11:42:08,257 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.60933 at BrokerTime : 2024-02-01 12:42:07
+2024-02-01 11:42:08,788 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.60933 at BrokerTime : 2024-02-01 12:42:07
+2024-02-01 11:42:09,351 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.60933 at BrokerTime : 2024-02-01 12:42:08
+2024-02-01 11:42:19,756 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-01 12:42:19
+2024-02-01 15:00:00,185 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 16:00:00
+2024-02-01 15:00:00,342 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 15:00:00.342028  BrokerTime : 2024-02-01 16:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 15:00:00,373 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 16:00:00 H4DfLastIndex : 2024-02-01 12:00:00
+2024-02-01 15:00:00,388 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-01 16:00:00 H4DfLastIndex : 2024-02-01 12:00:00 NowBrokerTime : 2024-02-01 16:00:00
+2024-02-01 15:00:00,592 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-01 16:00:00 H4DfLastIndex : 2024-02-01 16:00:00 NowBrokerTime : 2024-02-01 16:00:00
+2024-02-01 15:00:04,138 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,154 - DEBUG - 0.6093 atr: 0.0027650380895866225 
+2024-02-01 15:00:04,263 - INFO - Entry at 2024-02-01 16:00:03 for NZDUSD  , SL : 0.61433 , TP : 0.60633 ,Lotsize : 0.04 , OrderPrice : 0.60933, comment : Request executed Flag : 0 OrderID : 33737850
+2024-02-01 15:00:04,294 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.6093 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,310 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.6093 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,326 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.6093 at BrokerTime : 2024-02-01 16:00:03
+2024-02-01 15:00:04,326 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-02-01 15:01:00,354 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 16:00:00
+2024-02-01 19:00:00,303 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 20:00:00
+2024-02-01 19:00:00,475 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 19:00:00.475143  BrokerTime : 2024-02-01 20:00:00  for the New Short Signal Modified by Sourav
+2024-02-01 19:00:00,850 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-01 20:00:00 H4DfLastIndex : 2024-02-01 20:00:00
+2024-02-01 19:00:17,864 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-01 20:00:17
+2024-02-01 19:00:17,958 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-01 20:00:17
+2024-02-01 19:00:17,989 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-01 20:00:17
+2024-02-01 19:00:18,130 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-01 20:00:18
+2024-02-01 19:00:28,207 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-01 20:00:27
+2024-02-01 19:01:00,534 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-01 20:00:00
+2024-02-01 22:44:00,730 - INFO - SL hit Short BrokerTime : 2024-02-01 23:44:00 SL : 0.61433 TP : 0.60633 ,1.0,Request executed  
+2024-02-01 22:44:00,996 - DEBUG - Function Out after the Exit trade of NZDUSD at BrokerTime : 2024-02-01 23:44:00
+2024-02-01 23:02:00,167 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:00,213 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-01 23:02:00.213922  BrokerTime : 2024-02-02 00:02:00  for the New Short Signal Modified by Sourav
+2024-02-01 23:02:00,229 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 00:02:00 H4DfLastIndex : 2024-02-01 20:00:00
+2024-02-01 23:02:03,385 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:03,526 - DEBUG - No entry for signal3 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:03,682 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:03,823 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61342 at BrokerTime : 2024-02-02 00:02:00
+2024-02-01 23:02:14,697 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-02 00:02:00
+2024-02-02 03:00:02,621 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 04:00:00
+2024-02-02 03:00:07,918 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-02 03:00:07.918452  BrokerTime : 2024-02-02 04:00:07  for the New Short Signal Modified by Sourav
+2024-02-02 03:00:08,230 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 04:00:07 H4DfLastIndex : 2024-02-02 04:00:00
+2024-02-02 03:01:08,978 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 04:00:00
+2024-02-02 04:01:39,633 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61498 at BrokerTime : 2024-02-02 05:01:39
+2024-02-02 04:01:40,055 - DEBUG - Got Short Indication Candle for signal3 NZDUSD at BrokerTime : 2024-02-02 05:01:39
+2024-02-02 04:04:12,327 - DEBUG - 0.61498 atr: 0.0028653009543752514 
+2024-02-02 04:04:17,795 - INFO - Entry at 2024-02-02 05:01:39 for NZDUSD  , SL : 0.62065 , TP : 0.61265 ,Lotsize : 0.04 , OrderPrice : 0.61565, comment : Request executed Flag : 0 OrderID : 33772419
+2024-02-02 04:04:18,374 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61498 at BrokerTime : 2024-02-02 05:04:17
+2024-02-02 04:04:18,795 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61498 at BrokerTime : 2024-02-02 05:04:18
+2024-02-02 04:04:18,873 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-02-02 07:00:04,137 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 08:00:00
+2024-02-02 07:00:19,667 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-02 07:00:19.667795  BrokerTime : 2024-02-02 08:00:19  for the New Short Signal Modified by Sourav
+2024-02-02 07:00:20,167 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 08:00:20 H4DfLastIndex : 2024-02-02 08:00:00
+2024-02-02 07:01:15,181 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 08:00:00
+2024-02-02 08:13:29,417 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61514 at BrokerTime : 2024-02-02 09:13:22
+2024-02-02 08:13:30,121 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-02 09:13:22
+2024-02-02 08:13:30,527 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61514 at BrokerTime : 2024-02-02 09:13:30
+2024-02-02 08:13:30,933 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61514 at BrokerTime : 2024-02-02 09:13:30
+2024-02-02 08:13:51,979 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-02 09:13:49
+2024-02-02 11:00:04,942 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 12:00:00
+2024-02-02 11:00:25,253 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-02 11:00:25.253926  BrokerTime : 2024-02-02 12:00:24  for the New Short Signal Modified by Sourav
+2024-02-02 11:00:58,939 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 12:00:58 H4DfLastIndex : 2024-02-02 12:00:00
+2024-02-02 11:01:25,297 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 12:00:00
+2024-02-02 11:58:21,028 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61537 at BrokerTime : 2024-02-02 12:58:19
+2024-02-02 11:58:37,043 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-02 12:58:34
+2024-02-02 11:58:44,183 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.61537 at BrokerTime : 2024-02-02 12:58:44
+2024-02-02 11:58:54,698 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.61537 at BrokerTime : 2024-02-02 12:58:54
+2024-02-02 11:59:05,432 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-02 12:59:03
+2024-02-02 14:30:10,809 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-02 15:30:10 at CMP : 0.61265 , NewSL : 0.61555 NewTP : 0.61255 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:12,293 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:12 at CMP : 0.61254 , NewSL : 0.61545 NewTP : 0.61245 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:15,465 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:15 at CMP : 0.61244 , NewSL : 0.6153500000000001 NewTP : 0.6123500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:23,402 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:23 at CMP : 0.61234 , NewSL : 0.6152500000000001 NewTP : 0.6122500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:25,027 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:24 at CMP : 0.61225 , NewSL : 0.6151500000000001 NewTP : 0.6121500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:49,854 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:49 at CMP : 0.61212 , NewSL : 0.6150500000000001 NewTP : 0.6120500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:50,588 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:50 at CMP : 0.61205 , NewSL : 0.6149500000000001 NewTP : 0.6119500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:54,744 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:54 at CMP : 0.61193 , NewSL : 0.6148500000000001 NewTP : 0.6118500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:30:56,213 - INFO - Trailing at BrokerTime : 2024-02-02 15:30:56 at CMP : 0.61185 , NewSL : 0.6147500000000001 NewTP : 0.6117500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:31:01,417 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:01 at CMP : 0.61166 , NewSL : 0.6146500000000001 NewTP : 0.6116500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:31:02,009 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:01 at CMP : 0.61162 , NewSL : 0.6145500000000002 NewTP : 0.6115500000000001 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:31:06,728 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:06 at CMP : 0.61154 , NewSL : 0.6144500000000002 NewTP : 0.6114500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:31:08,102 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:08 at CMP : 0.61145 , NewSL : 0.6143500000000002 NewTP : 0.6113500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:31:13,618 - INFO - Trailing at BrokerTime : 2024-02-02 15:31:13 at CMP : 0.61135 , NewSL : 0.6142500000000002 NewTP : 0.6112500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:32:59,629 - INFO - Trailing at BrokerTime : 2024-02-02 15:32:59 at CMP : 0.61125 , NewSL : 0.6141500000000002 NewTP : 0.6111500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:33:09,361 - INFO - Trailing at BrokerTime : 2024-02-02 15:33:09 at CMP : 0.61115 , NewSL : 0.6140500000000002 NewTP : 0.6110500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:33:17,782 - INFO - Trailing at BrokerTime : 2024-02-02 15:33:17 at CMP : 0.61105 , NewSL : 0.6139500000000002 NewTP : 0.6109500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:33:26,173 - INFO - Trailing at BrokerTime : 2024-02-02 15:33:25 at CMP : 0.61095 , NewSL : 0.6138500000000002 NewTP : 0.6108500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:33:28,188 - INFO - Trailing at BrokerTime : 2024-02-02 15:33:28 at CMP : 0.61084 , NewSL : 0.6137500000000002 NewTP : 0.6107500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:34:14,341 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:14 at CMP : 0.61075 , NewSL : 0.6136500000000003 NewTP : 0.6106500000000002 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:34:18,310 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:18 at CMP : 0.61065 , NewSL : 0.6135500000000003 NewTP : 0.6105500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:34:41,105 - INFO - Trailing at BrokerTime : 2024-02-02 15:34:41 at CMP : 0.61055 , NewSL : 0.6134500000000003 NewTP : 0.6104500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:23,931 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:23 at CMP : 0.61045 , NewSL : 0.6133500000000003 NewTP : 0.6103500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:34,071 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:33 at CMP : 0.61031 , NewSL : 0.6132500000000003 NewTP : 0.6102500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:34,555 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:34 at CMP : 0.61025 , NewSL : 0.6131500000000003 NewTP : 0.6101500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:41,195 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:41 at CMP : 0.61015 , NewSL : 0.6130500000000003 NewTP : 0.6100500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:42,148 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:42 at CMP : 0.61005 , NewSL : 0.6129500000000003 NewTP : 0.6099500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:49,273 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:49 at CMP : 0.60995 , NewSL : 0.6128500000000003 NewTP : 0.6098500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:35:51,867 - INFO - Trailing at BrokerTime : 2024-02-02 15:35:51 at CMP : 0.60985 , NewSL : 0.6127500000000003 NewTP : 0.6097500000000003 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:51:44,327 - INFO - Trailing at BrokerTime : 2024-02-02 15:51:44 at CMP : 0.60975 , NewSL : 0.6126500000000004 NewTP : 0.6096500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:52:01,841 - INFO - Trailing at BrokerTime : 2024-02-02 15:52:01 at CMP : 0.60965 , NewSL : 0.6125500000000004 NewTP : 0.6095500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:54:59,851 - INFO - Trailing at BrokerTime : 2024-02-02 15:54:59 at CMP : 0.60955 , NewSL : 0.6124500000000004 NewTP : 0.6094500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:55:00,867 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:00 at CMP : 0.60941 , NewSL : 0.6123500000000004 NewTP : 0.6093500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:55:01,742 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:01 at CMP : 0.60935 , NewSL : 0.6122500000000004 NewTP : 0.6092500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:55:27,241 - INFO - Trailing at BrokerTime : 2024-02-02 15:55:27 at CMP : 0.60925 , NewSL : 0.6121500000000004 NewTP : 0.6091500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 14:57:33,641 - INFO - Trailing at BrokerTime : 2024-02-02 15:57:33 at CMP : 0.60915 , NewSL : 0.6120500000000004 NewTP : 0.6090500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:00:03,900 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 16:00:00
+2024-02-02 15:00:05,196 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-02 15:00:05.196863  BrokerTime : 2024-02-02 16:00:05  for the New Short Signal Modified by Sourav
+2024-02-02 15:00:08,540 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 16:00:08 H4DfLastIndex : 2024-02-02 16:00:00
+2024-02-02 15:01:10,225 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 16:00:00
+2024-02-02 15:02:01,425 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:01 at CMP : 0.60902 , NewSL : 0.6119500000000004 NewTP : 0.6089500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:02:05,971 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:05 at CMP : 0.60894 , NewSL : 0.6118500000000004 NewTP : 0.6088500000000004 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:02:08,080 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:08 at CMP : 0.60885 , NewSL : 0.6117500000000005 NewTP : 0.6087500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:02:23,423 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:23 at CMP : 0.60875 , NewSL : 0.6116500000000005 NewTP : 0.6086500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:02:58,625 - INFO - Trailing at BrokerTime : 2024-02-02 16:02:58 at CMP : 0.60865 , NewSL : 0.6115500000000005 NewTP : 0.6085500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:03:14,561 - INFO - Trailing at BrokerTime : 2024-02-02 16:03:14 at CMP : 0.60855 , NewSL : 0.6114500000000005 NewTP : 0.6084500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:03:21,170 - INFO - Trailing at BrokerTime : 2024-02-02 16:03:21 at CMP : 0.60845 , NewSL : 0.6113500000000005 NewTP : 0.6083500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 15:33:30,924 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.6094 at BrokerTime : 2024-02-02 16:33:30
+2024-02-02 15:33:31,331 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-02 16:33:31
+2024-02-02 15:33:31,549 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.6094 at BrokerTime : 2024-02-02 16:33:31
+2024-02-02 15:33:31,768 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.6094 at BrokerTime : 2024-02-02 16:33:31
+2024-02-02 15:33:46,033 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-02 16:33:45
+2024-02-02 16:02:01,282 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:01 at CMP : 0.60834 , NewSL : 0.6112500000000005 NewTP : 0.6082500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:02:10,484 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:10 at CMP : 0.60807 , NewSL : 0.6111500000000005 NewTP : 0.6081500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:02:11,718 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:11 at CMP : 0.60811 , NewSL : 0.6110500000000005 NewTP : 0.6080500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:02:15,609 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:15 at CMP : 0.60805 , NewSL : 0.6109500000000005 NewTP : 0.6079500000000005 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:02:37,936 - INFO - Trailing at BrokerTime : 2024-02-02 17:02:37 at CMP : 0.60794 , NewSL : 0.6108500000000006 NewTP : 0.6078500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:05:19,910 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:19 at CMP : 0.60781 , NewSL : 0.6107500000000006 NewTP : 0.6077500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:05:29,004 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:28 at CMP : 0.60771 , NewSL : 0.6106500000000006 NewTP : 0.6076500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:05:42,097 - INFO - Trailing at BrokerTime : 2024-02-02 17:05:42 at CMP : 0.60765 , NewSL : 0.6105500000000006 NewTP : 0.6075500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:08:36,289 - INFO - Trailing at BrokerTime : 2024-02-02 17:08:36 at CMP : 0.60755 , NewSL : 0.6104500000000006 NewTP : 0.6074500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:16:11,716 - INFO - Trailing at BrokerTime : 2024-02-02 17:16:11 at CMP : 0.60744 , NewSL : 0.6103500000000006 NewTP : 0.6073500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:16:15,122 - INFO - Trailing at BrokerTime : 2024-02-02 17:16:15 at CMP : 0.60735 , NewSL : 0.6102500000000006 NewTP : 0.6072500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:16:18,217 - INFO - Trailing at BrokerTime : 2024-02-02 17:16:18 at CMP : 0.60724 , NewSL : 0.6101500000000006 NewTP : 0.6071500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:16:23,528 - INFO - Trailing at BrokerTime : 2024-02-02 17:16:23 at CMP : 0.60714 , NewSL : 0.6100500000000006 NewTP : 0.6070500000000006 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:20:00,265 - INFO - Trailing at BrokerTime : 2024-02-02 17:20:00 at CMP : 0.60705 , NewSL : 0.6099500000000007 NewTP : 0.6069500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:20:50,637 - INFO - Trailing at BrokerTime : 2024-02-02 17:20:50 at CMP : 0.60695 , NewSL : 0.6098500000000007 NewTP : 0.6068500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:22:56,083 - INFO - Trailing at BrokerTime : 2024-02-02 17:22:55 at CMP : 0.60685 , NewSL : 0.6097500000000007 NewTP : 0.6067500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:23:39,486 - INFO - Trailing at BrokerTime : 2024-02-02 17:23:39 at CMP : 0.60675 , NewSL : 0.6096500000000007 NewTP : 0.6066500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:25:55,619 - INFO - Trailing at BrokerTime : 2024-02-02 17:25:55 at CMP : 0.60665 , NewSL : 0.6095500000000007 NewTP : 0.6065500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:27:09,646 - INFO - Trailing at BrokerTime : 2024-02-02 17:27:09 at CMP : 0.60655 , NewSL : 0.6094500000000007 NewTP : 0.6064500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:30:39,462 - INFO - Trailing at BrokerTime : 2024-02-02 17:30:39 at CMP : 0.60645 , NewSL : 0.6093500000000007 NewTP : 0.6063500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 16:34:00,309 - INFO - Trailing at BrokerTime : 2024-02-02 17:34:00 at CMP : 0.60633 , NewSL : 0.6092500000000007 NewTP : 0.6062500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 17:45:10,351 - INFO - Trailing at BrokerTime : 2024-02-02 18:45:10 at CMP : 0.60625 , NewSL : 0.6091500000000007 NewTP : 0.6061500000000007 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 17:46:15,020 - INFO - Trailing at BrokerTime : 2024-02-02 18:46:14 at CMP : 0.60614 , NewSL : 0.6090500000000008 NewTP : 0.6060500000000008 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 18:51:33,147 - INFO - Trailing at BrokerTime : 2024-02-02 19:51:33 at CMP : 0.60604 , NewSL : 0.6089500000000008 NewTP : 0.6059500000000008 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 18:52:07,144 - INFO - Trailing at BrokerTime : 2024-02-02 19:52:05 at CMP : 0.60595 , NewSL : 0.6088500000000008 NewTP : 0.6058500000000008 Flag : 1.0 of OrderID : 33772419.0
+2024-02-02 19:00:08,801 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 20:00:00
+2024-02-02 19:00:22,472 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-02 19:00:22.472289  BrokerTime : 2024-02-02 20:00:22  for the New Short Signal Modified by Sourav
+2024-02-02 19:01:03,579 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-02 20:01:00 H4DfLastIndex : 2024-02-02 20:00:00
+2024-02-02 19:01:14,578 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-02 20:00:00
+2024-02-02 20:03:49,493 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-02 21:03:45
+2024-02-02 20:03:50,008 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-02 21:03:45
+2024-02-02 20:04:17,990 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-02 21:04:15
+2024-02-02 20:04:18,319 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-02 21:04:15
+2024-02-02 20:04:28,693 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-02 21:04:26
+2024-02-03 08:00:05,707 - DEBUG - Mt5 Terminal Got Disconnected...
+2024-02-03 08:00:16,050 - DEBUG - Is Connected : False
+2024-02-05 03:00:00,557 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 04:00:00
+2024-02-05 03:00:00,683 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-05 03:00:00.683390  BrokerTime : 2024-02-05 04:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 03:00:00,807 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-05 04:00:00 H4DfLastIndex : 2024-02-02 20:00:00
+2024-02-05 03:00:04,885 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,885 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,901 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:04,917 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.60631 at BrokerTime : 2024-02-05 04:00:04
+2024-02-05 03:00:14,932 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-05 04:00:14
+2024-02-05 03:01:00,664 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 04:00:00
+2024-02-05 07:00:00,384 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 08:00:00
+2024-02-05 07:00:00,431 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-05 07:00:00.431999  BrokerTime : 2024-02-05 08:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 07:00:00,447 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-05 08:00:00 H4DfLastIndex : 2024-02-05 04:00:00
+2024-02-05 07:00:00,541 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-05 08:00:00 H4DfLastIndex : 2024-02-05 04:00:00 NowBrokerTime : 2024-02-05 08:00:00
+2024-02-05 07:00:00,697 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-05 08:00:00 H4DfLastIndex : 2024-02-05 08:00:00 NowBrokerTime : 2024-02-05 08:00:00
+2024-02-05 07:00:03,806 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.60749 at BrokerTime : 2024-02-05 08:00:02
+2024-02-05 07:00:03,806 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-05 08:00:02
+2024-02-05 07:00:03,822 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.60749 at BrokerTime : 2024-02-05 08:00:02
+2024-02-05 07:00:03,837 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.60749 at BrokerTime : 2024-02-05 08:00:02
+2024-02-05 07:00:13,852 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-05 08:00:13
+2024-02-05 07:01:00,443 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 08:00:00
+2024-02-05 11:00:00,153 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 12:00:00
+2024-02-05 11:00:00,278 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-05 11:00:00.278216  BrokerTime : 2024-02-05 12:00:00  for the New Short Signal Modified by Sourav
+2024-02-05 11:00:00,418 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-05 12:00:00 H4DfLastIndex : 2024-02-05 12:00:00
+2024-02-05 11:00:03,559 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.60762 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,559 - DEBUG - Signal3 Already have an active Trade of Instrument : NZDUSD BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,559 - DEBUG - No entry for signal4 of Instrument : NZDUSD  close : 0.60762 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:03,559 - DEBUG - No entry for signal5 of Instrument : NZDUSD  close : 0.60762 at BrokerTime : 2024-02-05 12:00:03
+2024-02-05 11:00:13,574 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-05 12:00:13
+2024-02-05 11:01:00,269 - DEBUG - AT the next Hour OutTime -- SymbolName : NZDUSD BrokerTime : 2024-02-05 12:00:00

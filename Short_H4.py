@@ -253,9 +253,6 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
         logger.debug(f'Entry happened for {symbol} , Checking for Exit.....')
                         
         while True:
-            if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() == 5 or (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() ==6:
-                continue
-            
             if not  mt5.initialize():
                 logger.debug("Mt5 Terminal Got Disconnected...")
                     
@@ -270,7 +267,13 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 logger.debug(f'Is Connected : {cd}')
                 continue
             
+            ## Error here
+            if (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() == 5 or (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday() ==6:
+                continue
             
+            
+            
+            ### Error Here 
             Price = mt5.symbol_info_tick(symbol).ask
                 
             for index, row in df_entry.iterrows(): 
