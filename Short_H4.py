@@ -15,6 +15,29 @@ import importlib
 import sig_lib as sig
 importlib.reload(sig)
 from ba_signals import entry_signal1
+from skpy import Skype
+
+
+
+user = 'sourav@purealphaventures.com'
+pwd = 'Inno1691@1'
+skype_connect = Skype(user, pwd)
+
+
+# Function to send Skype Notification
+def SendSkypeNotification(message , skype_connect):
+    try:
+        algo_trading_group = skype_connect.chats["19:10ccdc3f3fe74107b0bab4c9994f892a@thread.skype"]
+        algo_trading_group.sendMsg(message)
+        
+    except Exception as e:
+        user = 'sourav@purealphaventures.com'
+        pwd = 'Inno1691@1'
+        skype_connect = Skype(user, pwd)
+        algo_trading_group =skype_connect.chats["19:10ccdc3f3fe74107b0bab4c9994f892a@thread.skype"]
+        algo_trading_group.sendMsg(message)
+        
+
 
 
 
@@ -85,15 +108,33 @@ def close_order(ticket):
 # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
 
 
-def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,logger ,Choices , ChoicesExitModels,  login , password , server):
-    NoOfSignals = 1
-    NoOfSignals +=1
-    HoursDelay = 1
-    time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
+def Execution(script_name,symbol , PerCentageRisk ,TP,SL,TrailTPPoints,logger ,Choices , ChoicesExitModels,  login , password , server):
+    
+    try : 
+        SL_TpRatio  = mt5.symbol_info(symbol).point
+        pipval = mt5.symbol_info(symbol).trade_tick_value_profit
+        NoOfSignals = 1
+        NoOfSignals +=1
+        HoursDelay = 1
+        time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
+        df = pd.DataFrame(mt5.copy_rates_from_pos(symbol ,mt5.TIMEFRAME_H4 , 0 , 2700))
+        BrokerTime = datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)
+    except AttributeError:
+        if mt5.initialize():
+            logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
+            Execution(script_name,symbol , PerCentageRisk ,TP,SL,TrailTPPoints,logger ,Choices , ChoicesExitModels,  login , password , server)
+        else:
+            time.sleep(10)
+            logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......')
+            SendSkypeNotification(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......' , skype_connect)
+            mt5.initialize(login = login , password = password, server = server)
+            logger.debug(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
+            SendSkypeNotification(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}' , skype_connect)
+            Execution(script_name,symbol , PerCentageRisk ,TP,SL,TrailTPPoints,logger ,Choices , ChoicesExitModels,  login , password , server)
 
-    df = pd.DataFrame(mt5.copy_rates_from_pos(symbol ,mt5.TIMEFRAME_H4 , 0 , 2700))
+    
 
-    logger.debug(f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  for the New Short Signal Modified by Sourav')
+    logger.debug(f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {BrokerTime}  for the New Short Signal Modified by Sourav')
 
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     # Logic to Get the H4 DataFrame for the Instrument
@@ -124,8 +165,8 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             
             
             df['ValueOpen'], df['ValueLow'], df['ValueHigh'], df['ValueClose'], df['WinsLast'] = \
-            sig.ValueCharts(df,5,(1/SL_TpRatio),'open'), sig.ValueCharts(df,5,(1/SL_TpRatio),'low'), sig.ValueCharts(df,5,(1/SL_TpRatio),'high'), \
-            sig.ValueCharts(df,5,(1/SL_TpRatio),'close'), sig.WinsLast(df, 5 , column='close')
+            sig.ValueCharts(df,5,'open'), sig.ValueCharts(df,5,'low'), sig.ValueCharts(df,5,'high'), \
+            sig.ValueCharts(df,5,'close'), sig.WinsLast(df, 5 , column='close')
             
             
             # ATR
@@ -172,10 +213,11 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 logger.info(f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
             else:
                 logger.error(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......')
-
+                SendSkypeNotification(f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......' , skype_connect)
                 mt5.initialize(login = login , password = password, server = server)
                 #time.sleep(20)
                 logger.debug(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
+                SendSkypeNotification(f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}' , skype_connect)
             continue
         break
     
@@ -196,6 +238,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
     for i in range(len(Choices)):
         df_open_signals = pd.read_csv(f'{symbol}_{script_name}_open_signals.csv' )
         signal = f'signal{Choices[i]}'
+        Signal_uni_name = f"{symbol}_{Choices[i]}_Short_{ChoicesExitModels[i]}"
         
         if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
             logger.debug(f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))}')
@@ -208,32 +251,70 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
             # Got a Short Entry 
             if variable == 'Trail':
                 flag = 0
-                time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
+                try:
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
+                except AttributeError : 
+                    time.sleep(2)
+                    mt5.initialize(login = login , password = password, server = server)
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))
+                    
+                    
                 logger.debug(f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1}')
                 data = df.copy()
                 logger.debug(f"{data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']} ")
 
 
-                SL_dis = SL
-                LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*50),2)
+                LotSize = round((PerCentageRisk * mt5.account_info().equity)/(pipval*SL),2)
                 
-                order= market_order(symbol , LotSize,'sell',signal,3001+Choices[i] )
-                tick = mt5.symbol_info_tick(symbol)
+                while True:
+                    if not  mt5.initialize():
+                        logger.debug(f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                        SendSkypeNotification(f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
+                            
+                        time1 = (datetime.now())
+                        with open(f'NotInitial.txt' , 'a') as file:
+                                    file.write(f'\n symbol = {symbol},')
+                                    
+                                    file.write(f'Time = {time1}')
+                        file.close()
+                        time.sleep(10)
+                        cd = mt5.initialize(login = login , password = password, server = server)
+                        logger.debug(f'Is Connected : {cd}')
+                        SendSkypeNotification(f"Is Connection Reestablished : {cd} " , skype_connect)
+                        continue
+                    
+                    order= market_order(symbol , LotSize,'sell',Signal_uni_name,3001+Choices[i] )
+                    time.sleep(1)
+                    if order.comment == 'Market closed':
+                        time.sleep(1)
+                        continue
+                    break
+                    
+                try:
+                    tick = mt5.symbol_info_tick(symbol)
+                except AttributeError : 
+                    time.sleep(2)
+                    mt5.initialize(login = login , password = password, server = server)
+                    tick = mt5.symbol_info_tick(symbol)
+                    
+                   
+                    
                 Price = tick.ask
                 
                 ATR = df.iloc[index]['atr_7']
-                StopLoss = Price + (SL_dis * SL_TpRatio)
+                StopLoss = Price + (SL * SL_TpRatio)
                 TP_val = Price - (TP * SL_TpRatio)
                 order_id = order.order
                 order_price = order.price
-                logger.info(f'Entry at {time1} for {symbol}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
-                
+                logger.info(f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                SendSkypeNotification(f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}' , skype_connect)
                 '''Updating the Entry DF'''
                 df_entry.loc[len(df_entry)] = [Choices[i],order_id,order.volume,Price,TP_val,StopLoss,0,flag]
                 
                 '''Updating and Saving the ActiveSignals DF'''
                 df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
                 df_open_signals.to_csv(f'{symbol}_{script_name}_open_signals.csv' , index=False)
+                
             
             
         else:
@@ -254,7 +335,8 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                         
         while True:
             if not  mt5.initialize():
-                logger.debug("Mt5 Terminal Got Disconnected...")
+                logger.debug(f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                SendSkypeNotification(f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
                     
                 time1 = (datetime.now())
                 with open(f'NotInitial.txt' , 'a') as file:
@@ -265,6 +347,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                 time.sleep(10)
                 cd = mt5.initialize(login = login , password = password, server = server)
                 logger.debug(f'Is Connected : {cd}')
+                SendSkypeNotification(f"Is Connection Reestablished : {cd} " , skype_connect)
                 continue
             
             ## Error here
@@ -284,7 +367,8 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                             time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
                             #print(f'SL Hit at{time_s} ')
                             close = close_order(row['orderid'])
-                            logger.info(f"SL hit Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,{row['signals']},{close.comment}  ")
+                            logger.info(f"SL hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}")
+                            SendSkypeNotification(f"SL hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}" , skype_connect)
                             if close.comment == 'Request executed':
                                 
                                 '''Delete the Signals Trade from df_entry when we exit our Order'''
@@ -302,6 +386,7 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                                 '''Delete the Signals Trade from df_entry when we exit our Order'''
                                 df_entry = df_entry.drop(index)
                                 logger.info(f'Manually Closed the order for {symbol} of OrderID : {row["orderid"]}')
+                                SendSkypeNotification(f'Manually Closed the order for {symbol} of OrderID : {row["orderid"]}' , skype_connect)
                                 
                                 '''Update the OpenSignals Df to take the New trade from now on'''
                                 df_open_signals = pd.read_csv(f'{symbol}_{script_name}_open_signals.csv' )
@@ -314,21 +399,26 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
                     # First Trailing Step            
                     elif (Price <= row['TP']) and (row['flag'] == 0):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
-                        row['SL'] = row['price_open'] - 1*(SL_TpRatio)
-                        row['TP'] = row['TP'] - 1*(SL_TpRatio)
+                        row['SL'] = row['price_open'] - TrailTPPoints*(SL_TpRatio)
+                        row['TP'] = row['TP'] - TrailTPPoints*(SL_TpRatio)
                         row['flag'] = 1
                         logger.info(f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        SendSkypeNotification(f"First Trailing Step Hit for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}" , skype_connect)
                         
                     # Trailing SL and TP when we reaches new TP (note - this line of code will work only when First Trailing Step happened )
                     elif (Price <= row['TP']) and (row['flag'] == 1):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
-                        row['SL'] = row['SL'] - 1*(SL_TpRatio)
-                        row['TP'] = row['TP'] - 1*(SL_TpRatio)
-                        logger.info(f"Trailing at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        row['SL'] = row['SL'] - TrailTPPoints*(SL_TpRatio)
+                        row['TP'] = row['TP'] - TrailTPPoints*(SL_TpRatio)
+                        logger.info(f"Trailing for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
+                        SendSkypeNotification(f"Trailing for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}" , skype_connect)
                         
                         
+                
+                    
                 except Exception as e:
                     logger.error(f'Error : {e}  When We are Exiting a Trade for {symbol}')
+                    SendSkypeNotification(f'Error : {e}  When We are Exiting a Trade for {symbol} at Time : {datetime.now()}', skype_connect)
                     continue
                 
                 
@@ -345,7 +435,6 @@ def Execution(script_name,symbol , PerCentageRisk , SL_TpRatio ,TP,SL,pipval,log
         
                                         
                                         
-
 
 
 

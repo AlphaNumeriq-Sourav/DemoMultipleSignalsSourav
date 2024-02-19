@@ -1,0 +1,11 @@
+Symbol,PipetteQTY,PipetteValueProfit,PipetteValueLoss,Commission,LongSwap,ShortSwap,swap_rate_mon,swap_rate_tue,swap_rate_wed,swap_rate_thru,swap_rate_fri
+EURUSD,1.00E-05,1,1,Na,-6.17,2.61,1,1,3,1,1
+GBPUSD,1.00E-05,1,1,Na,-2.42,-0.53,1,1,3,1,1
+AUDUSD,1.00E-05,1,1,Na,-2.84,1.14,1,1,3,1,1
+USDCAD,1.00E-05,0.742688234,0.742699266,Na,0.48,-4.48,1,1,3,1,1
+USDJPY,0.001,0.672381913,0.672381913,Na,12.51,-25.41,1,1,3,1,1
+US30,0.01,0.01,0.01,Na,-7.69,2.15,1,1,1,1,3
+US500,0.01,0.01,0.01,Na,-0.97,0.26,1,1,1,1,3
+XTIUSD,0.01,0.01,0.01,Na,-0.99,-0.12,1,1,1,1,3
+XAUUSD,0.01,1,1,Na,-32.64,20.9,1,1,3,1,1
+XAGUSD,0.001,5,5,Na,-4.49,2.62,1,1,3,1,1

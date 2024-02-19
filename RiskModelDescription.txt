@@ -14,6 +14,14 @@ First TP - 2x of Last Candle ATR 7
 Trailing - No Trailing
 When we hit SL or TP we exit
 
+Variable Fixed - 
+
+Risk - Percentage
+First SL - 50 Pips
+First TP - 30 Pips
+Trailing - No Trailing
+When we hit SL or TP we exit
+
 
 
 Variable Trail ATR - 
