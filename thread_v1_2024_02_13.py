@@ -116,7 +116,7 @@ def PreMain():
                                 while True:
                                     time2 = mt5.symbol_info_tick(symbol).time
                                     time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
-                                    if (time2 % (3600*4)  < 50) or (time2 % (3600 *4)  < 1200) or (time2 % (3600 *4)  < 600) :
+                                    if (time2 % (3600 *4)  < 1200):
                                         for script_name, args in script_args.items():
                                             # create_file(script_name)  # Create a file for each script
                                             symbol = args[0]
