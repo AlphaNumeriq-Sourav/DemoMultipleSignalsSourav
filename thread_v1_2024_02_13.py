@@ -75,7 +75,7 @@ def PreMain():
 
         
 
-
+    print((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)))
         
     if mt5.initialize(login = login , password = password, server = server):
         MainLogger.debug(f'Script Started for thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav')
