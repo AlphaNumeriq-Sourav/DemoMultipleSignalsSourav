@@ -1,0 +1,52 @@
+2024-02-19 18:13:47,578 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:13:47.578885  BrokerTime : 2024-02-19 19:13:45  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:47,805 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:48,012 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:48,401 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:48,909 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:48
+2024-02-19 18:13:49,385 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:48
+2024-02-19 18:13:49,800 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:48
+2024-02-19 18:14:16,806 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:14:16.806600  BrokerTime : 2024-02-19 19:14:00  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:16,982 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:17,646 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:00
+2024-02-19 18:14:17,939 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:00
+2024-02-19 18:14:18,667 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:00
+2024-02-19 18:14:18,950 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:00
+2024-02-19 18:14:19,266 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:14:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:00
+2024-02-19 18:15:43,621 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:15:43.621044  BrokerTime : 2024-02-19 19:15:39  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:43,718 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:43,895 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:44,022 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:44,374 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:44,765 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:44,951 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:55,805 - DEBUG - No entry for signal1 of Instrument : AUDCAD  close : 0.881 at BrokerTime : 2024-02-19 19:15:54
+2024-02-19 18:16:05,879 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-19 19:16:01
+2024-02-19 18:17:29,867 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:17:29.867495  BrokerTime : 2024-02-19 19:17:26  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:29,966 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:30,139 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:30,236 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:30,568 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:30,846 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:31,126 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:41,248 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-19 19:17:40
+2024-02-19 18:17:41,493 - DEBUG - 0.88094 atr: 0.0017380497129307025 
+2024-02-19 18:17:42,743 - INFO - Entry at 2024-02-19 19:17:40 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.88603 , TP : 0.87803 ,Lotsize : 0.19 , OrderPrice : 0.88103 , ATR Value : 0.0017380497129307025, comment : Request executed Flag : 0 OrderID : 34464752
+2024-02-19 18:17:44,501 - DEBUG - Entry happened for AUDCAD , Checking for Exit.....
+2024-02-19 18:18:54,811 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:18:54.811461  BrokerTime : 2024-02-19 19:18:51  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:54,906 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:55,253 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:51
+2024-02-19 18:18:55,436 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:55
+2024-02-19 18:18:56,142 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:55
+2024-02-19 18:18:56,370 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:55
+2024-02-19 18:18:56,929 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:18:51 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:56
+2024-02-19 18:19:08,421 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-19 19:19:07
+2024-02-19 18:19:09,166 - DEBUG - 0.88098 atr: 0.0017380497129307025 
+2024-02-19 18:19:20,770 - INFO - Entry at 2024-02-19 19:19:07 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.88599 , TP : 0.87799 ,Lotsize : 0.19 , OrderPrice : 0.88099 , ATR Value : 0.0017380497129307025, comment : Request executed Flag : 0 OrderID : 34464829
+2024-02-19 18:26:19,547 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-19 18:26:19.547583  BrokerTime : 2024-02-19 19:26:17  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:19,758 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:19,993 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:20,146 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:20,342 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:21,522 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:22,183 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:37,163 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-19 19:26:35

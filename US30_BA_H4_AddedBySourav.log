@@ -1,0 +1,51 @@
+2024-02-19 18:13:47,350 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:13:47.350980  BrokerTime : 2024-02-19 19:13:46  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:47,399 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:47,445 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,481 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,555 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,727 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:13:48,123 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:14:16,640 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:14:16.640892  BrokerTime : 2024-02-19 19:14:07  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:16,654 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:16,685 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:07
+2024-02-19 18:14:16,713 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:07
+2024-02-19 18:14:16,735 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:07
+2024-02-19 18:14:16,754 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:07
+2024-02-19 18:14:16,777 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:14:07 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:07
+2024-02-19 18:15:43,310 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:15:43.310352  BrokerTime : 2024-02-19 19:15:42  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:43,338 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:43,371 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,401 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,417 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,627 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,773 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:55,324 - DEBUG - No entry for signal1 of Instrument : US30  close : 38650.95 at BrokerTime : 2024-02-19 19:15:51
+2024-02-19 18:16:05,395 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-19 19:16:03
+2024-02-19 18:17:29,566 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:17:29.566828  BrokerTime : 2024-02-19 19:17:29  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:29,603 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:29,617 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:29,657 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:29,698 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:29,856 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:30,039 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:42,703 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-19 19:17:40
+2024-02-19 18:17:43,666 - DEBUG - 38653.95 atr: 102.3529975474113 
+2024-02-19 18:17:44,939 - INFO - Entry at 2024-02-19 19:17:40 for SignalID : US30_1_Short_Trail  , SL : 38707.05 , TP : 38627.05 ,Lotsize : 1.4 , OrderPrice : 38657.05 , ATR Value : 102.3529975474113, comment : Request executed Flag : 0 OrderID : 34464755
+2024-02-19 18:17:46,315 - DEBUG - Entry happened for US30 , Checking for Exit.....
+2024-02-19 18:18:54,674 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:18:54.674970  BrokerTime : 2024-02-19 19:18:53  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:54,707 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:54,738 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:54,760 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:54,793 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:54,852 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:55,138 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:19:20,787 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-19 19:19:19
+2024-02-19 18:26:19,250 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-19 18:26:19.250424  BrokerTime : 2024-02-19 19:26:14  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:19,258 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:19,274 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:14
+2024-02-19 18:26:19,292 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:14
+2024-02-19 18:26:19,317 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:14
+2024-02-19 18:26:19,350 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:14
+2024-02-19 18:26:19,496 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-19 19:26:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:14
+2024-02-19 18:26:34,809 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-19 19:26:32
+2024-02-19 18:26:37,159 - DEBUG - 38651.95 atr: 102.3529975474113 

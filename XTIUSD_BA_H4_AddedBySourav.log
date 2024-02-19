@@ -1,0 +1,50 @@
+2024-02-19 18:13:47,449 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:13:47.449648  BrokerTime : 2024-02-19 19:13:45  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:47,498 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:47,554 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:47,946 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:48,241 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:48,771 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:13:49,013 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:13:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:45
+2024-02-19 18:14:16,708 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:14:16.708165  BrokerTime : 2024-02-19 19:14:05  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:16,725 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:16,745 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:05
+2024-02-19 18:14:16,859 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:05
+2024-02-19 18:14:17,156 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:05
+2024-02-19 18:14:17,848 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:05
+2024-02-19 18:14:18,491 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:14:05 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:05
+2024-02-19 18:15:43,345 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:15:43.345617  BrokerTime : 2024-02-19 19:15:42  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:43,364 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:43,411 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,532 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,672 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:44,017 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:43
+2024-02-19 18:15:44,312 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:43
+2024-02-19 18:15:55,308 - DEBUG - No entry for signal1 of Instrument : XTIUSD  close : 78.56 at BrokerTime : 2024-02-19 19:15:48
+2024-02-19 18:16:05,351 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-19 19:16:04
+2024-02-19 18:17:29,605 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:17:29.605039  BrokerTime : 2024-02-19 19:17:00  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:29,633 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:29,651 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:00
+2024-02-19 18:17:29,671 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:00
+2024-02-19 18:17:29,779 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:00
+2024-02-19 18:17:29,971 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:00
+2024-02-19 18:17:30,155 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:17:00 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:00
+2024-02-19 18:17:42,853 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-19 19:17:33
+2024-02-19 18:17:44,628 - DEBUG - 78.56 atr: 0.6333268210293468 
+2024-02-19 18:17:45,666 - INFO - Entry at 2024-02-19 19:17:33 for SignalID : XTIUSD_1_Short_Trail  , SL : 128.57999999999998 , TP : 48.58 ,Lotsize : 1.4 , OrderPrice : 78.58 , ATR Value : 0.6333268210293468, comment : Invalid volume Flag : 0 OrderID : 0
+2024-02-19 18:17:46,963 - DEBUG - Entry happened for XTIUSD , Checking for Exit.....
+2024-02-19 18:18:54,708 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:18:54.708630  BrokerTime : 2024-02-19 19:18:50  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:54,749 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:54,782 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:50
+2024-02-19 18:18:54,821 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:50
+2024-02-19 18:18:54,846 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:50
+2024-02-19 18:18:55,061 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:50
+2024-02-19 18:18:55,519 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:18:50 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:50
+2024-02-19 18:19:08,685 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-19 19:19:00
+2024-02-19 18:19:09,394 - DEBUG - 78.6 atr: 0.6390411067436333 
+2024-02-19 18:26:19,276 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-19 18:26:19.276903  BrokerTime : 2024-02-19 19:26:06  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:19,304 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:19,396 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:06
+2024-02-19 18:26:19,573 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:06
+2024-02-19 18:26:19,696 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:06
+2024-02-19 18:26:19,890 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:19
+2024-02-19 18:26:20,337 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-19 19:26:06 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:19

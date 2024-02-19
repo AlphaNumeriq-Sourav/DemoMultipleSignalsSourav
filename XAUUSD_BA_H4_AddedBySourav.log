@@ -1,0 +1,52 @@
+2024-02-19 18:13:47,316 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:13:47.316586  BrokerTime : 2024-02-19 19:13:46  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:47,343 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:47,358 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,373 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,413 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,475 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,540 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:14:16,609 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:14:16.609650  BrokerTime : 2024-02-19 19:14:15  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:16,622 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:16,634 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:15
+2024-02-19 18:14:16,661 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:15
+2024-02-19 18:14:16,676 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:15
+2024-02-19 18:14:16,692 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:15
+2024-02-19 18:14:16,701 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:14:15 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:15
+2024-02-19 18:15:43,273 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:15:43.273792  BrokerTime : 2024-02-19 19:15:42  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:43,289 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:43,307 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,324 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,353 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,381 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:43,394 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:55,541 - DEBUG - No entry for signal1 of Instrument : XAUUSD  close : 2016.82 at BrokerTime : 2024-02-19 19:15:54
+2024-02-19 18:16:05,581 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-19 19:16:04
+2024-02-19 18:17:29,509 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:17:29.509027  BrokerTime : 2024-02-19 19:17:26  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:29,528 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:29,556 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:29,574 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:29,595 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:29,624 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:29,645 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:17:26 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:26
+2024-02-19 18:17:41,246 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-19 19:17:36
+2024-02-19 18:17:42,124 - DEBUG - 2016.81 atr: 6.690787855188568 
+2024-02-19 18:17:43,434 - INFO - Entry at 2024-02-19 19:17:36 for SignalID : XAUUSD_1_Short_Trail  , SL : 2017.36 , TP : 2016.56 ,Lotsize : 1.4 , OrderPrice : 2016.86 , ATR Value : 6.690787855188568, comment : Request executed Flag : 0 OrderID : 34464754
+2024-02-19 18:17:46,777 - DEBUG - Entry happened for XAUUSD , Checking for Exit.....
+2024-02-19 18:18:54,647 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:18:54.647392  BrokerTime : 2024-02-19 19:18:54  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:54,661 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:54,683 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:54
+2024-02-19 18:18:54,699 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:54
+2024-02-19 18:18:54,718 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:54
+2024-02-19 18:18:54,753 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:54
+2024-02-19 18:18:54,809 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:18:54 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:54
+2024-02-19 18:19:08,559 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-19 19:19:08
+2024-02-19 18:19:09,164 - DEBUG - 2016.3 atr: 6.76793071233142 
+2024-02-19 18:26:19,206 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-19 18:26:19.206232  BrokerTime : 2024-02-19 19:26:18  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:19,229 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:19,242 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,263 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,282 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,311 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,503 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:30,349 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-19 19:26:29
+2024-02-19 18:26:30,744 - DEBUG - 2016.96 atr: 6.800787855188566 

@@ -1,0 +1,50 @@
+2024-02-19 18:13:47,300 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:13:47.300215  BrokerTime : 2024-02-19 19:13:46  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:47,326 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:47,335 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,350 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,364 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,412 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:13:47,490 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:13:46 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:46
+2024-02-19 18:14:16,599 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:14:16.599586  BrokerTime : 2024-02-19 19:14:14  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:16,608 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:16,615 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:14
+2024-02-19 18:14:16,627 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:14
+2024-02-19 18:14:16,639 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:14
+2024-02-19 18:14:16,648 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:14
+2024-02-19 18:14:16,669 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:14:14 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:14
+2024-02-19 18:15:43,257 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:15:43.257878  BrokerTime : 2024-02-19 19:15:39  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:43,264 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:43,272 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:43,281 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:43,300 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:43,317 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:43,333 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:15:39 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:39
+2024-02-19 18:15:55,667 - DEBUG - No entry for signal1 of Instrument : USDJPY  close : 149.98 at BrokerTime : 2024-02-19 19:15:54
+2024-02-19 18:16:05,691 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-19 19:16:03
+2024-02-19 18:17:29,489 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:17:29.489729  BrokerTime : 2024-02-19 19:17:28  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:29,505 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:29,519 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:28
+2024-02-19 18:17:29,537 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:28
+2024-02-19 18:17:29,556 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:28
+2024-02-19 18:17:29,565 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:28
+2024-02-19 18:17:29,588 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:17:28 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:28
+2024-02-19 18:17:41,229 - DEBUG - Got Short Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-19 19:17:40
+2024-02-19 18:17:41,728 - DEBUG - 149.983 atr: 0.2566512667827112 
+2024-02-19 18:17:42,980 - INFO - Entry at 2024-02-19 19:17:40 for SignalID : USDJPY_1_Short_Trail  , SL : 150.48 , TP : 149.67999999999998 ,Lotsize : 0.21 , OrderPrice : 149.98 , ATR Value : 0.2566512667827112, comment : Request executed Flag : 0 OrderID : 34464753
+2024-02-19 18:17:45,500 - DEBUG - Entry happened for USDJPY , Checking for Exit.....
+2024-02-19 18:18:54,637 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:18:54.637809  BrokerTime : 2024-02-19 19:18:45  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:54,646 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:54,654 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:45
+2024-02-19 18:18:54,672 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:45
+2024-02-19 18:18:54,689 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:45
+2024-02-19 18:18:54,726 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:45
+2024-02-19 18:18:54,768 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:18:45 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:45
+2024-02-19 18:26:19,189 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-19 18:26:19.189232  BrokerTime : 2024-02-19 19:26:18  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:19,195 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:19,202 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,211 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,220 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,235 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:19,250 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-19 19:26:18 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:18
+2024-02-19 18:26:30,622 - DEBUG - Got Short Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-19 19:26:29
+2024-02-19 18:26:34,794 - DEBUG - 149.973 atr: 0.2566512667827112 

@@ -1,0 +1,51 @@
+2024-02-19 18:13:47,727 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:13:47.727074  BrokerTime : 2024-02-19 19:13:46  for the New Short Signal Modified by Sourav
+2024-02-19 18:13:48,040 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:13:48,419 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:13:48,762 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:13:49,291 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:13:49,956 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:13:50,481 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:13:47 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:13:47
+2024-02-19 18:14:17,480 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:14:17.480501  BrokerTime : 2024-02-19 19:14:16  for the New Short Signal Modified by Sourav
+2024-02-19 18:14:18,099 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:14:18,527 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:16
+2024-02-19 18:14:18,762 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:16
+2024-02-19 18:14:18,932 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:16
+2024-02-19 18:14:19,415 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:18
+2024-02-19 18:14:20,373 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:14:16 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:14:18
+2024-02-19 18:15:43,768 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:15:43.768703  BrokerTime : 2024-02-19 19:15:42  for the New Short Signal Modified by Sourav
+2024-02-19 18:15:44,360 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:15:44,730 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:44,963 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:45,501 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:42
+2024-02-19 18:15:46,469 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:45
+2024-02-19 18:15:46,850 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:15:42 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:15:45
+2024-02-19 18:15:56,055 - DEBUG - No entry for signal1 of Instrument : NZDUSD  close : 0.61377 at BrokerTime : 2024-02-19 19:15:54
+2024-02-19 18:16:06,111 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-19 19:16:03
+2024-02-19 18:17:30,167 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:17:30.167431  BrokerTime : 2024-02-19 19:17:29  for the New Short Signal Modified by Sourav
+2024-02-19 18:17:30,467 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:17:30,959 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:31,097 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:29
+2024-02-19 18:17:31,316 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:30
+2024-02-19 18:17:31,562 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:30
+2024-02-19 18:17:31,862 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:17:29 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:17:31
+2024-02-19 18:17:43,294 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-19 19:17:42
+2024-02-19 18:17:45,065 - DEBUG - 0.61378 atr: 0.001835879971263655 
+2024-02-19 18:17:46,669 - INFO - Entry at 2024-02-19 19:17:42 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.61882 , TP : 0.61082 ,Lotsize : 0.14 , OrderPrice : 0.61382 , ATR Value : 0.001835879971263655, comment : Request executed Flag : 0 OrderID : 34464758
+2024-02-19 18:17:50,469 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-02-19 18:18:54,983 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:18:54.983764  BrokerTime : 2024-02-19 19:18:53  for the New Short Signal Modified by Sourav
+2024-02-19 18:18:55,620 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:18:56,008 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:56,338 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:53
+2024-02-19 18:18:56,763 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:56
+2024-02-19 18:18:57,207 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:56
+2024-02-19 18:18:57,601 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:18:53 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:18:56
+2024-02-19 18:19:09,088 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-19 19:19:08
+2024-02-19 18:19:20,787 - DEBUG - 0.61385 atr: 0.001835879971263655 
+2024-02-19 18:26:19,944 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-19 18:26:19.944101  BrokerTime : 2024-02-19 19:26:17  for the New Short Signal Modified by Sourav
+2024-02-19 18:26:20,152 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00
+2024-02-19 18:26:20,615 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:20,824 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:21,162 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:21,224 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:21,961 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-19 19:26:17 H4DfLastIndex : 2024-02-19 16:30:00 NowBrokerTime : 2024-02-19 19:26:17
+2024-02-19 18:26:37,162 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-19 19:26:35
