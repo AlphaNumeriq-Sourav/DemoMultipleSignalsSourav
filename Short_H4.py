@@ -99,13 +99,11 @@ def close_order(ticket):
 
 
 def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger, Choices, ChoicesExitModels,  login, password, server):
-
+    HoursDelay = 1
     try:
         SL_TpRatio = mt5.symbol_info(symbol).point
         pipval = mt5.symbol_info(symbol).trade_tick_value_profit
-        NoOfSignals = 1
-        NoOfSignals += 1
-        HoursDelay = 1
+        
         time_hr = (datetime.fromtimestamp(mt5.symbol_info_tick(
             symbol).time) - timedelta(hours=HoursDelay))
         df = pd.DataFrame(mt5.copy_rates_from_pos(
@@ -119,11 +117,11 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
             Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,
                       logger, Choices, ChoicesExitModels,  login, password, server)
         else:
-            time.sleep(10)
+            time.sleep(5)
             logger.error(
-                f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......')
+                f'MT5 Connection Not able to connect at ServerTime : {datetime.now()}  Again Trying......')
             SendSkypeNotification(
-                f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......', skype_connect)
+                f'MT5 Connection Not able to connect at ServerTime : {datetime.now()}  Again Trying......', skype_connect)
             mt5.initialize(login=login, password=password, server=server)
             logger.debug(
                 f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
@@ -202,9 +200,9 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
                     f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
             else:
                 logger.error(
-                    f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......')
+                    f'MT5 Connection Not able to connect at ServerTime : {datetime.now()}  Again Trying......')
                 SendSkypeNotification(
-                    f'MT5 Connection Not able to connect at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}  Again Trying......', skype_connect)
+                    f'MT5 Connection Not able to connect at ServerTime : {datetime.now()}  Again Trying......', skype_connect)
                 mt5.initialize(login=login, password=password, server=server)
                 # time.sleep(20)
                 logger.debug(
@@ -229,7 +227,7 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
         if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
             logger.debug(
-                f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time)- timedelta(hours=HoursDelay))}')
+                f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} ServerTime : {datetime.now()}')
             continue
 
         condition = entry_signal1(df, Choices[i], index)
@@ -257,6 +255,10 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
                 LotSize = round(
                     (PerCentageRisk * mt5.account_info().equity)/(pipval*SL), 2)
+                
+                if symbol == "XTIUSD":
+                        LotSize = float(round(
+                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
 
                 while True:
                     if not mt5.initialize():
@@ -291,10 +293,11 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
                 
 
                 ATR = df.iloc[index]['atr_7']
+                Price  = order.price
                 StopLoss = Price + (SL * SL_TpRatio)
                 TP_val = Price - (TP * SL_TpRatio)
                 order_id = order.order
-                Price  = order.price
+                
                 logger.info(
                     f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
                 SendSkypeNotification(
@@ -330,6 +333,10 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
                     LotSize = round(
                         (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
+                    
+                    if symbol == "XTIUSD":
+                        LotSize = float(round(
+                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
 
                     while True:
                         if not mt5.initialize():
@@ -362,10 +369,10 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
 
                     ATR = df.iloc[index]['atr_7']
+                    Price  = order.price
                     StopLoss = Price + (2* ATR)
                     TP_val = Price - (3 * ATR)
                     order_id = order.order
-                    Price = order.price
                     logger.info(
                         f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
                     SendSkypeNotification(
@@ -402,6 +409,9 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
                     LotSize = round(
                         (PerCentageRisk * mt5.account_info().equity)/(pipval*SL), 2)
+                    if symbol == "XTIUSD":
+                        LotSize = float(round(
+                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
 
                     while True:
                         if not mt5.initialize():
@@ -434,10 +444,10 @@ def Execution(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints, logger
 
 
                     ATR = df.iloc[index]['atr_7']
+                    Price  = order.price
                     StopLoss = Price + (SL * SL_TpRatio)
                     TP_val = Price - (TP * SL_TpRatio)
                     order_id = order.order
-                    Price = order.price
                     logger.info(
                         f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
                     SendSkypeNotification(
