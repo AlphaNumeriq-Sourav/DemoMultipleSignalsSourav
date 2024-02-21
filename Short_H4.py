@@ -249,10 +249,10 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                         login=login, password=password, server=server)
                     time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
                         symbol).time) - timedelta(hours=HoursDelay))
-
-                logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                 data = df.copy()
+                logger.debug(
+                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]["close"]} atr: {data.iloc[index]["atr_7"]}')
+                
                 
                 LotSize = round(
                     (PerCentageRisk * mt5.account_info().equity)/(pipval*SL), 2)
@@ -300,9 +300,9 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                 order_id = order.order
                 
                 logger.info(
-                    f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                        f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}')
                 SendSkypeNotification(
-                    f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
+                        f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
                 '''Updating the Entry DF'''
                 df_entry.loc[len(df_entry)] = [
                     Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
@@ -319,317 +319,317 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             # ATR
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
             elif variable == 'ATR':
-                    flag = 2
-                    try:
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
-                    except AttributeError:
-                        time.sleep(2)
-                        mt5.initialize(
+                flag = 2
+                try:
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                except AttributeError:
+                    time.sleep(2)
+                    mt5.initialize(
+                        login=login, password=password, server=server)
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                data = df.copy()
+                logger.debug(
+                f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]["close"]} atr: {data.iloc[index]["atr_7"]}')
+                
+                
+                StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
+
+                LotSize = round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
+                
+                if symbol == "XTIUSD":
+                    LotSize = float(round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
+
+                while True:
+                    if not mt5.initialize():
+                        logger.debug(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                        SendSkypeNotification(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
+
+                        time1 = (datetime.now())
+                        with open(f'NotInitial.txt', 'a') as file:
+                            file.write(f'\n symbol = {symbol},')
+
+                            file.write(f'Time = {time1}')
+                        file.close()
+                        time.sleep(10)
+                        cd = mt5.initialize(
                             login=login, password=password, server=server)
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
+                        logger.debug(f'Is Connected : {cd}')
+                        SendSkypeNotification(
+                            f"Is Connection Reestablished : {cd} ", skype_connect)
+                        continue
 
-                    logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
-                    data = df.copy()
-                    
-                    StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
-
-                    LotSize = round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
-                    
-                    if symbol == "XTIUSD":
-                        LotSize = float(round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
-
-                    while True:
-                        if not mt5.initialize():
-                            logger.debug(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
-                            SendSkypeNotification(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
-
-                            time1 = (datetime.now())
-                            with open(f'NotInitial.txt', 'a') as file:
-                                file.write(f'\n symbol = {symbol},')
-
-                                file.write(f'Time = {time1}')
-                            file.close()
-                            time.sleep(10)
-                            cd = mt5.initialize(
-                                login=login, password=password, server=server)
-                            logger.debug(f'Is Connected : {cd}')
-                            SendSkypeNotification(
-                                f"Is Connection Reestablished : {cd} ", skype_connect)
-                            continue
-
-                        order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    order = market_order(
+                        symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    time.sleep(1)
+                    if order.comment == 'Market closed':
                         time.sleep(1)
-                        if order.comment == 'Market closed':
-                            time.sleep(1)
-                            continue
-                        break
+                        continue
+                    break
 
 
-                    ATR = df.iloc[index]['atr_7']
-                    Price  = order.price
-                    StopLoss = Price + (2* ATR)
-                    TP_val = Price - (3 * ATR)
-                    order_id = order.order
-                    logger.info(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
-                    SendSkypeNotification(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
-                    '''Updating the Entry DF'''
-                    df_entry.loc[len(df_entry)] = [
-                        Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
+                ATR = df.iloc[index]['atr_7']
+                Price  = order.price
+                StopLoss = Price + (2* ATR)
+                TP_val = Price - (3 * ATR)
+                order_id = order.order
+                logger.info(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                SendSkypeNotification(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
+                '''Updating the Entry DF'''
+                df_entry.loc[len(df_entry)] = [
+                    Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
 
-                    '''Updating and Saving the ActiveSignals DF'''
-                    df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
-                    df_open_signals.to_csv(
-                        f'{symbol}_{script_name}_open_signals.csv', index=False)
-                    
-                    
+                '''Updating and Saving the ActiveSignals DF'''
+                df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
+                df_open_signals.to_csv(
+                    f'{symbol}_{script_name}_open_signals.csv', index=False)
+                
+                
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
             # Fixed
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
                     
             elif variable == 'Fixed':
-                    flag = 2
-                    try:
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
-                    except AttributeError:
-                        time.sleep(2)
-                        mt5.initialize(
+                flag = 2
+                try:
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                except AttributeError:
+                    time.sleep(2)
+                    mt5.initialize(
+                        login=login, password=password, server=server)
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                data = df.copy()
+                logger.debug(
+                f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]["close"]} atr: {data.iloc[index]["atr_7"]}')
+                
+                
+                
+
+                LotSize = round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*SL), 2)
+                if symbol == "XTIUSD":
+                    LotSize = float(round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
+
+                while True:
+                    if not mt5.initialize():
+                        logger.debug(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                        SendSkypeNotification(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
+
+                        time1 = (datetime.now())
+                        with open(f'NotInitial.txt', 'a') as file:
+                            file.write(f'\n symbol = {symbol},')
+
+                            file.write(f'Time = {time1}')
+                        file.close()
+                        time.sleep(10)
+                        cd = mt5.initialize(
                             login=login, password=password, server=server)
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
+                        logger.debug(f'Is Connected : {cd}')
+                        SendSkypeNotification(
+                            f"Is Connection Reestablished : {cd} ", skype_connect)
+                        continue
 
-                    logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
-                    data = df.copy()
-                    
-                   
-
-                    LotSize = round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL), 2)
-                    if symbol == "XTIUSD":
-                        LotSize = float(round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*SL)))
-
-                    while True:
-                        if not mt5.initialize():
-                            logger.debug(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
-                            SendSkypeNotification(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
-
-                            time1 = (datetime.now())
-                            with open(f'NotInitial.txt', 'a') as file:
-                                file.write(f'\n symbol = {symbol},')
-
-                                file.write(f'Time = {time1}')
-                            file.close()
-                            time.sleep(10)
-                            cd = mt5.initialize(
-                                login=login, password=password, server=server)
-                            logger.debug(f'Is Connected : {cd}')
-                            SendSkypeNotification(
-                                f"Is Connection Reestablished : {cd} ", skype_connect)
-                            continue
-
-                        order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    order = market_order(
+                        symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    time.sleep(1)
+                    if order.comment == 'Market closed':
                         time.sleep(1)
-                        if order.comment == 'Market closed':
-                            time.sleep(1)
-                            continue
-                        break
+                        continue
+                    break
 
 
-                    ATR = df.iloc[index]['atr_7']
-                    Price  = order.price
-                    StopLoss = Price + (SL * SL_TpRatio)
-                    TP_val = Price - (TP * SL_TpRatio)
-                    order_id = order.order
-                    logger.info(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
-                    SendSkypeNotification(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
-                    '''Updating the Entry DF'''
-                    df_entry.loc[len(df_entry)] = [
-                        Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
+                ATR = df.iloc[index]['atr_7']
+                Price  = order.price
+                StopLoss = Price + (SL * SL_TpRatio)
+                TP_val = Price - (TP * SL_TpRatio)
+                order_id = order.order
+                logger.info(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                SendSkypeNotification(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
+                '''Updating the Entry DF'''
+                df_entry.loc[len(df_entry)] = [
+                    Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
 
-                    '''Updating and Saving the ActiveSignals DF'''
-                    df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
-                    df_open_signals.to_csv(
-                        f'{symbol}_{script_name}_open_signals.csv', index=False)
-                    
+                '''Updating and Saving the ActiveSignals DF'''
+                df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
+                df_open_signals.to_csv(
+                    f'{symbol}_{script_name}_open_signals.csv', index=False)
+                
                     
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
             # Trail_ATR
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------  
             elif variable == 'Trail_ATR':
-                    flag = 0
-                    try:
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
-                    except AttributeError:
-                        time.sleep(2)
-                        mt5.initialize(
+                flag = 0
+                try:
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                except AttributeError:
+                    time.sleep(2)
+                    mt5.initialize(
+                        login=login, password=password, server=server)
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                data = df.copy()
+                logger.debug(
+                f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]["close"]} atr: {data.iloc[index]["atr_7"]}')
+                
+                StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
+                
+
+                LotSize = round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
+                if symbol == "XTIUSD":
+                    LotSize = float(round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip)))
+
+                while True:
+                    if not mt5.initialize():
+                        logger.debug(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                        SendSkypeNotification(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
+
+                        time1 = (datetime.now())
+                        with open(f'NotInitial.txt', 'a') as file:
+                            file.write(f'\n symbol = {symbol},')
+
+                            file.write(f'Time = {time1}')
+                        file.close()
+                        time.sleep(10)
+                        cd = mt5.initialize(
                             login=login, password=password, server=server)
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
+                        logger.debug(f'Is Connected : {cd}')
+                        SendSkypeNotification(
+                            f"Is Connection Reestablished : {cd} ", skype_connect)
+                        continue
 
-                    logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
-                    data = df.copy()
-                    StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
-                   
-
-                    LotSize = round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
-                    if symbol == "XTIUSD":
-                        LotSize = float(round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip)))
-
-                    while True:
-                        if not mt5.initialize():
-                            logger.debug(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
-                            SendSkypeNotification(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
-
-                            time1 = (datetime.now())
-                            with open(f'NotInitial.txt', 'a') as file:
-                                file.write(f'\n symbol = {symbol},')
-
-                                file.write(f'Time = {time1}')
-                            file.close()
-                            time.sleep(10)
-                            cd = mt5.initialize(
-                                login=login, password=password, server=server)
-                            logger.debug(f'Is Connected : {cd}')
-                            SendSkypeNotification(
-                                f"Is Connection Reestablished : {cd} ", skype_connect)
-                            continue
-
-                        order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    order = market_order(
+                        symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    time.sleep(1)
+                    if order.comment == 'Market closed':
                         time.sleep(1)
-                        if order.comment == 'Market closed':
-                            time.sleep(1)
-                            continue
-                        break
+                        continue
+                    break
 
 
-                    
-                    ATR = df.iloc[index]['atr_7']
-                    Price  = order.price
-                    StopLoss = Price + (2* ATR)
-                    TP_val = Price - (3 * ATR)
-                    order_id = order.order
-                    
-                    
-                    logger.info(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
-                    SendSkypeNotification(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
-                    '''Updating the Entry DF'''
-                    df_entry.loc[len(df_entry)] = [
-                        Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
+                
+                ATR = df.iloc[index]['atr_7']
+                Price  = order.price
+                StopLoss = Price + (2* ATR)
+                TP_val = Price - (3 * ATR)
+                order_id = order.order
+                
+                
+                logger.info(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                SendSkypeNotification(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
+                '''Updating the Entry DF'''
+                df_entry.loc[len(df_entry)] = [
+                    Choices[i], order_id, order.volume, Price, TP_val, StopLoss, 0, flag]
 
-                    '''Updating and Saving the ActiveSignals DF'''
-                    df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
-                    df_open_signals.to_csv(
-                        f'{symbol}_{script_name}_open_signals.csv', index=False)
-                    
-            
+                '''Updating and Saving the ActiveSignals DF'''
+                df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
+                df_open_signals.to_csv(
+                    f'{symbol}_{script_name}_open_signals.csv', index=False)
+                
+        
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
             # SL_Trail
             # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
             elif variable == 'SL_Trail':
-                    flag = 3
-                    try:
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
-                        tick = mt5.symbol_info_tick(symbol)
-                    except AttributeError:
-                        time.sleep(2)
-                        mt5.initialize(
+                flag = 3
+                try:
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                    tick = mt5.symbol_info_tick(symbol)
+                except AttributeError:
+                    time.sleep(2)
+                    mt5.initialize(
+                        login=login, password=password, server=server)
+                    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                        symbol).time) - timedelta(hours=HoursDelay))
+                    tick = mt5.symbol_info_tick(symbol)
+                data = df.copy()
+                logger.debug(
+                f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]["close"]} atr: {data.iloc[index]["atr_7"]}')
+                
+                
+                Price = tick.bid
+                StopLossInPip = ((0.5/100) * Price)/SL_TpRatio
+
+
+                LotSize = round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
+                if symbol == "XTIUSD":
+                    LotSize = float(round(
+                    (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip)))
+
+                while True:
+                    if not mt5.initialize():
+                        logger.debug(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
+                        SendSkypeNotification(
+                            f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
+
+                        time1 = (datetime.now())
+                        with open(f'NotInitial.txt', 'a') as file:
+                            file.write(f'\n symbol = {symbol},')
+
+                            file.write(f'Time = {time1}')
+                        file.close()
+                        time.sleep(10)
+                        cd = mt5.initialize(
                             login=login, password=password, server=server)
-                        time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                            symbol).time) - timedelta(hours=HoursDelay))
-                        tick = mt5.symbol_info_tick(symbol)
+                        logger.debug(f'Is Connected : {cd}')
+                        SendSkypeNotification(
+                            f"Is Connection Reestablished : {cd} ", skype_connect)
+                        continue
 
-                    logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
-                    data = df.copy()
-                    
-                    Price = tick.bid
-                    StopLossInPip = ((0.5/100) * Price)/SL_TpRatio
-
-
-                    LotSize = round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip), 2)
-                    if symbol == "XTIUSD":
-                        LotSize = float(round(
-                        (PerCentageRisk * mt5.account_info().equity)/(pipval*StopLossInPip)))
-
-                    while True:
-                        if not mt5.initialize():
-                            logger.debug(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}")
-                            SendSkypeNotification(
-                                f"Mt5 Terminal Got Disconnected... at {datetime.now()} for Symbol : {symbol}", skype_connect)
-
-                            time1 = (datetime.now())
-                            with open(f'NotInitial.txt', 'a') as file:
-                                file.write(f'\n symbol = {symbol},')
-
-                                file.write(f'Time = {time1}')
-                            file.close()
-                            time.sleep(10)
-                            cd = mt5.initialize(
-                                login=login, password=password, server=server)
-                            logger.debug(f'Is Connected : {cd}')
-                            SendSkypeNotification(
-                                f"Is Connection Reestablished : {cd} ", skype_connect)
-                            continue
-
-                        order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    order = market_order(
+                        symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                    time.sleep(1)
+                    if order.comment == 'Market closed':
                         time.sleep(1)
-                        if order.comment == 'Market closed':
-                            time.sleep(1)
-                            continue
-                        break
+                        continue
+                    break
 
 
-                    
-                    ATR = df.iloc[index]['atr_7']
-                    Price  = order.price
-                    StopLoss = Price + ((0.5/100) * Price)
-                    TP_val = Price - ((0.5/100) * Price)
-                    TP1 = Price - ((0.25/100) * Price)
-                    order_id = order.order
-                    
-                    
-                    logger.info(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
-                    SendSkypeNotification(
-                        f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price}, ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
-                    '''Updating the Entry DF'''
-                    df_entry.loc[len(df_entry)] = [
-                        Choices[i], order_id, order.volume, Price, TP_val, StopLoss, TP1, flag]
+                
+                ATR = df.iloc[index]['atr_7']
+                Price  = order.price
+                StopLoss = Price + ((0.5/100) * Price)
+                TP_val = Price - ((0.5/100) * Price)
+                TP1 = Price - ((0.25/100) * Price)
+                order_id = order.order
+                
+                
+                logger.info(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}')
+                SendSkypeNotification(
+                    f'Entry Short at {time1} for SignalID : {Signal_uni_name}  at EntryPrice : {Price}  StopLoss : {StopLoss} Target : {TP_val} Lotsize : {LotSize} ATR Value : {ATR} OrderComment : {order.comment} Flag : {flag} OrderID : {order_id}', skype_connect)
+                '''Updating the Entry DF'''
+                df_entry.loc[len(df_entry)] = [
+                    Choices[i], order_id, order.volume, Price, TP_val, StopLoss, TP1, flag]
 
-                    '''Updating and Saving the ActiveSignals DF'''
-                    df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
-                    df_open_signals.to_csv(
-                        f'{symbol}_{script_name}_open_signals.csv', index=False)
+                '''Updating and Saving the ActiveSignals DF'''
+                df_open_signals.loc[len(df_open_signals)] = [Choices[i]]
+                df_open_signals.to_csv(
+                    f'{symbol}_{script_name}_open_signals.csv', index=False)
         else:
 
             logger.debug(

@@ -103,3 +103,18 @@
 2024-02-20 18:14:44,931 - DEBUG - 0.88473 atr: 0.0015851906723091133 
 2024-02-20 18:14:46,226 - INFO - Entry at 2024-02-20 19:14:42 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.88978 , TP : 0.88178 ,Lotsize : 0.19 , OrderPrice : 0.88478 , ATR Value : 0.0015851906723091133, comment : Request executed Flag : 0 OrderID : 34505407
 2024-02-20 18:14:48,801 - DEBUG - Entry happened for AUDCAD , Checking for Exit.....
+2024-02-21 11:10:05,849 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-21 12:10:06 ClosePrice : 0.88734 atr: 0.0019157220074485861
+2024-02-21 11:10:07,403 - INFO - Entry at 2024-02-21 12:10:06 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.89229 , TP : 0.88429 ,Lotsize : 0.19 , OrderPrice : 0.88729 , ATR Value : 0.0019157220074485861, comment : Request executed Flag : 0 OrderID : 34603882
+2024-02-21 11:12:39,634 - INFO - Manually Closed the order for AUDCAD of OrderID : 34603882.0
+2024-02-21 11:12:44,001 - DEBUG - Function Out after the Exit trade of AUDCAD at BrokerTime : 2024-02-21 12:12:40
+2024-02-21 11:13:50,482 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-21 12:13:49 ClosePrice : 0.88752 atr: 0.0019157220074485861
+2024-02-21 11:13:52,166 - INFO - Entry at 2024-02-21 12:13:49 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.89257 , TP : 0.88457 ,Lotsize : 0.19 , OrderPrice : 0.88757 , ATR Value : 0.0019157220074485861, comment : Request executed Flag : 0 OrderID : 34604008
+2024-02-21 11:15:45,845 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-21 12:15:45 ClosePrice : 0.88749 atr: 0.0019157220074485861
+2024-02-21 11:15:47,391 - INFO - Entry at 2024-02-21 12:15:45 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.8925 , TP : 0.8845 ,Lotsize : 0.19 , OrderPrice : 0.8875 , ATR Value : 0.0019157220074485861, comment : Request executed Flag : 0 OrderID : 34604143
+2024-02-21 11:29:25,321 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-21 12:29:21 ClosePrice : 0.8874 atr: 0.0019157220074485861
+2024-02-21 11:29:26,823 - INFO - Entry Short at 2024-02-21 12:29:21 for SignalID : AUDCAD_1_Short_Trail  at EntryPrice : 0.88741  StopLoss : 0.89241 Target : 0.88441 Lotsize : 0.19 ATR Value : 0.0019157220074485861 OrderComment : Request executed Flag : 0 OrderID : 34604686
+2024-02-21 11:30:01,094 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:29,785 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-21 11:31:29.785168
+2024-02-21 11:31:40,379 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-21 12:31:35
+2024-02-21 12:34:22,738 - INFO - Manually Closed the order for AUDCAD of OrderID : 34604686.0
+2024-02-21 12:34:27,913 - DEBUG - Function Out after the Exit trade of AUDCAD at BrokerTime : 2024-02-21 13:34:26

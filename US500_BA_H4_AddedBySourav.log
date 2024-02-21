@@ -132,3 +132,19 @@
 2024-02-20 18:14:42,800 - DEBUG - 4990.71 atr: 13.801619441380437 
 2024-02-20 18:14:44,110 - INFO - Entry at 2024-02-20 19:14:34 for SignalID : US500_1_Short_SL_Trail  , SL : 5015.66355 , TP : 4965.75645 ,Lotsize : 2.76 , OrderPrice : 4990.71 , ATR Value : 13.801619441380437, comment : Request executed Flag : 3 OrderID : 34505400
 2024-02-20 18:14:46,430 - DEBUG - Entry happened for US500 , Checking for Exit.....
+2024-02-21 11:10:05,442 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-21 12:10:00 ClosePrice : 4971.07 atr: 15.352455023038143
+2024-02-21 11:10:06,799 - INFO - Entry at 2024-02-21 12:10:00 for SignalID : US500_1_Long_SL_Trail  , SL : 4945.9659 , TP : 4995.674099999999 ,Lotsize : 2.77 , OrderPrice : 4970.82 , ATR Value : 15.352455023038143, comment : Request executed Flag : 3 OrderID : 34603880
+2024-02-21 11:12:50,076 - INFO - Manually Closed the order for US500 of OrderID : 34603880.0
+2024-02-21 11:12:53,328 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-21 12:12:33
+2024-02-21 11:13:50,140 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-21 12:13:44 ClosePrice : 4971.07 atr: 15.369597880180985
+2024-02-21 11:13:51,435 - INFO - Entry at 2024-02-21 12:13:44 for SignalID : US500_1_Long_SL_Trail  , SL : 4946.5629 , TP : 4996.2771 ,Lotsize : 2.76 , OrderPrice : 4971.42 , ATR Value : 15.369597880180985, comment : Request executed Flag : 3 OrderID : 34604006
+2024-02-21 11:15:45,625 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-21 12:15:33 ClosePrice : 4971.32 atr: 15.388169308752428
+2024-02-21 11:15:47,153 - INFO - Entry at 2024-02-21 12:15:33 for SignalID : US500_1_Long_SL_Trail  , SL : 4946.81165 , TP : 4996.5283500000005 ,Lotsize : 2.76 , OrderPrice : 4971.67 , ATR Value : 15.388169308752428, comment : Request executed Flag : 3 OrderID : 34604142
+2024-02-21 11:29:25,875 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-21 12:29:25 ClosePrice : 4971.08 atr: 15.388169308752428
+2024-02-21 11:29:28,073 - INFO - Entry Long at 2024-02-21 12:29:25 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 4971.43  StopLoss : 4946.5728500000005 Target : 4996.28715 Lotsize : 2.76 ATR Value : 15.388169308752428 OrderComment : Request executed Flag : 3 OrderID : 34604689
+2024-02-21 11:30:03,434 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:04,838 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:29,738 - DEBUG - Signal1 Already have an active Trade of Instrument : US500 ServerTime : 2024-02-21 11:31:29.738117
+2024-02-21 11:31:40,069 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-21 12:31:13
+2024-02-21 12:34:27,113 - INFO - Manually Closed the order for US500 of OrderID : 34604689.0
+2024-02-21 12:34:28,573 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-21 13:34:21

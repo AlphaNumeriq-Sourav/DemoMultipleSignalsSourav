@@ -143,3 +143,18 @@
 2024-02-20 18:14:44,214 - DEBUG - 2027.0 atr: 5.409775418164868 
 2024-02-20 18:14:45,479 - INFO - Entry at 2024-02-20 19:14:44 for SignalID : XAUUSD_1_Short_ATR  , SL : 2037.6195508363296 , TP : 2010.5706737455052 ,Lotsize : 0.04 , OrderPrice : 2026.8 , ATR Value : 5.409775418164868, comment : Request executed Flag : 2 OrderID : 34505403
 2024-02-20 18:14:47,532 - DEBUG - Entry happened for XAUUSD , Checking for Exit.....
+2024-02-21 11:10:06,424 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-21 12:10:06 ClosePrice : 2031.25 atr: 5.439796072683527
+2024-02-21 11:10:07,829 - INFO - Entry at 2024-02-21 12:10:06 for SignalID : XAUUSD_1_Short_ATR  , SL : 2041.999592145367 , TP : 2014.8006117819493 ,Lotsize : 0.04 , OrderPrice : 2031.12 , ATR Value : 5.439796072683527, comment : Request executed Flag : 2 OrderID : 34603883
+2024-02-21 11:12:52,455 - INFO - Manually Closed the order for XAUUSD of OrderID : 34603883.0
+2024-02-21 11:12:53,550 - DEBUG - Function Out after the Exit trade of XAUUSD at BrokerTime : 2024-02-21 12:12:47
+2024-02-21 11:13:50,560 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-21 12:13:50 ClosePrice : 2031.42 atr: 5.439796072683527
+2024-02-21 11:13:51,946 - INFO - Entry at 2024-02-21 12:13:50 for SignalID : XAUUSD_1_Short_ATR  , SL : 2042.2995921453671 , TP : 2015.1006117819495 ,Lotsize : 0.04 , OrderPrice : 2031.42 , ATR Value : 5.439796072683527, comment : Request executed Flag : 2 OrderID : 34604007
+2024-02-21 11:15:44,904 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-21 12:15:43 ClosePrice : 2031.73 atr: 5.4955103583977944
+2024-02-21 11:15:46,385 - INFO - Entry at 2024-02-21 12:15:43 for SignalID : XAUUSD_1_Short_ATR  , SL : 2042.7210207167957 , TP : 2015.2434689248066 ,Lotsize : 0.04 , OrderPrice : 2031.73 , ATR Value : 5.4955103583977944, comment : Request executed Flag : 2 OrderID : 34604139
+2024-02-21 11:29:27,076 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-21 12:29:27 ClosePrice : 2030.99 atr: 5.559796072683516
+2024-02-21 11:29:28,607 - INFO - Entry Short at 2024-02-21 12:29:27 for SignalID : XAUUSD_1_Short_ATR  at EntryPrice : 2030.91  StopLoss : 2042.0295921453671 Target : 2014.2306117819496 Lotsize : 0.04 ATR Value : 5.559796072683516 OrderComment : Request executed Flag : 2 OrderID : 34604691
+2024-02-21 11:30:01,431 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:26,990 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-21 11:31:26.990194
+2024-02-21 11:31:38,511 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-21 12:31:39
+2024-02-21 12:34:28,403 - INFO - Manually Closed the order for XAUUSD of OrderID : 34604691.0
+2024-02-21 12:34:29,228 - DEBUG - Function Out after the Exit trade of XAUUSD at BrokerTime : 2024-02-21 13:34:30

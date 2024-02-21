@@ -306,3 +306,18 @@
 2024-02-20 18:14:43,206 - DEBUG - 77.61 atr: 0.5695886105930308 
 2024-02-20 18:14:44,485 - INFO - Entry at 2024-02-20 19:14:39 for SignalID : XTIUSD_1_Short_ATR  , SL : 78.73917722118605 , TP : 75.8912341682209 ,Lotsize : 1.0 , OrderPrice : 77.6 , ATR Value : 0.5695886105930308, comment : Request executed Flag : 2 OrderID : 34505401
 2024-02-20 18:14:46,553 - DEBUG - Entry happened for XTIUSD , Checking for Exit.....
+2024-02-21 11:10:05,848 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 12:10:05 ClosePrice : 77.55 atr: 0.5840630615398317
+2024-02-21 11:10:07,115 - INFO - Entry at 2024-02-21 12:10:05 for SignalID : XTIUSD_1_Short_ATR  , SL : 78.70812612307967 , TP : 75.78781081538051 ,Lotsize : 1.0 , OrderPrice : 77.54 , ATR Value : 0.5840630615398317, comment : Request executed Flag : 2 OrderID : 34603881
+2024-02-21 11:12:53,706 - INFO - Manually Closed the order for XTIUSD of OrderID : 34603881.0
+2024-02-21 11:12:54,228 - DEBUG - Function Out after the Exit trade of XTIUSD at BrokerTime : 2024-02-21 12:12:41
+2024-02-21 11:13:51,714 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 12:13:22 ClosePrice : 77.56 atr: 0.5854916329684039
+2024-02-21 11:13:52,969 - INFO - Entry at 2024-02-21 12:13:22 for SignalID : XTIUSD_1_Short_ATR  , SL : 78.73098326593681 , TP : 75.80352510109479 ,Lotsize : 1.0 , OrderPrice : 77.56 , ATR Value : 0.5854916329684039, comment : Request executed Flag : 2 OrderID : 34604010
+2024-02-21 11:15:44,967 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 12:15:21 ClosePrice : 77.56 atr: 0.5854916329684039
+2024-02-21 11:15:46,773 - INFO - Entry at 2024-02-21 12:15:21 for SignalID : XTIUSD_1_Short_ATR  , SL : 78.73098326593681 , TP : 75.80352510109479 ,Lotsize : 1.0 , OrderPrice : 77.56 , ATR Value : 0.5854916329684039, comment : Request executed Flag : 2 OrderID : 34604140
+2024-02-21 11:29:26,592 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 12:29:21 ClosePrice : 77.51 atr: 0.5854916329684039
+2024-02-21 11:29:28,607 - INFO - Entry Short at 2024-02-21 12:29:21 for SignalID : XTIUSD_1_Short_ATR  at EntryPrice : 77.5  StopLoss : 78.67098326593681 Target : 75.74352510109479 Lotsize : 1.0 ATR Value : 0.5854916329684039 OrderComment : Request executed Flag : 2 OrderID : 34604692
+2024-02-21 11:30:02,556 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:59,709 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-21 11:31:59.709466
+2024-02-21 11:32:09,861 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-21 12:32:01
+2024-02-21 12:34:29,050 - INFO - Manually Closed the order for XTIUSD of OrderID : 34604692.0
+2024-02-21 12:34:29,723 - DEBUG - Function Out after the Exit trade of XTIUSD at BrokerTime : 2024-02-21 13:34:17

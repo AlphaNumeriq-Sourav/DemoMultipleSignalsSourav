@@ -102,3 +102,18 @@
 2024-02-20 18:14:44,486 - DEBUG - 0.61754 atr: 0.0017527578664076283 
 2024-02-20 18:14:45,791 - INFO - Entry at 2024-02-20 19:14:41 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.62256 , TP : 0.61456 ,Lotsize : 0.14 , OrderPrice : 0.61756 , ATR Value : 0.0017527578664076283, comment : Request executed Flag : 0 OrderID : 34505404
 2024-02-20 18:14:47,751 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-02-21 11:10:06,387 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-21 12:10:06 ClosePrice : 0.61889 atr: 0.0017952668152585321
+2024-02-21 11:10:08,161 - INFO - Entry at 2024-02-21 12:10:06 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.62386 , TP : 0.61586 ,Lotsize : 0.14 , OrderPrice : 0.61886 , ATR Value : 0.0017952668152585321, comment : Request executed Flag : 0 OrderID : 34603884
+2024-02-21 11:12:41,722 - INFO - Manually Closed the order for NZDUSD of OrderID : 34603884.0
+2024-02-21 11:12:44,353 - DEBUG - Function Out after the Exit trade of NZDUSD at BrokerTime : 2024-02-21 12:12:39
+2024-02-21 11:13:51,166 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-21 12:13:50 ClosePrice : 0.61927 atr: 0.0018266953866871033
+2024-02-21 11:13:52,615 - INFO - Entry at 2024-02-21 12:13:50 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.6242800000000001 , TP : 0.61628 ,Lotsize : 0.14 , OrderPrice : 0.61928 , ATR Value : 0.0018266953866871033, comment : Request executed Flag : 0 OrderID : 34604009
+2024-02-21 11:15:45,546 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-21 12:15:42 ClosePrice : 0.61945 atr: 0.0018681239581156606
+2024-02-21 11:15:46,897 - INFO - Entry at 2024-02-21 12:15:42 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.62445 , TP : 0.6164499999999999 ,Lotsize : 0.14 , OrderPrice : 0.61945 , ATR Value : 0.0018681239581156606, comment : Request executed Flag : 0 OrderID : 34604141
+2024-02-21 11:29:25,736 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-21 12:29:25 ClosePrice : 0.61907 atr: 0.0018995525295442317
+2024-02-21 11:29:27,599 - INFO - Entry Short at 2024-02-21 12:29:25 for SignalID : NZDUSD_1_Short_Trail  at EntryPrice : 0.6191  StopLoss : 0.6241 Target : 0.6161 Lotsize : 0.14 ATR Value : 0.0018995525295442317 OrderComment : Request executed Flag : 0 OrderID : 34604688
+2024-02-21 11:30:01,176 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:30,331 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-21 11:31:30.331986
+2024-02-21 11:31:41,254 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-21 12:31:42
+2024-02-21 12:34:23,494 - INFO - Manually Closed the order for NZDUSD of OrderID : 34604688.0
+2024-02-21 12:34:27,926 - DEBUG - Function Out after the Exit trade of NZDUSD at BrokerTime : 2024-02-21 13:34:27

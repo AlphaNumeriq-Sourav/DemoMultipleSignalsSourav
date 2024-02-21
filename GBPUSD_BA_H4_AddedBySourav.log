@@ -1,0 +1,9 @@
+2024-02-21 11:15:43,199 - DEBUG - Got Long Indication Candle for signal1 GBPUSD at BrokerTime : 2024-02-21 12:15:35 ClosePrice : 1.26335 atr: 0.002349331691010511
+2024-02-21 11:15:44,627 - INFO - Entry at 2024-02-21 12:15:35 for SignalID : GBPUSD_1_Long_Trail  , SL : 1.25835 , TP : 1.2663499999999999 ,Lotsize : 0.14 , OrderPrice : 1.26335 , ATR Value : 0.002349331691010511, comment : Request executed Flag : 0 OrderID : 34604137
+2024-02-21 11:29:24,646 - DEBUG - Got Long Indication Candle for signal1 GBPUSD at BrokerTime : 2024-02-21 12:29:25 ClosePrice : 1.26338 atr: 0.002349331691010511
+2024-02-21 11:29:26,113 - INFO - Entry Long at 2024-02-21 12:29:25 for SignalID : GBPUSD_1_Long_Trail  at EntryPrice : 1.26338  StopLoss : 1.25838 Target : 1.2663799999999998 Lotsize : 0.14 ATR Value : 0.002349331691010511 OrderComment : Request executed Flag : 0 OrderID : 34604685
+2024-02-21 11:29:58,940 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:32,842 - DEBUG - Signal1 Already have an active Trade of Instrument : GBPUSD ServerTime : 2024-02-21 11:31:32.841775
+2024-02-21 11:31:43,239 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-21 12:31:43
+2024-02-21 12:34:22,856 - INFO - Manually Closed the order for GBPUSD of OrderID : 34604685.0
+2024-02-21 12:34:26,799 - DEBUG - Function Out after the Exit trade of GBPUSD at BrokerTime : 2024-02-21 13:34:28

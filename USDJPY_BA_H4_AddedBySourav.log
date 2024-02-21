@@ -101,3 +101,18 @@
 2024-02-20 18:14:41,599 - DEBUG - 150.116 atr: 0.22862582709233004 
 2024-02-20 18:14:43,081 - INFO - Entry at 2024-02-20 19:14:41 for SignalID : USDJPY_1_Short_Trail  , SL : 150.617 , TP : 149.81699999999998 ,Lotsize : 0.21 , OrderPrice : 150.117 , ATR Value : 0.22862582709233004, comment : Request executed Flag : 0 OrderID : 34505398
 2024-02-20 18:14:45,324 - DEBUG - Entry happened for USDJPY , Checking for Exit.....
+2024-02-21 11:10:05,069 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 12:10:03 ClosePrice : 149.985 atr: 0.23685491184515947
+2024-02-21 11:10:06,439 - INFO - Entry at 2024-02-21 12:10:03 for SignalID : USDJPY_1_Long_Trail  , SL : 149.486 , TP : 150.286 ,Lotsize : 0.21 , OrderPrice : 149.986 , ATR Value : 0.23685491184515947, comment : Request executed Flag : 0 OrderID : 34603879
+2024-02-21 11:12:51,389 - INFO - Manually Closed the order for USDJPY of OrderID : 34603879.0
+2024-02-21 11:12:53,468 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-21 12:12:53
+2024-02-21 11:13:49,736 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 12:13:49 ClosePrice : 149.975 atr: 0.23685491184515947
+2024-02-21 11:13:51,152 - INFO - Entry at 2024-02-21 12:13:49 for SignalID : USDJPY_1_Long_Trail  , SL : 149.476 , TP : 150.276 ,Lotsize : 0.21 , OrderPrice : 149.976 , ATR Value : 0.23685491184515947, comment : Request executed Flag : 0 OrderID : 34604005
+2024-02-21 11:15:44,105 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 12:15:41 ClosePrice : 149.963 atr: 0.23685491184515947
+2024-02-21 11:15:45,545 - INFO - Entry at 2024-02-21 12:15:41 for SignalID : USDJPY_1_Long_Trail  , SL : 149.465 , TP : 150.26500000000001 ,Lotsize : 0.21 , OrderPrice : 149.965 , ATR Value : 0.23685491184515947, comment : Request executed Flag : 0 OrderID : 34604138
+2024-02-21 11:29:25,650 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 12:29:25 ClosePrice : 149.981 atr: 0.23685491184515947
+2024-02-21 11:29:27,381 - INFO - Entry Long at 2024-02-21 12:29:25 for SignalID : USDJPY_1_Long_Trail  at EntryPrice : 149.981  StopLoss : 149.481 Target : 150.281 Lotsize : 0.21 ATR Value : 0.23685491184515947 OrderComment : Request executed Flag : 0 OrderID : 34604687
+2024-02-21 11:30:00,758 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-21 12:30:00
+2024-02-21 11:31:14,268 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-21 11:31:14.268518
+2024-02-21 11:31:24,446 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-21 12:31:22
+2024-02-21 12:34:27,918 - INFO - Manually Closed the order for USDJPY of OrderID : 34604687.0
+2024-02-21 12:34:29,630 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-21 13:34:30

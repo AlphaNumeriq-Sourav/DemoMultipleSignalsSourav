@@ -72,8 +72,8 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name, *args)
-        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        # thread.start()
+        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        thread.start()
 
     # print((datetime.fromtimestamp(mt5.symbol_info_tick(
     #     symbol).time) - timedelta(hours=HoursDelay)))

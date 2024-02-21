@@ -98,7 +98,7 @@ def entry_signal1(data,choice,index):
         
                     
                     
-                    
+    #TODO:
                     
     # high[0] > open[2]; low[6] > low[9]; close[1] <= high[5]; pivotpoint[0] <= pivotpoint[1]; ValueOpen(5)[0] > ValueOpen(5)[1]; momentum(close;5)[0] < momentum(close;5)[1]
     # TimeFrame = H4 , Type = Long
