@@ -115,3 +115,20 @@
 2024-02-20 15:33:14,586 - DEBUG - 38564.45 atr: 91.10470005058073 
 2024-02-20 15:33:15,844 - INFO - Entry at 2024-02-20 16:33:14 for SignalID : US30_1_Short_Trail  , SL : 38607.95 , TP : 38527.95 ,Lotsize : 1.39 , OrderPrice : 38557.95 , ATR Value : 91.10470005058073, comment : Request executed Flag : 0 OrderID : 34498172
 2024-02-20 15:33:17,412 - DEBUG - Entry happened for US30 , Checking for Exit.....
+2024-02-20 15:39:03,818 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-20 15:39:03.818795  BrokerTime : 2024-02-20 16:39:02  for the New Short Signal Modified by Sourav
+2024-02-20 15:39:03,818 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-20 16:39:02 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 15:39:10,222 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-20 16:39:10
+2024-02-20 15:39:10,501 - DEBUG - 38564.45 atr: 91.10470005058073 
+2024-02-20 15:39:11,759 - INFO - Entry at 2024-02-20 16:39:10 for SignalID : US30_1_Short_ATR  , SL : 38716.15940010116 , TP : 38260.635899848254 ,Lotsize : 0.25 , OrderPrice : 38533.95 , ATR Value : 91.10470005058073, comment : Request executed Flag : 2 OrderID : 34498352
+2024-02-20 15:39:15,031 - DEBUG - Entry happened for US30 , Checking for Exit.....
+2024-02-20 18:14:32,796 - DEBUG - Running Event Loop of Instrument:US30 at ServerTime : 2024-02-20 18:14:32.796724  BrokerTime : 2024-02-20 19:14:33  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:32,840 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US30 BrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:33,092 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,544 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:33,649 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:34,063 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:34,335 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US30 FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:35
+2024-02-20 18:14:41,863 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-20 19:14:40
+2024-02-20 18:14:42,063 - DEBUG - 38511.45 atr: 94.66117147192634 
+2024-02-20 18:14:43,441 - INFO - Entry at 2024-02-20 19:14:40 for SignalID : US30_1_Short_SL_Trail  , SL : 38703.50475 , TP : 38318.395249999994 ,Lotsize : 0.36 , OrderPrice : 38510.95 , ATR Value : 94.66117147192634, comment : Request executed Flag : 3 OrderID : 34505399
+2024-02-20 18:14:45,805 - DEBUG - Entry happened for US30 , Checking for Exit.....

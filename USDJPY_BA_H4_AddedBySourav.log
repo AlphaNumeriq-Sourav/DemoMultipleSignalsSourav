@@ -90,3 +90,14 @@
 2024-02-20 15:08:12,700 - DEBUG - 150.282 atr: 0.22465870303629057 
 2024-02-20 15:08:13,982 - INFO - Entry at 2024-02-20 16:08:11 for SignalID : USDJPY_1_Short_Trail  , SL : 150.777 , TP : 149.97699999999998 ,Lotsize : 0.21 , OrderPrice : 150.277 , ATR Value : 0.22465870303629057, comment : Request executed Flag : 0 OrderID : 34496773
 2024-02-20 15:08:16,526 - DEBUG - Entry happened for USDJPY , Checking for Exit.....
+2024-02-20 18:14:32,689 - DEBUG - Running Event Loop of Instrument:USDJPY at ServerTime : 2024-02-20 18:14:32.689331  BrokerTime : 2024-02-20 19:14:32  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:32,692 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : USDJPY BrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:32,707 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:32
+2024-02-20 18:14:32,722 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,732 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,754 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,763 - DEBUG - Retrying getting Latest candle for H4data of Instrument : USDJPY FalseBrokerTime: 2024-02-20 19:14:32 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:41,149 - DEBUG - Got Short Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-20 19:14:41
+2024-02-20 18:14:41,599 - DEBUG - 150.116 atr: 0.22862582709233004 
+2024-02-20 18:14:43,081 - INFO - Entry at 2024-02-20 19:14:41 for SignalID : USDJPY_1_Short_Trail  , SL : 150.617 , TP : 149.81699999999998 ,Lotsize : 0.21 , OrderPrice : 150.117 , ATR Value : 0.22862582709233004, comment : Request executed Flag : 0 OrderID : 34505398
+2024-02-20 18:14:45,324 - DEBUG - Entry happened for USDJPY , Checking for Exit.....

@@ -289,3 +289,20 @@
 2024-02-20 15:33:12,534 - DEBUG - 77.83 atr: 0.5711867123585356 
 2024-02-20 15:33:13,794 - INFO - Entry at 2024-02-20 16:33:11 for SignalID : XTIUSD_1_Short_ATR  , SL : 79.01237342471707 , TP : 76.1564398629244 ,Lotsize : 1.0 , OrderPrice : 77.87 , ATR Value : 0.5711867123585356, comment : Request executed Flag : 2 OrderID : 34498170
 2024-02-20 15:33:16,550 - DEBUG - Entry happened for XTIUSD , Checking for Exit.....
+2024-02-20 15:39:03,831 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-20 15:39:03.831723  BrokerTime : 2024-02-20 16:39:03  for the New Short Signal Modified by Sourav
+2024-02-20 15:39:03,911 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-20 16:39:03 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 15:39:11,703 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-20 16:39:12
+2024-02-20 15:39:12,005 - DEBUG - 77.83 atr: 0.5711867123585356 
+2024-02-20 15:39:13,273 - INFO - Entry at 2024-02-20 16:39:12 for SignalID : XTIUSD_1_Short_ATR  , SL : 79.03237342471706 , TP : 76.1764398629244 ,Lotsize : 1.0 , OrderPrice : 77.89 , ATR Value : 0.5711867123585356, comment : Request executed Flag : 2 OrderID : 34498355
+2024-02-20 15:39:16,098 - DEBUG - Entry happened for XTIUSD , Checking for Exit.....
+2024-02-20 18:14:32,876 - DEBUG - Running Event Loop of Instrument:XTIUSD at ServerTime : 2024-02-20 18:14:32.876351  BrokerTime : 2024-02-20 19:14:31  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:33,457 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XTIUSD BrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:33,809 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:31
+2024-02-20 18:14:34,110 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:31
+2024-02-20 18:14:34,408 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:31
+2024-02-20 18:14:34,771 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:31
+2024-02-20 18:14:34,939 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XTIUSD FalseBrokerTime: 2024-02-20 19:14:31 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:31
+2024-02-20 18:14:42,397 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-20 19:14:39
+2024-02-20 18:14:43,206 - DEBUG - 77.61 atr: 0.5695886105930308 
+2024-02-20 18:14:44,485 - INFO - Entry at 2024-02-20 19:14:39 for SignalID : XTIUSD_1_Short_ATR  , SL : 78.73917722118605 , TP : 75.8912341682209 ,Lotsize : 1.0 , OrderPrice : 77.6 , ATR Value : 0.5695886105930308, comment : Request executed Flag : 2 OrderID : 34505401
+2024-02-20 18:14:46,553 - DEBUG - Entry happened for XTIUSD , Checking for Exit.....

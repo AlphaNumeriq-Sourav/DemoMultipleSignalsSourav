@@ -1,4 +1,5 @@
-from Short_H4 import Execution
+from Short_H4 import Execution_Short
+from Long_H4 import Execution_Long
 from config_v1_2024_02_13 import thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav
 import math
 import logging
@@ -25,12 +26,15 @@ importlib.reload(sig)
 '''Function to Run Instrument Signal file with a Independent Thread'''
 
 
-def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints, Choices, ChoicesExitModels, login, password, server):
+def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, Choices, ChoicesExitModels,EntryType, login, password, server):
     logger = logging.getLogger(symbol)
     try:
-        # script_module = importlib.import_module(script_name)
-        Execution(script_name, symbol, RISK, TP, SL, TrailTPPoints,
-                  logger, Choices, ChoicesExitModels,  login, password, server)
+        if EntryType == "Short":
+            Execution_Short(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,
+                    logger, Choices, ChoicesExitModels,  login, password, server)
+        elif EntryType == "Long":
+            Execution_Long(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,
+                    logger, Choices, ChoicesExitModels,  login, password, server)
     except ImportError:
         logger.error(f"Failed to Import : {script_name}")
 
@@ -38,7 +42,7 @@ def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints, Choices, Choice
 '''Function to create EntrySignalCsv Files and Logger File'''
 
 
-def files(script_name, symbol, RISK, TP, SL, TrailTPPoints, Choices, ChoicesExitModels):
+def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,EntryType, Choices, ChoicesExitModels):
     # df_cols = ['signals','orderid','volume','price_open','TP','SL']
 
     # df_entry = pd.DataFrame(columns= df_cols)
@@ -68,11 +72,11 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name, *args)
-        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        thread.start()
+        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        # thread.start()
 
-    print((datetime.fromtimestamp(mt5.symbol_info_tick(
-        symbol).time) - timedelta(hours=HoursDelay)))
+    # print((datetime.fromtimestamp(mt5.symbol_info_tick(
+    #     symbol).time) - timedelta(hours=HoursDelay)))
 
     if mt5.initialize(login=login, password=password, server=server):
         MainLogger.debug(

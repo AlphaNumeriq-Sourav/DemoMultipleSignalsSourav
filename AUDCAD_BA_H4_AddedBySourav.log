@@ -92,3 +92,14 @@
 2024-02-20 15:08:13,538 - DEBUG - 0.88372 atr: 0.0015810557843606294 
 2024-02-20 15:08:14,950 - INFO - Entry at 2024-02-20 16:08:13 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.88872 , TP : 0.88072 ,Lotsize : 0.19 , OrderPrice : 0.88372 , ATR Value : 0.0015810557843606294, comment : Request executed Flag : 0 OrderID : 34496775
 2024-02-20 15:08:18,497 - DEBUG - Entry happened for AUDCAD , Checking for Exit.....
+2024-02-20 18:14:32,708 - DEBUG - Running Event Loop of Instrument:AUDCAD at ServerTime : 2024-02-20 18:14:32.708311  BrokerTime : 2024-02-20 19:14:33  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:32,727 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : AUDCAD BrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:32,736 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,758 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,832 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,871 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,361 - DEBUG - Retrying getting Latest candle for H4data of Instrument : AUDCAD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:43,983 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-20 19:14:42
+2024-02-20 18:14:44,931 - DEBUG - 0.88473 atr: 0.0015851906723091133 
+2024-02-20 18:14:46,226 - INFO - Entry at 2024-02-20 19:14:42 for SignalID : AUDCAD_1_Short_Trail  , SL : 0.88978 , TP : 0.88178 ,Lotsize : 0.19 , OrderPrice : 0.88478 , ATR Value : 0.0015851906723091133, comment : Request executed Flag : 0 OrderID : 34505407
+2024-02-20 18:14:48,801 - DEBUG - Entry happened for AUDCAD , Checking for Exit.....

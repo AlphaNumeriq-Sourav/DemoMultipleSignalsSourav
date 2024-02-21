@@ -91,3 +91,14 @@
 2024-02-20 15:08:14,283 - DEBUG - 0.61612 atr: 0.001722027034618423 
 2024-02-20 15:08:15,528 - INFO - Entry at 2024-02-20 16:08:12 for SignalID : NZDUSD_1_Short_ATR  , SL : 0.6195140540692369 , TP : 0.6109039188961447 ,Lotsize : 0.13 , OrderPrice : 0.61607 , ATR Value : 0.001722027034618423, comment : Request executed Flag : 2 OrderID : 34496776
 2024-02-20 15:08:18,463 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....
+2024-02-20 18:14:32,723 - DEBUG - Running Event Loop of Instrument:NZDUSD at ServerTime : 2024-02-20 18:14:32.723500  BrokerTime : 2024-02-20 19:14:33  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:32,739 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : NZDUSD BrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:32,767 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,836 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:32,875 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,518 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,657 - DEBUG - Retrying getting Latest candle for H4data of Instrument : NZDUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:43,629 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-20 19:14:41
+2024-02-20 18:14:44,486 - DEBUG - 0.61754 atr: 0.0017527578664076283 
+2024-02-20 18:14:45,791 - INFO - Entry at 2024-02-20 19:14:41 for SignalID : NZDUSD_1_Short_Trail  , SL : 0.62256 , TP : 0.61456 ,Lotsize : 0.14 , OrderPrice : 0.61756 , ATR Value : 0.0017527578664076283, comment : Request executed Flag : 0 OrderID : 34505404
+2024-02-20 18:14:47,751 - DEBUG - Entry happened for NZDUSD , Checking for Exit.....

@@ -115,3 +115,20 @@
 2024-02-20 15:33:12,844 - DEBUG - 4990.46 atr: 13.93522268161051 
 2024-02-20 15:33:14,103 - INFO - Entry at 2024-02-20 16:33:10 for SignalID : US500_1_Short_Trail  , SL : 5038.46 , TP : 4958.46 ,Lotsize : 1.39 , OrderPrice : 4988.46 , ATR Value : 13.93522268161051, comment : Request executed Flag : 0 OrderID : 34498171
 2024-02-20 15:33:15,844 - DEBUG - Entry happened for US500 , Checking for Exit.....
+2024-02-20 15:39:03,992 - DEBUG - Running Event Loop of Instrument:US500 at ServerTime : 2024-02-20 15:39:03.992987  BrokerTime : 2024-02-20 16:39:01  for the New Short Signal Modified by Sourav
+2024-02-20 15:39:04,078 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US500 BrokerTime: 2024-02-20 16:39:01 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 15:39:10,357 - DEBUG - Got Short Indication Candle for signal1 US500 at BrokerTime : 2024-02-20 16:39:10
+2024-02-20 15:39:10,915 - DEBUG - 4990.46 atr: 13.93522268161051 
+2024-02-20 15:39:12,233 - INFO - Entry at 2024-02-20 16:39:10 for SignalID : US500_1_Short_ATR  , SL : 5011.830445363221 , TP : 4942.154331955168 ,Lotsize : 1.65 , OrderPrice : 4983.96 , ATR Value : 13.93522268161051, comment : Request executed Flag : 2 OrderID : 34498353
+2024-02-20 15:39:14,273 - DEBUG - Entry happened for US500 , Checking for Exit.....
+2024-02-20 18:14:32,913 - DEBUG - Running Event Loop of Instrument:US500 at ServerTime : 2024-02-20 18:14:32.913937  BrokerTime : 2024-02-20 19:14:26  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:33,426 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : US500 BrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:33,603 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US500 FalseBrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:34,078 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US500 FalseBrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:34,515 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US500 FalseBrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:34,703 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US500 FalseBrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:35,090 - DEBUG - Retrying getting Latest candle for H4data of Instrument : US500 FalseBrokerTime: 2024-02-20 19:14:34 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:42,412 - DEBUG - Got Short Indication Candle for signal1 US500 at BrokerTime : 2024-02-20 19:14:34
+2024-02-20 18:14:42,800 - DEBUG - 4990.71 atr: 13.801619441380437 
+2024-02-20 18:14:44,110 - INFO - Entry at 2024-02-20 19:14:34 for SignalID : US500_1_Short_SL_Trail  , SL : 5015.66355 , TP : 4965.75645 ,Lotsize : 2.76 , OrderPrice : 4990.71 , ATR Value : 13.801619441380437, comment : Request executed Flag : 3 OrderID : 34505400
+2024-02-20 18:14:46,430 - DEBUG - Entry happened for US500 , Checking for Exit.....

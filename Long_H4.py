@@ -40,8 +40,8 @@ def SendSkypeNotification(message, skype_connect):
 # function to send a market order
 def market_order(symbol, volume, order_type, comment, magic, **kwargs):
     tick = mt5.symbol_info_tick(symbol)
-    order_dict = {'buy': 0, 'sell': 1}
-    price_dict = {'buy': tick.ask, 'sell': tick.bid}
+    order_dict = {'buy': 0, 'buy': 1}
+    price_dict = {'buy': tick.ask, 'buy': tick.bid}
 
     request = {
         "action": mt5.TRADE_ACTION_DEAL,
@@ -67,7 +67,7 @@ def close_order(ticket):
 
     for pos in positions:
         tick = mt5.symbol_info_tick(pos.symbol)
-        # 0 represents buy, 1 represents sell - inverting order_type to close the position
+        # 0 represents buy, 1 represents buy - inverting order_type to close the position
         type_dict = {0: 1, 1: 0}
         price_dict = {0: tick.bid, 1: tick.ask}
 
@@ -98,7 +98,7 @@ def close_order(ticket):
 # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
 
 
-def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, logger, Choices, ChoicesExitModels,  login, password, server):
+def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, logger, Choices, ChoicesExitModels,  login, password, server):
     HoursDelay = 1
     try:
         SL_TpRatio = mt5.symbol_info(symbol).point
@@ -114,7 +114,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
         if mt5.initialize():
             logger.info(
                 f'MT5 Connect Reestablished at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
-            Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,
+            Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,
                       logger, Choices, ChoicesExitModels,  login, password, server)
         else:
             time.sleep(5)
@@ -127,11 +127,11 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                 f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}')
             SendSkypeNotification(
                 f'MT5 Connect Reestablished after Retry Status : {mt5.initialize()}  at BrokerTime : {datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)}', skype_connect)
-            Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,
+            Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,
                       logger, Choices, ChoicesExitModels,  login, password, server)
 
     # logger.debug(
-    #     f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {BrokerTime}  for the New Short Signal Modified by Sourav')
+    #     f'Running Event Loop of Instrument:{symbol} at ServerTime : {datetime.now()}  BrokerTime : {BrokerTime}  for the New Long Signal Modified by Sourav')
 
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     # Logic to Get the H4 DataFrame for the Instrument
@@ -159,8 +159,8 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                     index = -1
                     df['time'] = df['time'].map(lambda Date: datetime.fromtimestamp(
                         Date) - timedelta(hours=HoursDelay))
-                    time_false = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                        symbol).time) - timedelta(hours=HoursDelay))
+                    # time_false = (datetime.fromtimestamp(mt5.symbol_info_tick(
+                    #     symbol).time) - timedelta(hours=HoursDelay))
                     # logger.debug(
                     #     f"Retrying getting Latest candle for H4data of Instrument : {symbol} FalseBrokerTime: {time_hr} H4DfLastIndex : {df.iloc[-1]['time']} NowBrokerTime : {time_false}")
                     if (df.iloc[-1]['time'].hour == time_hr.hour) or (df.iloc[-1]['time'].hour > time_hr.hour) or ((df.iloc[-1]['time'].hour == 0) and (time_hr.hour >= 23)):
@@ -223,7 +223,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
         df_open_signals = pd.read_csv(
             f'{symbol}_{script_name}_open_signals.csv')
         signal = f'signal{Choices[i]}'
-        Signal_uni_name = f"{symbol}_{Choices[i]}_Short_{ChoicesExitModels[i]}"
+        Signal_uni_name = f"{symbol}_{Choices[i]}_Long_{ChoicesExitModels[i]}"
 
         if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
             logger.debug(
@@ -251,7 +251,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                         symbol).time) - timedelta(hours=HoursDelay))
 
                 logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
+                    f'Got Long Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                 data = df.copy()
                 
                 LotSize = round(
@@ -283,7 +283,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                         continue
 
                     order = market_order(
-                        symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                        symbol, LotSize, 'buy', Signal_uni_name, 3001+Choices[i])
                     time.sleep(1)
                     if order.comment == 'Market closed':
                         time.sleep(1)
@@ -295,8 +295,8 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
 
                 ATR = df.iloc[index]['atr_7']
                 Price  = order.price
-                StopLoss = Price + (SL * SL_TpRatio)
-                TP_val = Price - (TP * SL_TpRatio)
+                StopLoss = Price - (SL * SL_TpRatio)
+                TP_val = Price + (TP * SL_TpRatio)
                 order_id = order.order
                 
                 logger.info(
@@ -331,7 +331,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             symbol).time) - timedelta(hours=HoursDelay))
 
                     logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
+                    f'Got Long Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                     data = df.copy()
                     
                     StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
@@ -365,7 +365,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             continue
 
                         order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                            symbol, LotSize, 'buy', Signal_uni_name, 3001+Choices[i])
                         time.sleep(1)
                         if order.comment == 'Market closed':
                             time.sleep(1)
@@ -375,8 +375,8 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
 
                     ATR = df.iloc[index]['atr_7']
                     Price  = order.price
-                    StopLoss = Price + (2* ATR)
-                    TP_val = Price - (3 * ATR)
+                    StopLoss = Price - (2* ATR)
+                    TP_val = Price + (3 * ATR)
                     order_id = order.order
                     logger.info(
                         f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
@@ -409,7 +409,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             symbol).time) - timedelta(hours=HoursDelay))
 
                     logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
+                    f'Got Long Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                     data = df.copy()
                     
                    
@@ -442,7 +442,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             continue
 
                         order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                            symbol, LotSize, 'buy', Signal_uni_name, 3001+Choices[i])
                         time.sleep(1)
                         if order.comment == 'Market closed':
                             time.sleep(1)
@@ -452,8 +452,8 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
 
                     ATR = df.iloc[index]['atr_7']
                     Price  = order.price
-                    StopLoss = Price + (SL * SL_TpRatio)
-                    TP_val = Price - (TP * SL_TpRatio)
+                    StopLoss = Price - (SL * SL_TpRatio)
+                    TP_val = Price + (TP * SL_TpRatio)
                     order_id = order.order
                     logger.info(
                         f'Entry at {time1} for SignalID : {Signal_uni_name}  , SL : {StopLoss} , TP : {TP_val} ,Lotsize : {LotSize} , OrderPrice : {Price} , ATR Value : {ATR}, comment : {order.comment} Flag : {flag} OrderID : {order_id}')
@@ -485,7 +485,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             symbol).time) - timedelta(hours=HoursDelay))
 
                     logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
+                    f'Got Long Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                     data = df.copy()
                     StopLossInPip = (data.iloc[index]['atr_7']/SL_TpRatio) * 3
                    
@@ -518,7 +518,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             continue
 
                         order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                            symbol, LotSize, 'buy', Signal_uni_name, 3001+Choices[i])
                         time.sleep(1)
                         if order.comment == 'Market closed':
                             time.sleep(1)
@@ -529,8 +529,8 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                     
                     ATR = df.iloc[index]['atr_7']
                     Price  = order.price
-                    StopLoss = Price + (2* ATR)
-                    TP_val = Price - (3 * ATR)
+                    StopLoss = Price - (2* ATR)
+                    TP_val = Price + (3 * ATR)
                     order_id = order.order
                     
                     
@@ -566,10 +566,10 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                         tick = mt5.symbol_info_tick(symbol)
 
                     logger.debug(
-                    f'Got Short Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
+                    f'Got Long Indication Candle for {signal} {symbol} at BrokerTime : {time1} ClosePrice : {data.iloc[index]['close']} atr: {data.iloc[index]['atr_7']}')
                     data = df.copy()
                     
-                    Price = tick.bid
+                    Price = tick.ask
                     StopLossInPip = ((0.5/100) * Price)/SL_TpRatio
 
 
@@ -601,7 +601,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             continue
 
                         order = market_order(
-                            symbol, LotSize, 'sell', Signal_uni_name, 3001+Choices[i])
+                            symbol, LotSize, 'buy', Signal_uni_name, 3001+Choices[i])
                         time.sleep(1)
                         if order.comment == 'Market closed':
                             time.sleep(1)
@@ -612,9 +612,9 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                     
                     ATR = df.iloc[index]['atr_7']
                     Price  = order.price
-                    StopLoss = Price + ((0.5/100) * Price)
-                    TP_val = Price - ((0.5/100) * Price)
-                    TP1 = Price - ((0.25/100) * Price)
+                    StopLoss = Price - ((0.5/100) * Price)
+                    TP_val = Price + ((0.5/100) * Price)
+                    TP1 = Price + ((0.25/100) * Price)
                     order_id = order.order
                     
                     
@@ -636,7 +636,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                 f"No entry for {signal} of Instrument : {symbol}  close : {df.iloc[index]['close']} at BrokerTime : {(datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))}")
 
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-    # Logic to Exit the Short Trades if hits SL and also the trailing Part
+    # Logic to Exit the Long Trades if hits SL and also the trailing Part
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     if not df_entry.empty:
         # logger.debug(f'Entry happened for {symbol} , Checking for Exit.....')
@@ -667,10 +667,11 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                 continue
 
             # Error Here
-            Price = mt5.symbol_info_tick(symbol).ask
+            Price = mt5.symbol_info_tick(symbol).bid
 
             for index, row in df_entry.iterrows():
                 try:
+                    
                     ## For Manual Close Order Prevention
                     ActivePos = [pos.ticket for pos in mt5.positions_get()]
                     
@@ -691,17 +692,18 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             drop=True)
                         df_open_signals.to_csv(
                             f'{symbol}_{script_name}_open_signals.csv', index=False)
+                    
 
                     # If the Price hit SL
-                    if Price >= row['SL']:
+                    if Price <= row['SL']:
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(
                             symbol).time) - timedelta(hours=HoursDelay))
                         # print(f'SL Hit at{time_s} ')
                         close = close_order(row['orderid'])
                         logger.info(
-                            f"SL hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}")
+                            f"SL hit for {symbol} Long BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}")
                         SendSkypeNotification(
-                            f"SL hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}", skype_connect)
+                            f"SL hit for {symbol} Long BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}", skype_connect)
                         if close.comment == 'Request executed':
 
                             '''Delete the Signals Trade from df_entry when we exit our Order'''
@@ -736,12 +738,12 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                                 f'{symbol}_{script_name}_open_signals.csv', index=False)
 
                     # First Trailing Step
-                    elif (Price <= row['TP']) and (row['flag'] == 0):
+                    elif (Price >= row['TP']) and (row['flag'] == 0):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(
                             symbol).time) - timedelta(hours=HoursDelay))
-                        row['SL'] = row['price_open'] - \
+                        row['SL'] = row['price_open'] + \
                             TrailTPPoints*(SL_TpRatio)
-                        row['TP'] = row['TP'] - TrailTPPoints*(SL_TpRatio)
+                        row['TP'] = row['TP'] + TrailTPPoints*(SL_TpRatio)
                         row['flag'] = 1
                         logger.info(
                             f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
@@ -749,11 +751,11 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             f"First Trailing Step Hit for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}", skype_connect)
                         
                     # For SL Trail Model
-                    elif (Price <= row['TP1']) and (row['flag'] == 3):
+                    elif (Price >= row['TP1']) and (row['flag'] == 3):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(
                             symbol).time) - timedelta(hours=HoursDelay))
-                        row['SL'] = row['TP1'] + (SLTrailFirstSLPoint * SL_TpRatio)
-                        row['TP'] = row['TP'] - ( TrailTPPoints*SL_TpRatio)
+                        row['SL'] = row['TP1'] - (SLTrailFirstSLPoint * SL_TpRatio)
+                        row['TP'] = row['TP'] + ( TrailTPPoints*SL_TpRatio)
                         row['flag'] = 1
                         logger.info(
                             f"First Trailing Step Hit at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
@@ -761,15 +763,15 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
                             f"First Trailing Step Hit for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}", skype_connect)
                     
                     # For Fixed and ATR Model Tp Exit  
-                    elif (Price <= row['TP']) and (row['flag'] == 2):
+                    elif (Price >= row['TP']) and (row['flag'] == 2):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(
                             symbol).time) - timedelta(hours=HoursDelay))
                         # print(f'SL Hit at{time_s} ')
                         close = close_order(row['orderid'])
                         logger.info(
-                            f"Target hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}")
+                            f"Target hit for {symbol} Long BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}")
                         SendSkypeNotification(
-                            f"Target hit for {symbol} Short BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}", skype_connect)
+                            f"Target hit for {symbol} Long BrokerTime : {time_s} SL : {row['SL']} TP : {row['TP']} ,Signal : {row['signals']} CloseOrderComment : {close.comment}", skype_connect)
                         if close.comment == 'Request executed':
 
                             '''Delete the Signals Trade from df_entry when we exit our Order'''
@@ -805,11 +807,11 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
 
 
                     # Trailing SL and TP when we reaches new TP (note - this line of code will work only when First Trailing Step happened )
-                    elif (Price <= row['TP']) and (row['flag'] == 1):
+                    elif (Price >= row['TP']) and (row['flag'] == 1):
                         time_s = (datetime.fromtimestamp(mt5.symbol_info_tick(
                             symbol).time) - timedelta(hours=HoursDelay))
-                        row['SL'] = row['SL'] - TrailTPPoints*(SL_TpRatio)
-                        row['TP'] = row['TP'] - TrailTPPoints*(SL_TpRatio)
+                        row['SL'] = row['SL'] + TrailTPPoints*(SL_TpRatio)
+                        row['TP'] = row['TP'] + TrailTPPoints*(SL_TpRatio)
                         logger.info(
                             f"Trailing for {symbol} of Signal : {row['signals']} at BrokerTime : {time_s} at CMP : {Price} , NewSL : {row['SL']} NewTP : {row['TP']} Flag : {row['flag']} of OrderID : {row['orderid']}")
                         SendSkypeNotification(

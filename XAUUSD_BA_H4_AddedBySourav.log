@@ -126,3 +126,20 @@
 2024-02-20 15:33:14,899 - DEBUG - Entry happened for XAUUSD , Checking for Exit.....
 2024-02-20 15:35:47,921 - INFO - SL hit for XAUUSD Short BrokerTime : 2024-02-20 16:35:48 SL : 2024.18 TP : 2023.38 ,Signal : 1.0 CloseOrderComment : Request executed
 2024-02-20 15:35:51,352 - DEBUG - Function Out after the Exit trade of XAUUSD at BrokerTime : 2024-02-20 16:35:50
+2024-02-20 15:39:03,815 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-20 15:39:03.815784  BrokerTime : 2024-02-20 16:39:04  for the New Short Signal Modified by Sourav
+2024-02-20 15:39:03,818 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-20 16:39:04 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 15:39:10,345 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-20 16:39:10
+2024-02-20 15:39:11,211 - DEBUG - 2024.06 atr: 5.549737987859023 
+2024-02-20 15:39:12,474 - INFO - Entry at 2024-02-20 16:39:10 for SignalID : XAUUSD_1_Short_ATR  , SL : 2035.649475975718 , TP : 2007.900786036423 ,Lotsize : 0.04 , OrderPrice : 2024.55 , ATR Value : 5.549737987859023, comment : Request executed Flag : 2 OrderID : 34498354
+2024-02-20 15:39:14,130 - DEBUG - Entry happened for XAUUSD , Checking for Exit.....
+2024-02-20 18:14:32,759 - DEBUG - Running Event Loop of Instrument:XAUUSD at ServerTime : 2024-02-20 18:14:32.759619  BrokerTime : 2024-02-20 19:14:33  for the New Short Signal Modified by Sourav
+2024-02-20 18:14:32,787 - DEBUG - Checking DataFrameLastIndex and BrokerTime of Instrument : XAUUSD BrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00
+2024-02-20 18:14:32,843 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,438 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:33,583 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:34,050 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:34,223 - DEBUG - Retrying getting Latest candle for H4data of Instrument : XAUUSD FalseBrokerTime: 2024-02-20 19:14:33 H4DfLastIndex : 2024-02-20 16:30:00 NowBrokerTime : 2024-02-20 19:14:33
+2024-02-20 18:14:43,676 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-20 19:14:44
+2024-02-20 18:14:44,214 - DEBUG - 2027.0 atr: 5.409775418164868 
+2024-02-20 18:14:45,479 - INFO - Entry at 2024-02-20 19:14:44 for SignalID : XAUUSD_1_Short_ATR  , SL : 2037.6195508363296 , TP : 2010.5706737455052 ,Lotsize : 0.04 , OrderPrice : 2026.8 , ATR Value : 5.409775418164868, comment : Request executed Flag : 2 OrderID : 34505403
+2024-02-20 18:14:47,532 - DEBUG - Entry happened for XAUUSD , Checking for Exit.....
