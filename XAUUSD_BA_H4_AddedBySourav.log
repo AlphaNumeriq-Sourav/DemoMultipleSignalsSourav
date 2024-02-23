@@ -188,3 +188,7 @@
 2024-02-23 15:59:36,387 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,112 - DEBUG - No entry for signal0 of Instrument : XAUUSD  close : 2016.78 at BrokerTime : 2024-02-23 16:59:38
 2024-02-23 15:59:49,116 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-23 16:59:49
+2024-02-23 17:33:46,992 - DEBUG - Got Short Indication Candle for signal0 XAUUSD at BrokerTime : 2024-02-23 18:33:45 ClosePrice : 2024.51 atr: 6.210434506542185
+2024-02-23 17:33:48,480 - INFO - Entry Short at 2024-02-23 18:33:45 for SignalID : XAUUSD_0_Short_ATR  at EntryPrice : 2024.43  StopLoss : 2036.8508690130843 Target : 2005.7986964803736 Lotsize : 0.04 ATR Value : 6.210434506542185 OrderComment : Request executed Flag : 2 OrderID : 34801647
+2024-02-23 17:36:16,302 - DEBUG - Got Short Indication Candle for signal0 XAUUSD at BrokerTime : 2024-02-23 18:36:15 ClosePrice : 2024.26 atr: 6.210434506542185
+2024-02-23 17:36:17,596 - INFO - Entry Short at 2024-02-23 18:36:15 for SignalID : XAUUSD_0_Short_ATR  at EntryPrice : 2024.23  StopLoss : 2036.6508690130845 Target : 2005.5986964803735 Lotsize : 0.04 ATR Value : 6.210434506542185 OrderComment : Request executed Flag : 2 OrderID : 34801809

@@ -59,7 +59,7 @@ def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,E
 
 
 def PreMain():
-    HoursDelay = 5.5
+    HoursDelay = 3
     login = 25088141
     password = 'N3W*f%Ts??kF'
     server = 'Tickmill-Demo'
@@ -75,8 +75,9 @@ def PreMain():
         # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
         # thread.start()
 
-    #time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
-    if mt5.initialize(login=login, password=password, server=server):
+    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
+    print(time1)
+    if mt5.initialize(login =login, password=password, server=server):
         MainLogger.debug(
             f'Script Started for thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav')
         while True:

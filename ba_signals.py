@@ -12,7 +12,7 @@ def entry_signal1(data,choice,index):
     # close[4] > low[6]; open[0] <= open[3]; ValueLow(5)[4] > ValueLow(5)[5]; ValueHigh(5)[0] <= ValueClose(5)[4]; ValueHigh(5)[3] <= ValueClose(5)[5]; ValueLow(5)[0] <= ValueClose(5)[1]
     # TimeFrame = H4 , Type = Short
     # Instruments = USDCAD
-    if choice == 1:
+    elif choice == 1:
         condition = (data.iloc[index-4]['close'] > data.iloc[index-6]['low']) and \
                     (data.iloc[index-4]['ValueLow'] > data.iloc[index-5]['ValueLow']) and \
                     (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-4]['ValueClose']) and \

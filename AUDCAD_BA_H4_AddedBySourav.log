@@ -157,3 +157,5 @@
 2024-02-23 15:59:36,334 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,112 - DEBUG - No entry for signal0 of Instrument : AUDCAD  close : 0.8845 at BrokerTime : 2024-02-23 16:59:37
 2024-02-23 15:59:49,116 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-23 16:59:42
+2024-02-23 17:33:47,542 - DEBUG - Got Short Indication Candle for signal0 AUDCAD at BrokerTime : 2024-02-23 18:33:45 ClosePrice : 0.88529 atr: 0.0017620120206724664
+2024-02-23 17:33:48,850 - INFO - Entry Short at 2024-02-23 18:33:45 for SignalID : AUDCAD_0_Short_Trail  at EntryPrice : 0.88524  StopLoss : 0.89024 Target : 0.88224 Lotsize : 0.19 ATR Value : 0.0017620120206724664 OrderComment : Request executed Flag : 0 OrderID : 34801648

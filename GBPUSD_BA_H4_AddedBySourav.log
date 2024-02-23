@@ -73,3 +73,7 @@
 2024-02-23 15:59:36,311 - DEBUG - AT the next Hour InTime -- SymbolName : GBPUSD BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,051 - DEBUG - No entry for signal0 of Instrument : GBPUSD  close : 1.2656100000000001 at BrokerTime : 2024-02-23 16:59:34
 2024-02-23 15:59:49,059 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-23 16:59:34
+2024-02-23 17:33:43,584 - DEBUG - Got Long Indication Candle for signal0 GBPUSD at BrokerTime : 2024-02-23 18:33:43 ClosePrice : 1.2683200000000001 atr: 0.0028715031510527554
+2024-02-23 17:33:45,074 - INFO - Entry Long at 2024-02-23 18:33:43 for SignalID : GBPUSD_0_Long_Trail  at EntryPrice : 1.26825  StopLoss : 1.2632500000000002 Target : 1.27125 Lotsize : 0.14 ATR Value : 0.0028715031510527554 OrderComment : Request executed Flag : 0 OrderID : 34801636
+2024-02-23 17:36:15,081 - DEBUG - Got Long Indication Candle for signal0 GBPUSD at BrokerTime : 2024-02-23 18:36:14 ClosePrice : 1.26807 atr: 0.0028715031510527554
+2024-02-23 17:36:16,555 - INFO - Entry Long at 2024-02-23 18:36:14 for SignalID : GBPUSD_0_Long_Trail  at EntryPrice : 1.2681  StopLoss : 1.2631000000000001 Target : 1.2711 Lotsize : 0.14 ATR Value : 0.0028715031510527554 OrderComment : Request executed Flag : 0 OrderID : 34801806

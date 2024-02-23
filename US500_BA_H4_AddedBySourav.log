@@ -195,3 +195,5 @@
 2024-02-23 15:59:36,433 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,061 - DEBUG - No entry for signal0 of Instrument : US500  close : 5082.77 at BrokerTime : 2024-02-23 16:59:30
 2024-02-23 15:59:49,075 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-23 16:59:44
+2024-02-23 17:33:44,420 - DEBUG - Got Long Indication Candle for signal0 US500 at BrokerTime : 2024-02-23 18:33:38 ClosePrice : 5087.82 atr: 15.84471950987017
+2024-02-23 17:33:45,692 - INFO - Entry Long at 2024-02-23 18:33:38 for SignalID : US500_0_Long_SL_Trail  at EntryPrice : 5087.93  StopLoss : 5062.49035 Target : 5113.369650000001 Lotsize : 2.78 ATR Value : 15.84471950987017 OrderComment : Request executed Flag : 3 OrderID : 34801637

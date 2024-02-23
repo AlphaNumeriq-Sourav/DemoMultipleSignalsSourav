@@ -147,3 +147,5 @@
 2024-02-23 15:59:36,358 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,096 - DEBUG - No entry for signal0 of Instrument : NZDUSD  close : 0.61826 at BrokerTime : 2024-02-23 16:59:34
 2024-02-23 15:59:49,110 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-23 16:59:48
+2024-02-23 17:33:46,515 - DEBUG - Got Short Indication Candle for signal0 NZDUSD at BrokerTime : 2024-02-23 18:33:43 ClosePrice : 0.61961 atr: 0.0018447806450125742
+2024-02-23 17:33:48,085 - INFO - Entry Short at 2024-02-23 18:33:43 for SignalID : NZDUSD_0_Short_Trail  at EntryPrice : 0.61959  StopLoss : 0.62459 Target : 0.61659 Lotsize : 0.14 ATR Value : 0.0018447806450125742 OrderComment : Request executed Flag : 0 OrderID : 34801646

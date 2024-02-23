@@ -353,3 +353,7 @@
 2024-02-23 15:59:36,429 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-23 12:29:30
 2024-02-23 15:59:39,093 - DEBUG - No entry for signal0 of Instrument : XTIUSD  close : 77.62 at BrokerTime : 2024-02-23 16:59:23
 2024-02-23 15:59:49,095 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-23 16:59:48
+2024-02-23 17:33:46,253 - DEBUG - Got Short Indication Candle for signal0 XTIUSD at BrokerTime : 2024-02-23 18:33:37 ClosePrice : 77.45 atr: 0.6472761989546454
+2024-02-23 17:33:47,799 - INFO - Entry Short at 2024-02-23 18:33:37 for SignalID : XTIUSD_0_Short_ATR  at EntryPrice : 77.44  StopLoss : 78.73455239790928 Target : 75.49817140313606 Lotsize : 1.0 ATR Value : 0.6472761989546454 OrderComment : Request executed Flag : 2 OrderID : 34801645
+2024-02-23 17:36:15,639 - DEBUG - Got Short Indication Candle for signal0 XTIUSD at BrokerTime : 2024-02-23 18:36:07 ClosePrice : 77.42 atr: 0.6472761989546454
+2024-02-23 17:36:16,907 - INFO - Entry Short at 2024-02-23 18:36:07 for SignalID : XTIUSD_0_Short_ATR  at EntryPrice : 77.41  StopLoss : 78.70455239790928 Target : 75.46817140313605 Lotsize : 1.0 ATR Value : 0.6472761989546454 OrderComment : Request executed Flag : 2 OrderID : 34801807
