@@ -147,3 +147,43 @@
 2024-02-21 11:31:56,022 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-21 12:31:52
 2024-02-21 12:34:26,441 - INFO - Manually Closed the order for US30 of OrderID : 34604690.0
 2024-02-21 12:34:28,665 - DEBUG - Function Out after the Exit trade of US30 at BrokerTime : 2024-02-21 13:34:17
+2024-02-21 11:00:00,264 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:09,934 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-21 12:00:09 ClosePrice : 38493.43 atr: 95.83095016158096
+2024-02-21 11:00:11,076 - INFO - Entry Short at 2024-02-21 12:00:09 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 38492.94  StopLoss : 38685.4047 Target : 38300.475300000006 Lotsize : 0.36 ATR Value : 95.83095016158096 OrderComment : Request executed Flag : 3 OrderID : 34620446
+2024-02-21 15:00:04,968 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:11:23,188 - DEBUG - Signal1 Already have an active Trade of Instrument : US30 ServerTime : 2024-02-21 15:11:23.188224
+2024-02-21 15:11:34,477 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-21 16:11:32
+2024-02-21 15:32:34,181 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-21 16:32:34 at CMP : 38395.34 , NewSL : 38397.707650000004 NewTP : 38300.37530000001 Flag : 1.0 of OrderID : 34620446.0
+2024-02-21 15:32:40,384 - INFO - SL hit for US30 Short BrokerTime : 2024-02-21 16:32:40 SL : 38397.707650000004 TP : 38300.37530000001 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-21 15:32:42,643 - DEBUG - Function Out after the Exit trade of US30 at BrokerTime : 2024-02-21 16:32:42
+2024-02-21 19:00:04,310 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:08:54,336 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-21 20:08:51 ClosePrice : 38508.52 atr: 100.20498379218306
+2024-02-21 19:08:56,014 - INFO - Entry Short at 2024-02-21 20:08:51 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 38465.79  StopLoss : 38658.118950000004 Target : 38273.46105 Lotsize : 0.36 ATR Value : 100.20498379218306 OrderComment : Request executed Flag : 3 OrderID : 34658689
+2024-02-21 21:15:44,263 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-21 22:15:44 at CMP : 38368.0 , NewSL : 38370.625525 NewTP : 38273.36105 Flag : 1.0 of OrderID : 34658689.0
+2024-02-21 21:17:45,990 - INFO - SL hit for US30 Short BrokerTime : 2024-02-21 22:17:45 SL : 38370.625525 TP : 38273.36105 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-21 21:17:47,587 - DEBUG - Function Out after the Exit trade of US30 at BrokerTime : 2024-02-21 22:17:46
+2024-02-22 03:00:04,129 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:04:59,325 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-22 04:04:53 ClosePrice : 38650.73 atr: 134.25019217385005
+2024-02-22 03:05:01,083 - INFO - Entry Short at 2024-02-22 04:04:53 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 38649.23  StopLoss : 38842.47615 Target : 38455.983850000004 Lotsize : 0.37 ATR Value : 134.25019217385005 OrderComment : Request executed Flag : 3 OrderID : 34684358
+2024-02-22 07:00:05,944 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:00,705 - DEBUG - Signal1 Already have an active Trade of Instrument : US30 ServerTime : 2024-02-22 07:08:00.705682
+2024-02-22 07:08:11,305 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-22 08:08:08
+2024-02-22 11:00:00,402 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:09,571 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-22 12:00:06 ClosePrice : 38709.53 atr: 131.48177384201168
+2024-02-22 11:00:10,709 - INFO - Entry Short at 2024-02-22 12:00:06 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 38707.53  StopLoss : 38901.06765 Target : 38513.99235 Lotsize : 0.36 ATR Value : 131.48177384201168 OrderComment : Request executed Flag : 3 OrderID : 34719497
+2024-02-22 15:00:05,573 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:07:03,277 - DEBUG - Signal1 Already have an active Trade of Instrument : US30 ServerTime : 2024-02-22 15:07:03.277307
+2024-02-22 15:07:14,062 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-22 16:07:12
+2024-02-22 15:47:43,015 - INFO - SL hit for US30 Short BrokerTime : 2024-02-22 16:47:42 SL : 38901.06765 TP : 38513.99235 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 15:47:47,659 - DEBUG - Function Out after the Exit trade of US30 at BrokerTime : 2024-02-22 16:47:47
+2024-02-22 19:00:03,225 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:32,612 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-22 20:06:32 ClosePrice : 38956.35 atr: 144.49681343494737
+2024-02-22 19:06:34,664 - INFO - Entry Short at 2024-02-22 20:06:32 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 38946.06  StopLoss : 39140.7903 Target : 38751.329699999995 Lotsize : 0.37 ATR Value : 144.49681343494737 OrderComment : Request executed Flag : 3 OrderID : 34756314
+2024-02-22 20:25:12,498 - INFO - SL hit for US30 Short BrokerTime : 2024-02-22 21:25:12 SL : 39140.7903 TP : 38751.329699999995 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 20:25:14,311 - DEBUG - Function Out after the Exit trade of US30 at BrokerTime : 2024-02-22 21:25:13
+2024-02-23 03:00:02,831 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:04:02,012 - DEBUG - Got Short Indication Candle for signal1 US30 at BrokerTime : 2024-02-23 04:03:57 ClosePrice : 38956.35 atr: 144.49681343494737
+2024-02-23 03:04:03,410 - INFO - Entry Short at 2024-02-23 04:03:57 for SignalID : US30_1_Short_SL_Trail  at EntryPrice : 39090.28  StopLoss : 39285.7314 Target : 38894.8286 Lotsize : 0.36 ATR Value : 144.49681343494737 OrderComment : Request executed Flag : 3 OrderID : 34769179
+2024-02-23 15:59:36,403 - DEBUG - AT the next Hour InTime -- SymbolName : US30 BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,111 - DEBUG - No entry for signal0 of Instrument : US30  close : 39054.52 at BrokerTime : 2024-02-23 16:59:39
+2024-02-23 15:59:49,116 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-23 16:59:48

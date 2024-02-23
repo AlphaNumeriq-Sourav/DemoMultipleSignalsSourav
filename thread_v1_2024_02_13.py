@@ -59,7 +59,7 @@ def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,E
 
 
 def PreMain():
-    HoursDelay = 1
+    HoursDelay = 5.5
     login = 25088141
     password = 'N3W*f%Ts??kF'
     server = 'Tickmill-Demo'
@@ -72,26 +72,23 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name, *args)
-        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        thread.start()
+        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        # thread.start()
 
-    # print((datetime.fromtimestamp(mt5.symbol_info_tick(
-    #     symbol).time) - timedelta(hours=HoursDelay)))
-
+    #time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
     if mt5.initialize(login=login, password=password, server=server):
         MainLogger.debug(
             f'Script Started for thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav')
         while True:
-            if (datetime.now().weekday()) != 5 and    \
-                    (datetime.now().weekday()) != 6:
+            if (datetime.now().weekday()) != 5 and (datetime.now().weekday()) != 6:
                 if mt5.initialize():
-
                     if ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 6:
 
                         try:
                             time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
                                 symbol).time) - timedelta(hours=HoursDelay))
                             time2 = mt5.symbol_info_tick(symbol).time
+                            
                         except AttributeError:
                             time.sleep(20)
 
@@ -99,32 +96,29 @@ def PreMain():
                         if (time2 % (3600 * 24) != 0):  # not 00:00
 
                             if (time2 % (3600*4) == 0) or (time2 % (3600*4) < 30):
+                                
                                 for script_name, args in script_args.items():
-                                    # create_file(script_name)  # Create a file for each script
                                     symbol = args[0]
-                                    logger = logging.getLogger(symbol)
-                                    logger.debug(
+                                    MainLogger.debug(
                                         f'AT the next Hour InTime -- SymbolName : {symbol} BrokerTime : {time1}')
                                     thread = threading.Thread(target=run_script, args=(
                                         script_name, *args, login, password, server))
                                     thread.start()
 
                                 time.sleep(60)
-                                logger.debug(
-                                    f'AT the next Hour OutTime -- SymbolName : {symbol} BrokerTime : {time1}')
 
                         '''For the Next Day 0th Hour candle Execution Code'''
                         if (time1.hour == 0):
+                            MainLogger.debug(f'Entered the Next Day ServerTime : {datetime.now()} BrokerTime : {time1}')
                             while True:
                                 time2 = mt5.symbol_info_tick(symbol).time
                                 time1 = (datetime.fromtimestamp(
-                                    mt5.symbol_info_tick(symbol).time) - timedelta(hours=1))
-                                if (time2 % (3600 * 4) < 1200):
+                                    mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
+                                if (time2 % (3600*4)  < 50) or (time2 % (3600 *4)  <= 1200) or (time2 % (3600 *4)  <= 600):
+                                    
                                     for script_name, args in script_args.items():
-                                        # create_file(script_name)  # Create a file for each script
                                         symbol = args[0]
-                                        logger = logging.getLogger(symbol)
-                                        logger.debug(
+                                        MainLogger.debug(
                                             f'AT the next Hour InTime -- SymbolName : {symbol} BrokerTime : {time1}')
                                         thread = threading.Thread(target=run_script, args=(
                                             script_name, *args, login, password, server))
@@ -143,7 +137,7 @@ def PreMain():
                         file.write(f'\n symbol = {symbol},')
 
                         file.write(f'Time = {time1}')
-                    file.close
+                    file.close()
                     cd = mt5.initialize(
                         login=login, password=password, server=server)
                     MainLogger.debug(f'Is Connected : {cd}')

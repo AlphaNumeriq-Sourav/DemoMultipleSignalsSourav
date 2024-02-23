@@ -116,3 +116,74 @@
 2024-02-21 11:31:24,446 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-21 12:31:22
 2024-02-21 12:34:27,918 - INFO - Manually Closed the order for USDJPY of OrderID : 34604687.0
 2024-02-21 12:34:29,630 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-21 13:34:30
+2024-02-21 11:00:00,133 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:10,221 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 12:00:07 ClosePrice : 150.094 atr: 0.23744706729584908
+2024-02-21 11:00:11,339 - INFO - Entry Long at 2024-02-21 12:00:07 for SignalID : USDJPY_1_Long_Trail  at EntryPrice : 150.093  StopLoss : 149.593 Target : 150.393 Lotsize : 0.21 ATR Value : 0.23744706729584908 OrderComment : Request executed Flag : 0 OrderID : 34620449
+2024-02-21 12:36:31,206 - INFO - Manually Closed the order for USDJPY of OrderID : 34620449.0
+2024-02-21 12:36:33,972 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-21 13:36:31
+2024-02-21 15:00:00,497 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:10:34,080 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-21 16:10:28 ClosePrice : 150.08 atr: 0.22781177196787275
+2024-02-21 15:10:35,671 - INFO - Entry Long at 2024-02-21 16:10:28 for SignalID : USDJPY_1_Long_Trail  at EntryPrice : 150.022  StopLoss : 149.522 Target : 150.322 Lotsize : 0.21 ATR Value : 0.22781177196787275 OrderComment : Request executed Flag : 0 OrderID : 34637594
+2024-02-21 18:02:17,024 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-21 19:02:16 at CMP : 150.323 , NewSL : 150.03199999999998 NewTP : 150.332 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:03:16,200 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:03:16 at CMP : 150.333 , NewSL : 150.04199999999997 NewTP : 150.34199999999998 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:26:31,010 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:26:30 at CMP : 150.343 , NewSL : 150.05199999999996 NewTP : 150.35199999999998 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:37:28,673 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:37:28 at CMP : 150.352 , NewSL : 150.06199999999995 NewTP : 150.36199999999997 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:37:34,264 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:37:34 at CMP : 150.365 , NewSL : 150.07199999999995 NewTP : 150.37199999999996 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:37:44,060 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:37:43 at CMP : 150.372 , NewSL : 150.08199999999994 NewTP : 150.38199999999995 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 18:37:57,812 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 19:37:57 at CMP : 150.383 , NewSL : 150.09199999999993 NewTP : 150.39199999999994 Flag : 1.0 of OrderID : 34637594.0
+2024-02-21 19:00:00,763 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:08:07,120 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-21 19:08:07.120158
+2024-02-21 19:08:23,199 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-21 20:08:23
+2024-02-21 20:01:08,530 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-21 21:01:08 at CMP : 150.394 , NewSL : 150.10199999999992 NewTP : 150.40199999999993 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 01:03:06,767 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 02:03:06 at CMP : 150.402 , NewSL : 150.1119999999999 NewTP : 150.41199999999992 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 01:03:33,698 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 02:03:33 at CMP : 150.417 , NewSL : 150.1219999999999 NewTP : 150.4219999999999 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 01:03:41,821 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 02:03:41 at CMP : 150.423 , NewSL : 150.1319999999999 NewTP : 150.4319999999999 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 01:04:22,668 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 02:04:22 at CMP : 150.432 , NewSL : 150.14199999999988 NewTP : 150.4419999999999 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 02:05:09,074 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 03:05:08 at CMP : 150.442 , NewSL : 150.15199999999987 NewTP : 150.45199999999988 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 02:05:12,887 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 03:05:12 at CMP : 150.454 , NewSL : 150.16199999999986 NewTP : 150.46199999999988 Flag : 1.0 of OrderID : 34637594.0
+2024-02-22 03:00:00,554 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:05:09,366 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-22 03:05:09.366709
+2024-02-22 03:05:19,560 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-22 04:05:16
+2024-02-22 07:00:00,510 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:21,659 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-22 07:08:21.659446
+2024-02-22 07:08:31,974 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-22 08:08:30
+2024-02-22 08:14:01,734 - INFO - SL hit for USDJPY Long BrokerTime : 2024-02-22 09:14:01 SL : 150.16199999999986 TP : 150.46199999999988 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 08:14:03,145 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-22 09:14:02
+2024-02-22 11:00:00,301 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:09,407 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-22 12:00:08 ClosePrice : 150.177 atr: 0.2509924637842718
+2024-02-22 11:00:10,529 - INFO - Entry Long at 2024-02-22 12:00:08 for SignalID : USDJPY_1_Long_Trail  at EntryPrice : 150.191  StopLoss : 149.691 Target : 150.491 Lotsize : 0.21 ATR Value : 0.2509924637842718 OrderComment : Request executed Flag : 0 OrderID : 34719494
+2024-02-22 14:30:00,382 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-22 15:30:00 at CMP : 150.52 , NewSL : 150.201 NewTP : 150.501 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:03,758 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:03 at CMP : 150.578 , NewSL : 150.21099999999998 NewTP : 150.511 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:04,796 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:04 at CMP : 150.576 , NewSL : 150.22099999999998 NewTP : 150.521 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:05,548 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:05 at CMP : 150.587 , NewSL : 150.23099999999997 NewTP : 150.53099999999998 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:06,367 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:06 at CMP : 150.57 , NewSL : 150.24099999999996 NewTP : 150.54099999999997 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:07,413 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:07 at CMP : 150.56 , NewSL : 150.25099999999995 NewTP : 150.55099999999996 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:08,610 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:08 at CMP : 150.551 , NewSL : 150.26099999999994 NewTP : 150.56099999999995 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:11,122 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:10 at CMP : 150.561 , NewSL : 150.27099999999993 NewTP : 150.57099999999994 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:24,619 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:24 at CMP : 150.575 , NewSL : 150.28099999999992 NewTP : 150.58099999999993 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:30:26,507 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:30:26 at CMP : 150.581 , NewSL : 150.2909999999999 NewTP : 150.59099999999992 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 14:31:32,514 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 15:31:32 at CMP : 150.593 , NewSL : 150.3009999999999 NewTP : 150.6009999999999 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 15:00:00,857 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:06:12,756 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-22 15:06:12.756315
+2024-02-22 15:06:24,475 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-22 16:06:23
+2024-02-22 15:17:09,521 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 16:17:09 at CMP : 150.601 , NewSL : 150.3109999999999 NewTP : 150.6109999999999 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 15:40:23,845 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 16:40:23 at CMP : 150.614 , NewSL : 150.32099999999988 NewTP : 150.6209999999999 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 15:40:33,448 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 16:40:33 at CMP : 150.624 , NewSL : 150.33099999999988 NewTP : 150.6309999999999 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 15:40:39,816 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 16:40:39 at CMP : 150.631 , NewSL : 150.34099999999987 NewTP : 150.64099999999988 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 15:42:36,841 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 16:42:36 at CMP : 150.642 , NewSL : 150.35099999999986 NewTP : 150.65099999999987 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 18:05:32,895 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 19:05:32 at CMP : 150.651 , NewSL : 150.36099999999985 NewTP : 150.66099999999986 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 18:05:57,350 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 19:05:57 at CMP : 150.666 , NewSL : 150.37099999999984 NewTP : 150.67099999999985 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 18:06:13,950 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 19:06:13 at CMP : 150.671 , NewSL : 150.38099999999983 NewTP : 150.68099999999984 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 18:09:02,690 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 19:09:02 at CMP : 150.681 , NewSL : 150.39099999999982 NewTP : 150.69099999999983 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 18:09:30,992 - INFO - Trailing for USDJPY of Signal : 1.0 at BrokerTime : 2024-02-22 19:09:30 at CMP : 150.691 , NewSL : 150.4009999999998 NewTP : 150.70099999999982 Flag : 1.0 of OrderID : 34719494.0
+2024-02-22 19:00:00,452 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:30,457 - DEBUG - Signal1 Already have an active Trade of Instrument : USDJPY ServerTime : 2024-02-22 19:06:30.457826
+2024-02-22 19:06:40,739 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-22 20:06:39
+2024-02-23 01:20:19,719 - INFO - SL hit for USDJPY Long BrokerTime : 2024-02-23 02:20:19 SL : 150.4009999999998 TP : 150.70099999999982 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-23 01:20:21,813 - DEBUG - Function Out after the Exit trade of USDJPY at BrokerTime : 2024-02-23 02:20:20
+2024-02-23 03:00:00,667 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:03:46,613 - DEBUG - Got Long Indication Candle for signal1 USDJPY at BrokerTime : 2024-02-23 04:03:43 ClosePrice : 150.459 atr: 0.2562949742042548
+2024-02-23 03:03:47,968 - INFO - Entry Long at 2024-02-23 04:03:43 for SignalID : USDJPY_1_Long_Trail  at EntryPrice : 150.464  StopLoss : 149.964 Target : 150.764 Lotsize : 0.21 ATR Value : 0.2562949742042548 OrderComment : Request executed Flag : 0 OrderID : 34769170
+2024-02-23 15:59:36,320 - DEBUG - AT the next Hour InTime -- SymbolName : USDJPY BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,061 - DEBUG - No entry for signal0 of Instrument : USDJPY  close : 150.749 at BrokerTime : 2024-02-23 16:59:38
+2024-02-23 15:59:49,075 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-23 16:59:48

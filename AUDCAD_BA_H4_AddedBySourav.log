@@ -118,3 +118,42 @@
 2024-02-21 11:31:40,379 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-21 12:31:35
 2024-02-21 12:34:22,738 - INFO - Manually Closed the order for AUDCAD of OrderID : 34604686.0
 2024-02-21 12:34:27,913 - DEBUG - Function Out after the Exit trade of AUDCAD at BrokerTime : 2024-02-21 13:34:26
+2024-02-21 11:00:00,161 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:09,430 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-21 12:00:07 ClosePrice : 0.88647 atr: 0.0018349045778132816
+2024-02-21 11:00:10,560 - INFO - Entry Short at 2024-02-21 12:00:07 for SignalID : AUDCAD_1_Short_Trail  at EntryPrice : 0.88656  StopLoss : 0.89156 Target : 0.88356 Lotsize : 0.19 ATR Value : 0.0018349045778132816 OrderComment : Request executed Flag : 0 OrderID : 34620442
+2024-02-21 15:00:01,004 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:11:46,666 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-21 15:11:46.666837
+2024-02-21 15:11:57,621 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-21 16:11:56
+2024-02-21 18:22:42,902 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-21 19:22:42 at CMP : 0.88356 , NewSL : 0.88646 NewTP : 0.88346 Flag : 1.0 of OrderID : 34620442.0
+2024-02-21 18:43:25,850 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-21 19:43:25 at CMP : 0.88346 , NewSL : 0.88636 NewTP : 0.88336 Flag : 1.0 of OrderID : 34620442.0
+2024-02-21 18:45:00,288 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-21 19:45:00 at CMP : 0.88336 , NewSL : 0.88626 NewTP : 0.88326 Flag : 1.0 of OrderID : 34620442.0
+2024-02-21 19:00:02,056 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:02:13,033 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-21 20:02:12 at CMP : 0.88326 , NewSL : 0.8861600000000001 NewTP : 0.8831600000000001 Flag : 1.0 of OrderID : 34620442.0
+2024-02-21 19:09:12,912 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-21 19:09:12.912503
+2024-02-21 19:09:24,118 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-21 20:09:23
+2024-02-21 20:00:59,815 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-21 21:00:59 at CMP : 0.88316 , NewSL : 0.8860600000000001 NewTP : 0.8830600000000001 Flag : 1.0 of OrderID : 34620442.0
+2024-02-21 20:01:09,768 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-21 21:01:09 at CMP : 0.88304 , NewSL : 0.8859600000000001 NewTP : 0.8829600000000001 Flag : 1.0 of OrderID : 34620442.0
+2024-02-22 03:00:01,374 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:05:12,308 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-22 03:05:12.308539
+2024-02-22 03:05:23,240 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-22 04:05:22
+2024-02-22 03:12:55,524 - INFO - Trailing for AUDCAD of Signal : 1.0 at BrokerTime : 2024-02-22 04:12:55 at CMP : 0.88295 , NewSL : 0.8858600000000001 NewTP : 0.8828600000000001 Flag : 1.0 of OrderID : 34620442.0
+2024-02-22 06:38:47,598 - INFO - Manually Closed the order for AUDCAD of OrderID : 34620442.0
+2024-02-22 06:38:49,404 - DEBUG - Function Out after the Exit trade of AUDCAD at BrokerTime : 2024-02-22 07:38:33
+2024-02-22 07:00:01,835 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:31,120 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-22 08:08:25 ClosePrice : 0.88425 atr: 0.0018407388586347579
+2024-02-22 07:08:32,599 - INFO - Entry Short at 2024-02-22 08:08:25 for SignalID : AUDCAD_1_Short_Trail  at EntryPrice : 0.88437  StopLoss : 0.88937 Target : 0.88137 Lotsize : 0.19 ATR Value : 0.0018407388586347579 OrderComment : Request executed Flag : 0 OrderID : 34697517
+2024-02-22 11:00:00,339 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:08,891 - DEBUG - Got Short Indication Candle for signal1 AUDCAD at BrokerTime : 2024-02-22 12:00:06 ClosePrice : 0.88544 atr: 0.001930633307401233
+2024-02-22 11:00:10,026 - INFO - Entry Short at 2024-02-22 12:00:06 for SignalID : AUDCAD_1_Short_Trail  at EntryPrice : 0.88541  StopLoss : 0.89041 Target : 0.88241 Lotsize : 0.19 ATR Value : 0.001930633307401233 OrderComment : Request executed Flag : 0 OrderID : 34719486
+2024-02-22 15:00:02,224 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:07:07,670 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-22 15:07:07.670044
+2024-02-22 15:07:18,304 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-22 16:07:17
+2024-02-22 19:00:01,074 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:42,162 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-22 19:06:42.162571
+2024-02-22 19:06:52,394 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-22 20:06:51
+2024-02-23 03:00:01,250 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:03:42,860 - DEBUG - Signal1 Already have an active Trade of Instrument : AUDCAD ServerTime : 2024-02-23 03:03:42.859582
+2024-02-23 03:03:52,884 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-23 04:03:41
+2024-02-23 15:59:36,334 - DEBUG - AT the next Hour InTime -- SymbolName : AUDCAD BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,112 - DEBUG - No entry for signal0 of Instrument : AUDCAD  close : 0.8845 at BrokerTime : 2024-02-23 16:59:37
+2024-02-23 15:59:49,116 - DEBUG - Function Out of AUDCAD at BrokerTime : 2024-02-23 16:59:42

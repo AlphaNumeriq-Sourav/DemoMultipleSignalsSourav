@@ -174,6 +174,9 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             # ATR
             df['atr_7'] = sig.AvgTrueRange(df, 7)
             df['CompositeATR_2_24'] = sig.CompositeATR(df, 2, 24)
+            df['CompositeRSI_2_24'] = sig.CompositeRSI(df,2,24)
+            df['AvgTrueRange_10'] = sig.AvgTrueRange(df,10,"high","low","close")
+            df['CompositeSMA'] = sig.CompositeSMA(df,8,20,50,200)
 
             # RSI
             df['rsi_14'] = sig.rsi(df, 14)

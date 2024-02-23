@@ -321,3 +321,35 @@
 2024-02-21 11:32:09,861 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-21 12:32:01
 2024-02-21 12:34:29,050 - INFO - Manually Closed the order for XTIUSD of OrderID : 34604692.0
 2024-02-21 12:34:29,723 - DEBUG - Function Out after the Exit trade of XTIUSD at BrokerTime : 2024-02-21 13:34:17
+2024-02-21 11:00:00,327 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:09,696 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 12:00:06 ClosePrice : 76.87 atr: 0.6432785425443476
+2024-02-21 11:00:10,933 - INFO - Entry Short at 2024-02-21 12:00:06 for SignalID : XTIUSD_1_Short_ATR  at EntryPrice : 76.89  StopLoss : 78.17655708508869 Target : 74.96016437236696 Lotsize : 1.0 ATR Value : 0.6432785425443476 OrderComment : Request executed Flag : 2 OrderID : 34620444
+2024-02-21 15:00:06,319 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:11:37,184 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-21 15:11:37.184386
+2024-02-21 15:11:47,924 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-21 16:11:46
+2024-02-21 18:09:36,055 - INFO - SL hit for XTIUSD Short BrokerTime : 2024-02-21 19:09:35 SL : 78.17655708508869 TP : 74.96016437236696 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-21 18:09:39,116 - DEBUG - Function Out after the Exit trade of XTIUSD at BrokerTime : 2024-02-21 19:09:37
+2024-02-21 19:00:06,203 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:08:04,675 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-21 20:08:02 ClosePrice : 77.98 atr: 0.7495515822774804
+2024-02-21 19:08:06,221 - INFO - Entry Short at 2024-02-21 20:08:02 for SignalID : XTIUSD_1_Short_ATR  at EntryPrice : 77.94  StopLoss : 79.43910316455496 Target : 75.69134525316755 Lotsize : 1.0 ATR Value : 0.7495515822774804 OrderComment : Request executed Flag : 2 OrderID : 34658672
+2024-02-22 03:00:04,219 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:05:01,781 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-22 03:05:01.781165
+2024-02-22 03:05:13,369 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-22 04:05:11
+2024-02-22 07:00:07,471 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:17,325 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-22 07:08:17.325706
+2024-02-22 07:08:28,255 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-22 08:08:03
+2024-02-22 11:00:00,414 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:09,560 - DEBUG - Got Short Indication Candle for signal1 XTIUSD at BrokerTime : 2024-02-22 12:00:07 ClosePrice : 78.44 atr: 0.5910324242530659
+2024-02-22 11:00:10,913 - INFO - Entry Short at 2024-02-22 12:00:07 for SignalID : XTIUSD_1_Short_ATR  at EntryPrice : 78.43  StopLoss : 79.61206484850614 Target : 76.6569027272408 Lotsize : 1.0 ATR Value : 0.5910324242530659 OrderComment : Request executed Flag : 2 OrderID : 34719501
+2024-02-22 15:00:06,549 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:06:39,875 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-22 15:06:39.875693
+2024-02-22 15:06:50,533 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-22 16:06:48
+2024-02-22 19:00:04,657 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:27,086 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-22 19:06:27.086021
+2024-02-22 19:06:37,739 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-22 20:06:34
+2024-02-23 03:00:03,002 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:03:55,258 - DEBUG - Signal1 Already have an active Trade of Instrument : XTIUSD ServerTime : 2024-02-23 03:03:55.258839
+2024-02-23 03:04:07,376 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-23 04:04:03
+2024-02-23 15:59:36,429 - DEBUG - AT the next Hour InTime -- SymbolName : XTIUSD BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,093 - DEBUG - No entry for signal0 of Instrument : XTIUSD  close : 77.62 at BrokerTime : 2024-02-23 16:59:23
+2024-02-23 15:59:49,095 - DEBUG - Function Out of XTIUSD at BrokerTime : 2024-02-23 16:59:48

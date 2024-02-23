@@ -148,3 +148,50 @@
 2024-02-21 11:31:40,069 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-21 12:31:13
 2024-02-21 12:34:27,113 - INFO - Manually Closed the order for US500 of OrderID : 34604689.0
 2024-02-21 12:34:28,573 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-21 13:34:21
+2024-02-21 11:00:00,346 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:10,093 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-21 12:00:00 ClosePrice : 4965.25 atr: 15.08557369321643
+2024-02-21 11:00:11,215 - INFO - Entry Long at 2024-02-21 12:00:00 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 4965.6  StopLoss : 4940.772 Target : 4990.428000000001 Lotsize : 2.76 ATR Value : 15.08557369321643 OrderComment : Request executed Flag : 3 OrderID : 34620448
+2024-02-21 11:01:00,490 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-21 12:00:00
+2024-02-21 15:00:07,220 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:01:08,898 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:10:48,760 - DEBUG - Signal1 Already have an active Trade of Instrument : US500 ServerTime : 2024-02-21 15:10:48.760254
+2024-02-21 15:10:59,129 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-21 16:10:54
+2024-02-21 19:00:06,870 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:01:08,759 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:08:48,579 - DEBUG - Signal1 Already have an active Trade of Instrument : US500 ServerTime : 2024-02-21 19:08:48.579860
+2024-02-21 19:09:00,125 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-21 20:08:59
+2024-02-21 21:54:01,529 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-21 22:54:01 at CMP : 4978.04 , NewSL : 4977.014 NewTP : 4990.528000000001 Flag : 1.0 of OrderID : 34620448.0
+2024-02-21 21:54:27,555 - INFO - SL hit for US500 Long BrokerTime : 2024-02-21 22:54:27 SL : 4977.014 TP : 4990.528000000001 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-21 21:54:29,144 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-21 22:54:28
+2024-02-22 03:00:05,435 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:01:06,044 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:05:06,148 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-22 04:04:53 ClosePrice : 5016.93 atr: 21.199714080136655
+2024-02-22 03:05:08,795 - INFO - Entry Long at 2024-02-22 04:04:53 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 5017.28  StopLoss : 4992.1936 Target : 5042.3664 Lotsize : 2.82 ATR Value : 21.199714080136655 OrderComment : Request executed Flag : 3 OrderID : 34684378
+2024-02-22 07:00:07,817 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:01:08,825 - DEBUG - AT the next Hour OutTime -- SymbolName : US500 BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:45,170 - DEBUG - Signal1 Already have an active Trade of Instrument : US500 ServerTime : 2024-02-22 07:08:45.170056
+2024-02-22 07:08:55,393 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-22 08:08:54
+2024-02-22 11:00:00,448 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:09,560 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-22 12:00:00 ClosePrice : 5039.43 atr: 20.366116467039173
+2024-02-22 11:00:10,912 - INFO - Entry Long at 2024-02-22 12:00:00 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 5039.78  StopLoss : 5014.581099999999 Target : 5064.9789 Lotsize : 2.78 ATR Value : 20.366116467039173 OrderComment : Request executed Flag : 3 OrderID : 34719499
+2024-02-22 12:20:31,765 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-22 13:20:31 at CMP : 5052.43 , NewSL : 5051.379449999999 NewTP : 5065.0789 Flag : 1.0 of OrderID : 34719499.0
+2024-02-22 12:25:53,465 - INFO - SL hit for US500 Long BrokerTime : 2024-02-22 13:25:53 SL : 5051.379449999999 TP : 5065.0789 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 12:25:55,952 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-22 13:25:53
+2024-02-22 15:00:07,383 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:06:48,512 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-22 16:06:26 ClosePrice : 5052.18 atr: 19.938099828890703
+2024-02-22 15:06:50,463 - INFO - Entry Long at 2024-02-22 16:06:26 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 5051.28  StopLoss : 5026.0235999999995 Target : 5076.5364 Lotsize : 2.79 ATR Value : 19.938099828890703 OrderComment : Request executed Flag : 3 OrderID : 34738378
+2024-02-22 15:50:38,359 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-22 16:50:38 at CMP : 5063.96 , NewSL : 5062.9082 NewTP : 5076.6364 Flag : 1.0 of OrderID : 34738378.0
+2024-02-22 15:51:45,758 - INFO - SL hit for US500 Long BrokerTime : 2024-02-22 16:51:45 SL : 5062.9082 TP : 5076.6364 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 15:51:47,782 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-22 16:51:46
+2024-02-22 19:00:06,042 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:33,030 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-22 20:06:23 ClosePrice : 5074.63 atr: 22.042656996192044
+2024-02-22 19:06:34,520 - INFO - Entry Long at 2024-02-22 20:06:23 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 5074.19  StopLoss : 5048.819049999999 Target : 5099.56095 Lotsize : 2.8 ATR Value : 22.042656996192044 OrderComment : Request executed Flag : 3 OrderID : 34756315
+2024-02-22 20:03:30,632 - INFO - First Trailing Step Hit at BrokerTime : 2024-02-22 21:03:30 at CMP : 5087.05 , NewSL : 5085.875475 NewTP : 5099.66095 Flag : 1.0 of OrderID : 34756315.0
+2024-02-22 20:03:38,161 - INFO - SL hit for US500 Long BrokerTime : 2024-02-22 21:03:37 SL : 5085.875475 TP : 5099.66095 ,Signal : 1.0 CloseOrderComment : Request executed
+2024-02-22 20:03:39,411 - DEBUG - Function Out after the Exit trade of US500 at BrokerTime : 2024-02-22 21:03:37
+2024-02-23 03:00:03,243 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:03:53,713 - DEBUG - Got Long Indication Candle for signal1 US500 at BrokerTime : 2024-02-23 04:03:31 ClosePrice : 5087.22 atr: 20.464809221692054
+2024-02-23 03:03:57,337 - INFO - Entry Long at 2024-02-23 04:03:31 for SignalID : US500_1_Long_SL_Trail  at EntryPrice : 5088.08  StopLoss : 5062.6395999999995 Target : 5113.5204 Lotsize : 2.75 ATR Value : 20.464809221692054 OrderComment : Request executed Flag : 3 OrderID : 34769173
+2024-02-23 15:59:36,433 - DEBUG - AT the next Hour InTime -- SymbolName : US500 BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,061 - DEBUG - No entry for signal0 of Instrument : US500  close : 5082.77 at BrokerTime : 2024-02-23 16:59:30
+2024-02-23 15:59:49,075 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-23 16:59:44

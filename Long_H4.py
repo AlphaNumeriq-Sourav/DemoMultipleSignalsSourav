@@ -174,6 +174,7 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
             # ATR
             df['atr_7'] = sig.AvgTrueRange(df, 7)
             df['CompositeATR_2_24'] = sig.CompositeATR(df, 2, 24)
+            df['CompositeRSI_2_24'] = sig.CompositeRSI(df,2,24)
 
             # RSI
             df['rsi_14'] = sig.rsi(df, 14)

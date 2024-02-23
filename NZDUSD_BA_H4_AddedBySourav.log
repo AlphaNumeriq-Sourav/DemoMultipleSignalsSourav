@@ -117,3 +117,33 @@
 2024-02-21 11:31:41,254 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-21 12:31:42
 2024-02-21 12:34:23,494 - INFO - Manually Closed the order for NZDUSD of OrderID : 34604688.0
 2024-02-21 12:34:27,926 - DEBUG - Function Out after the Exit trade of NZDUSD at BrokerTime : 2024-02-21 13:34:27
+2024-02-21 11:00:00,208 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:09,562 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-21 12:00:09 ClosePrice : 0.61836 atr: 0.0018253307396093323
+2024-02-21 11:00:10,680 - INFO - Entry Short at 2024-02-21 12:00:09 for SignalID : NZDUSD_1_Short_Trail  at EntryPrice : 0.61838  StopLoss : 0.62338 Target : 0.61538 Lotsize : 0.14 ATR Value : 0.0018253307396093323 OrderComment : Request executed Flag : 0 OrderID : 34620443
+2024-02-21 15:00:03,393 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:11:43,579 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-21 15:11:43.579013
+2024-02-21 15:11:54,452 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-21 16:11:54
+2024-02-21 19:00:02,801 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:08:28,372 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-21 19:08:28.372983
+2024-02-21 19:08:39,684 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-21 20:08:39
+2024-02-22 03:00:02,274 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:04:54,877 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-22 03:04:54.877563
+2024-02-22 03:05:05,216 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-22 04:05:04
+2024-02-22 07:00:03,435 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:25,991 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-22 07:08:25.991186
+2024-02-22 07:08:36,337 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-22 08:08:35
+2024-02-22 11:00:00,359 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:10,203 - DEBUG - Got Short Indication Candle for signal1 NZDUSD at BrokerTime : 2024-02-22 12:00:08 ClosePrice : 0.62066 atr: 0.0020338766244270166
+2024-02-22 11:00:11,321 - INFO - Entry Short at 2024-02-22 12:00:08 for SignalID : NZDUSD_1_Short_Trail  at EntryPrice : 0.62063  StopLoss : 0.62563 Target : 0.61763 Lotsize : 0.14 ATR Value : 0.0020338766244270166 OrderComment : Request executed Flag : 0 OrderID : 34719510
+2024-02-22 15:00:03,207 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:06:26,183 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-22 15:06:26.183509
+2024-02-22 15:06:36,259 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-22 16:06:36
+2024-02-22 19:00:02,243 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:21,353 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-22 19:06:21.353329
+2024-02-22 19:06:31,835 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-22 20:06:30
+2024-02-23 03:00:02,195 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:04:07,514 - DEBUG - Signal1 Already have an active Trade of Instrument : NZDUSD ServerTime : 2024-02-23 03:04:07.513111
+2024-02-23 03:04:18,970 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-23 04:04:17
+2024-02-23 15:59:36,358 - DEBUG - AT the next Hour InTime -- SymbolName : NZDUSD BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,096 - DEBUG - No entry for signal0 of Instrument : NZDUSD  close : 0.61826 at BrokerTime : 2024-02-23 16:59:34
+2024-02-23 15:59:49,110 - DEBUG - Function Out of NZDUSD at BrokerTime : 2024-02-23 16:59:48

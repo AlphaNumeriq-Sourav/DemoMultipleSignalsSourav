@@ -158,3 +158,33 @@
 2024-02-21 11:31:38,511 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-21 12:31:39
 2024-02-21 12:34:28,403 - INFO - Manually Closed the order for XAUUSD of OrderID : 34604691.0
 2024-02-21 12:34:29,228 - DEBUG - Function Out after the Exit trade of XAUUSD at BrokerTime : 2024-02-21 13:34:30
+2024-02-21 11:00:00,240 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-21 12:00:00
+2024-02-21 11:00:09,697 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-21 12:00:08 ClosePrice : 2030.53 atr: 5.014110919443015
+2024-02-21 11:00:10,934 - INFO - Entry Short at 2024-02-21 12:00:08 for SignalID : XAUUSD_1_Short_ATR  at EntryPrice : 2028.18  StopLoss : 2038.2082218388862 Target : 2013.1376672416711 Lotsize : 0.05 ATR Value : 5.014110919443015 OrderComment : Request executed Flag : 2 OrderID : 34620445
+2024-02-21 15:00:04,780 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-21 16:00:00
+2024-02-21 15:11:37,056 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-21 15:11:37.056405
+2024-02-21 15:11:47,214 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-21 16:11:46
+2024-02-21 19:00:03,637 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-21 20:00:00
+2024-02-21 19:09:11,333 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-21 19:09:11.333593
+2024-02-21 19:09:22,132 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-21 20:09:21
+2024-02-22 03:00:02,901 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-22 04:00:00
+2024-02-22 03:05:17,275 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-22 03:05:17.275259
+2024-02-22 03:05:27,495 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-22 04:05:26
+2024-02-22 07:00:04,851 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-22 08:00:00
+2024-02-22 07:08:05,714 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-22 07:08:05.714389
+2024-02-22 07:08:16,778 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-22 08:08:16
+2024-02-22 11:00:00,387 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-22 12:00:00
+2024-02-22 11:00:10,087 - DEBUG - Got Short Indication Candle for signal1 XAUUSD at BrokerTime : 2024-02-22 12:00:09 ClosePrice : 2030.3 atr: 5.670733542028431
+2024-02-22 11:00:11,199 - INFO - Entry Short at 2024-02-22 12:00:09 for SignalID : XAUUSD_1_Short_ATR  at EntryPrice : 2030.41  StopLoss : 2041.751467084057 Target : 2013.3977993739147 Lotsize : 0.04 ATR Value : 5.670733542028431 OrderComment : Request executed Flag : 2 OrderID : 34719508
+2024-02-22 15:00:04,708 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-22 16:00:00
+2024-02-22 15:06:14,249 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-22 15:06:14.249221
+2024-02-22 15:06:25,079 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-22 16:06:24
+2024-02-22 19:00:03,095 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-22 20:00:00
+2024-02-22 19:06:59,022 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-22 19:06:59.022641
+2024-02-22 19:07:09,150 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-22 20:07:08
+2024-02-23 03:00:02,738 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-23 04:00:00
+2024-02-23 03:03:53,509 - DEBUG - Signal1 Already have an active Trade of Instrument : XAUUSD ServerTime : 2024-02-23 03:03:53.509943
+2024-02-23 03:04:05,681 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-23 04:04:05
+2024-02-23 15:59:36,387 - DEBUG - AT the next Hour InTime -- SymbolName : XAUUSD BrokerTime : 2024-02-23 12:29:30
+2024-02-23 15:59:39,112 - DEBUG - No entry for signal0 of Instrument : XAUUSD  close : 2016.78 at BrokerTime : 2024-02-23 16:59:38
+2024-02-23 15:59:49,116 - DEBUG - Function Out of XAUUSD at BrokerTime : 2024-02-23 16:59:49
