@@ -197,3 +197,40 @@
 2024-02-23 15:59:49,075 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-23 16:59:44
 2024-02-23 17:33:44,420 - DEBUG - Got Long Indication Candle for signal0 US500 at BrokerTime : 2024-02-23 18:33:38 ClosePrice : 5087.82 atr: 15.84471950987017
 2024-02-23 17:33:45,692 - INFO - Entry Long at 2024-02-23 18:33:38 for SignalID : US500_0_Long_SL_Trail  at EntryPrice : 5087.93  StopLoss : 5062.49035 Target : 5113.369650000001 Lotsize : 2.78 ATR Value : 15.84471950987017 OrderComment : Request executed Flag : 3 OrderID : 34801637
+2024-02-26 18:03:04,330 - DEBUG - No entry for signal5 of Instrument : US500  close : 5086.43 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:04,429 - DEBUG - No entry for signal6 of Instrument : US500  close : 5086.43 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:04,475 - DEBUG - No entry for signal7 of Instrument : US500  close : 5086.43 at BrokerTime : 2024-02-26 19:03:04
+2024-02-26 18:03:04,611 - DEBUG - No entry for signal11 of Instrument : US500  close : 5086.43 at BrokerTime : 2024-02-26 19:03:04
+2024-02-26 18:03:04,719 - DEBUG - No entry for signal12 of Instrument : US500  close : 5086.43 at BrokerTime : 2024-02-26 19:03:04
+2024-02-26 18:04:08,698 - DEBUG - No entry for signal5 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,787 - DEBUG - No entry for signal6 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,803 - DEBUG - No entry for signal7 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,811 - DEBUG - No entry for signal11 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,872 - DEBUG - No entry for signal12 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,912 - DEBUG - No entry for signal13 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,982 - DEBUG - No entry for signal14 of Instrument : US500  close : 5086.68 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:19,022 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-26 19:04:16
+2024-02-26 18:08:55,118 - DEBUG - No entry for signal5 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,196 - DEBUG - No entry for signal6 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,287 - DEBUG - No entry for signal7 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,313 - DEBUG - No entry for signal11 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,437 - DEBUG - No entry for signal12 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,538 - DEBUG - No entry for signal13 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:08:55,605 - DEBUG - No entry for signal14 of Instrument : US500  close : 5085.93 at BrokerTime : 2024-02-26 19:08:49
+2024-02-26 18:09:05,639 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:13:53,388 - DEBUG - No entry for signal5 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,408 - DEBUG - No entry for signal6 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,441 - DEBUG - No entry for signal7 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,479 - DEBUG - No entry for signal11 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,498 - DEBUG - No entry for signal12 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,508 - DEBUG - No entry for signal13 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:13:53,538 - DEBUG - No entry for signal14 of Instrument : US500  close : 5085.43 at BrokerTime : 2024-02-26 19:13:52
+2024-02-26 18:14:03,545 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-26 19:14:00
+2024-02-26 18:14:53,647 - DEBUG - No entry for signal5 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,651 - DEBUG - No entry for signal6 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,660 - DEBUG - No entry for signal7 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,681 - DEBUG - No entry for signal11 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,694 - DEBUG - No entry for signal12 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,709 - DEBUG - No entry for signal13 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:14:53,724 - DEBUG - No entry for signal14 of Instrument : US500  close : 5084.93 at BrokerTime : 2024-02-26 19:14:35
+2024-02-26 18:15:03,747 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-26 19:15:02

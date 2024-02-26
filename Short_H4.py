@@ -177,9 +177,15 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             df['CompositeRSI_2_24'] = sig.CompositeRSI(df,2,24)
             df['AvgTrueRange_10'] = sig.AvgTrueRange(df,10,"high","low","close")
             df['CompositeSMA'] = sig.CompositeSMA(df,8,20,50,200)
+            df['CompositeEMA'] = sig.CompositeEMA(df,8,20,50,200)
+            df['rateOfChange_close_10'] = sig.rateOfChange(df , 10  , SL_TpRatio,'close')
+            df['CubeHLC'] = sig.CubeHLC(df,'high','low','close')
+            df['PivotPoint'] = sig.pivotpoint(df,'high','low', 'close')
+            df['momentum_close_5'] = sig.momentum(df,5,'close')
 
             # RSI
             df['rsi_14'] = sig.rsi(df, 14)
+            df['rsi_2'] = sig.rsi(df, 2)
 
             # OHLC
             df['OHLC'] = sig.OHLC(df)
@@ -190,10 +196,11 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
 
             # EMA
             df['ema_2'] = sig.EMA(df, 2)
+            df['ema_1'] = sig.EMA(df, 1)
 
             # ADX
-            df['adx_1'],  df['adx_2'], df['adx_3'],  df['adx_5'], df['adx_7'], df['adx_9'], df['adx_10'], df['adx_13'], df['adx_14'], df['adx_15'], df['adx_17'], df['adx_18'], df['adx_19'], df['adx_20'] = \
-                sig.ADX(df, 1), sig.ADX(df, 2), sig.ADX(df, 3), sig.ADX(df, 5), sig.ADX(df, 7), sig.ADX(df, 9), sig.ADX(df, 10), sig.ADX(
+            df['adx_1'],  df['adx_2'], df['adx_3'] , df['adx_4'],  df['adx_5'], df['adx_7'], df['adx_9'], df['adx_10'], df['adx_13'], df['adx_14'], df['adx_15'], df['adx_17'], df['adx_18'], df['adx_19'], df['adx_20'] = \
+                sig.ADX(df, 1), sig.ADX(df, 2), sig.ADX(df, 3) , sig.ADX(df, 4), sig.ADX(df, 5), sig.ADX(df, 7), sig.ADX(df, 9), sig.ADX(df, 10), sig.ADX(
                     df, 13), sig.ADX(df, 14), sig.ADX(df, 15), sig.ADX(df, 17), sig.ADX(df, 18), sig.ADX(df, 19), sig.ADX(df, 20)
 
         except AttributeError:

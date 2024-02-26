@@ -189,3 +189,15 @@
 2024-02-23 15:59:49,075 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-23 16:59:48
 2024-02-23 17:33:46,096 - DEBUG - Got Long Indication Candle for signal0 USDJPY at BrokerTime : 2024-02-23 18:33:45 ClosePrice : 150.615 atr: 0.23249187879918304
 2024-02-23 17:33:47,511 - INFO - Entry Long at 2024-02-23 18:33:45 for SignalID : USDJPY_0_Long_Trail  at EntryPrice : 150.617  StopLoss : 150.117 Target : 150.917 Lotsize : 0.21 ATR Value : 0.23249187879918304 OrderComment : Request executed Flag : 0 OrderID : 34801644
+2024-02-26 18:02:05,461 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.567 at BrokerTime : 2024-02-26 19:02:05
+2024-02-26 18:02:15,645 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:02:15
+2024-02-26 18:03:03,938 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.573 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:13,964 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:04:08,293 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.54 at BrokerTime : 2024-02-26 19:04:05
+2024-02-26 18:04:18,343 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:04:16
+2024-02-26 18:08:55,216 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.559 at BrokerTime : 2024-02-26 19:08:53
+2024-02-26 18:09:05,269 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:09:04
+2024-02-26 18:13:53,545 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.565 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:14:03,557 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:14:02
+2024-02-26 18:14:53,781 - DEBUG - No entry for signal4 of Instrument : USDJPY  close : 150.562 at BrokerTime : 2024-02-26 19:14:53
+2024-02-26 18:15:03,789 - DEBUG - Function Out of USDJPY at BrokerTime : 2024-02-26 19:15:03

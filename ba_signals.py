@@ -12,12 +12,12 @@ def entry_signal1(data,choice,index):
     # close[4] > low[6]; open[0] <= open[3]; ValueLow(5)[4] > ValueLow(5)[5]; ValueHigh(5)[0] <= ValueClose(5)[4]; ValueHigh(5)[3] <= ValueClose(5)[5]; ValueLow(5)[0] <= ValueClose(5)[1]
     # TimeFrame = H4 , Type = Short
     # Instruments = USDCAD
-    elif choice == 1:
+    if choice == 1:
         condition = (data.iloc[index-4]['close'] > data.iloc[index-6]['low']) and \
+                    (data.iloc[index-0]['open'] <= data.iloc[index-3]['open']) and \
                     (data.iloc[index-4]['ValueLow'] > data.iloc[index-5]['ValueLow']) and \
                     (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-4]['ValueClose']) and \
-                    (data.iloc[index-3]['ValueHigh'] <= data.iloc[index-4]['ValueClose']) and \
-                    (data.iloc[index-3]['ValueHigh'] <= data.iloc[index-5]['ValueLow']) and \
+                    (data.iloc[index-3]['ValueHigh'] <= data.iloc[index-5]['ValueClose']) and \
                     (data.iloc[index-0]['ValueLow'] <= data.iloc[index-1]['ValueClose']) 
         
     
@@ -73,7 +73,7 @@ def entry_signal1(data,choice,index):
                     (data.iloc[index-2]['low'] <= data.iloc[index-8]['low']) and \
                     (data.iloc[index-3]['low'] <= data.iloc[index-5]['open']) and \
                     (data.iloc[index-3]['close'] <= data.iloc[index-6]['low']) and \
-                    (data.iloc[index-(-1)]['rsi_2'] < 40 and data.iloc[index-0]['rsi_2'] > 40) and \
+                    (data.iloc[index-1]['rsi_2'] > 40 and data.iloc[index-0]['rsi_2'] < 40) and \
                     (data.iloc[index-0]['CompositeEMA'] <= data.iloc[index-2]['CompositeEMA'])   # Crosses Below COndition
         
         
@@ -127,7 +127,7 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Long
     # Instruments = US30
     elif choice == 9:
-        condition = (data.iloc[index-3]['open'] < data.iloc[index-5]['low']) and \
+        condition = (data.iloc[index-3]['open'] > data.iloc[index-5]['low']) and \
                     (data.iloc[index-4]['low'] <= data.iloc[index-8]['close']) and \
                     (data.iloc[index-7]['high'] <= data.iloc[index-8]['high']) and \
                     (data.iloc[index-0]['ValueOpen'] > -6) and \
@@ -179,8 +179,8 @@ def entry_signal1(data,choice,index):
                     (data.iloc[index-2]['adx_18'] > 1) and \
                     (data.iloc[index-7]['adx_6'] > 11) and \
                     (data.iloc[index-1]['adx_4'] > data.iloc[index-1]['adx_14']) and \
-                    (data.iloc[index-4]['adx_5'] > data.iloc[index-10]['adx_11']) and \
-                    (data.iloc[index-9]['adx_2'] > data.iloc[index-0]['adx_18']) 
+                    (data.iloc[index-4]['adx_5'] > data.iloc[index-7]['adx_8']) and \
+                    (data.iloc[index-10]['adx_4'] > data.iloc[index-6]['adx_5']) 
         
         
         
@@ -189,12 +189,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Long
     # Instruments = US500
     elif choice == 13:
-        condition = (data.iloc[index-4]['high'] > data.iloc[index-5]['sma_2']) and \
-                    (data.iloc[index-0]['adx_3'] > 14) and \
-                    (data.iloc[index-6]['adx_9'] > data.iloc[index-4]['adx_3']) and \
-                    (data.iloc[index-7]['adx_9'] > data.iloc[index-0]['adx_8']) and \
-                    (data.iloc[index-7]['adx_3'] > data.iloc[index-9]['adx_7']) and \
-                    (data.iloc[index-0]['adx_20'] <= data.iloc[index-5]['adx_3']) 
+        condition = (data.iloc[index-3]['close'] > data.iloc[index-0]['ema_1']) and \
+                    (data.iloc[index-0]['adx_7'] > data.iloc[index-5]['adx_7']) and \
+                    (data.iloc[index-2]['adx_10'] > data.iloc[index-7]['adx_17']) and \
+                    (data.iloc[index-2]['adx_3'] > data.iloc[index-9]['adx_10']) and \
+                    (data.iloc[index-6]['adx_1'] > data.iloc[index-1]['adx_10']) and \
+                    (data.iloc[index-6]['adx_5'] > data.iloc[index-2]['adx_11']) 
         
         
         
@@ -204,12 +204,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Long
     # Instruments = US500
     elif choice == 14:
-        condition = (data.iloc[index-1]['open'] > data.iloc[index-10]['sma_3']) and \
-                    (data.iloc[index-10]['adx_6'] > 8) and \
-                    (data.iloc[index-1]['adx_3'] > data.iloc[index-2]['adx_8']) and \
-                    (data.iloc[index-2]['adx_2'] > data.iloc[index-6]['adx_20']) and \
-                    (data.iloc[index-3]['adx_8'] > data.iloc[index-9]['adx_8']) and \
-                    (data.iloc[index-7]['adx_3'] > data.iloc[index-3]['adx_12']) 
+        condition = (data.iloc[index-9]['open'] < data.iloc[index-10]['ema_2']) and \
+                    (data.iloc[index-0]['adx_2'] > data.iloc[index-4]['adx_17']) and \
+                    (data.iloc[index-2]['adx_8'] > data.iloc[index-9]['adx_9']) and \
+                    (data.iloc[index-4]['adx_3'] > data.iloc[index-7]['adx_9']) and \
+                    (data.iloc[index-7]['adx_11'] > data.iloc[index-5]['adx_16']) and \
+                    (data.iloc[index-8]['adx_1'] > data.iloc[index-3]['adx_2']) 
         
         
         
@@ -218,12 +218,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Short
     # Instruments = GBPUSD
     elif choice == 15:
-        condition = (data.iloc[index-9]['close'] <= data.iloc[index-0]['low']) and \
-                    (data.iloc[index-4]['adx_15'] > 4) and \
-                    (data.iloc[index-0]['adx_8'] > data.iloc[index-10]['adx_8']) and \
-                    (data.iloc[index-2]['adx_7'] > data.iloc[index-4]['adx_18']) and \
-                    (data.iloc[index-5]['adx_1'] > data.iloc[index-5]['adx_7']) and \
-                    (data.iloc[index-7]['adx_4'] > data.iloc[index-4]['adx_13']) 
+        condition = (data.iloc[index-0]['high'] > data.iloc[index-7]['low']) and \
+                    (data.iloc[index-2]['high'] > data.iloc[index-4]['open']) and \
+                    (data.iloc[index-3]['low'] <= data.iloc[index-5]['open']) and \
+                    (data.iloc[index-4]['close'] <= data.iloc[index-6]['open']) and \
+                    (data.iloc[index-1]['ValueOpen'] > data.iloc[index-5]['ValueClose']) and \
+                    (data.iloc[index-3]['ValueClose'] <= data.iloc[index-4]['ValueOpen']) 
         
                     
                     
@@ -233,12 +233,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Short
     # Instruments = GBPUSD
     elif choice == 16:
-        condition = (data.iloc[index-0]['close'] > data.iloc[index-8]['sma_3']) and \
-                    (data.iloc[index-8]['close'] < data.iloc[index-6]['ema_1']) and \
-                    (data.iloc[index-0]['adx_4'] > data.iloc[index-10]['adx_8']) and \
-                    (data.iloc[index-1]['adx_1'] > data.iloc[index-8]['adx_8']) and \
-                    (data.iloc[index-1]['adx_5'] > data.iloc[index-9]['adx_7']) and \
-                    (data.iloc[index-4]['adx_5'] > data.iloc[index-3]['adx_15']) 
+        condition = (data.iloc[index-0]['low'] > data.iloc[index-6]['open']) and \
+                    (data.iloc[index-0]['open'] > data.iloc[index-2]['close']) and \
+                    (data.iloc[index-1]['low'] > data.iloc[index-5]['close']) and \
+                    (data.iloc[index-8]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-7]['low'] <= data.iloc[index-9]['open']) and \
+                    (data.iloc[index-0]['CompositeATR_2_24'] > data.iloc[index-2]['CompositeATR_2_24']) 
         
         
         
@@ -247,12 +247,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Short
     # Instruments = EURUSD
     elif choice == 17:
-        condition = (data.iloc[index-2]['open'] > data.iloc[index-9]['sma_3']) and \
-                    (data.iloc[index-8]['adx_5'] > 9) and \
-                    (data.iloc[index-0]['adx_11'] > data.iloc[index-7]['adx_13']) and \
-                    (data.iloc[index-3]['adx_5'] > data.iloc[index-10]['adx_8']) and \
-                    (data.iloc[index-5]['adx_5'] > data.iloc[index-2]['adx_15']) and \
-                    (data.iloc[index-8]['adx_2'] > data.iloc[index-9]['adx_14']) 
+        condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
+                    (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
+                    (data.iloc[index-4]['low'] <= data.iloc[index-8]['high']) and \
+                    (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
+                    (data.iloc[index-0]['WinsLast'] >= 1) 
         
         
         
@@ -262,12 +262,12 @@ def entry_signal1(data,choice,index):
     # TimeFrame = H4 , Type = Short
     # Instruments = NZDUSD
     elif choice == 18:
-        condition = (data.iloc[index-6]['close'] <= data.iloc[index-3]['open']) and \
-                    (data.iloc[index-0]['low'] > data.iloc[index-6]['sma_1']) and \
-                    (data.iloc[index-6]['high'] > data.iloc[index-10]['ema_2']) and \
-                    (data.iloc[index-10]['adx_8'] > 6) and \
-                    (data.iloc[index-4]['adx_4'] > data.iloc[index-8]['adx_11']) and \
-                    (data.iloc[index-4]['adx_3'] > data.iloc[index-9]['adx_6']) 
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
         
         
         

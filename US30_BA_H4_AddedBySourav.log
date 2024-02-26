@@ -191,3 +191,27 @@
 2024-02-23 17:33:46,083 - INFO - Entry Short at 2024-02-23 18:33:42 for SignalID : US30_0_Short_SL_Trail  at EntryPrice : 39114.39  StopLoss : 39309.96195 Target : 38918.81805 Lotsize : 0.36 ATR Value : 114.2113501082969 OrderComment : Request executed Flag : 3 OrderID : 34801638
 2024-02-23 17:36:15,980 - DEBUG - Got Short Indication Candle for signal0 US30 at BrokerTime : 2024-02-23 18:36:13 ClosePrice : 39110.92 atr: 114.28277867972547
 2024-02-23 17:36:17,269 - INFO - Entry Short at 2024-02-23 18:36:13 for SignalID : US30_0_Short_SL_Trail  at EntryPrice : 39114.41  StopLoss : 39309.982050000006 Target : 38918.83795 Lotsize : 0.36 ATR Value : 114.28277867972547 OrderComment : Request executed Flag : 3 OrderID : 34801808
+2024-02-26 18:02:04,654 - DEBUG - No entry for signal8 of Instrument : US30  close : 39098.95 at BrokerTime : 2024-02-26 19:02:02
+2024-02-26 18:02:04,838 - DEBUG - No entry for signal9 of Instrument : US30  close : 39098.95 at BrokerTime : 2024-02-26 19:02:02
+2024-02-26 18:02:05,029 - DEBUG - No entry for signal10 of Instrument : US30  close : 39098.95 at BrokerTime : 2024-02-26 19:02:02
+2024-02-26 18:02:15,070 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:02:12
+2024-02-26 18:03:04,403 - DEBUG - No entry for signal8 of Instrument : US30  close : 39101.45 at BrokerTime : 2024-02-26 19:03:01
+2024-02-26 18:03:04,613 - DEBUG - No entry for signal9 of Instrument : US30  close : 39101.45 at BrokerTime : 2024-02-26 19:03:04
+2024-02-26 18:03:04,746 - DEBUG - No entry for signal10 of Instrument : US30  close : 39101.45 at BrokerTime : 2024-02-26 19:03:04
+2024-02-26 18:03:14,767 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:04:08,204 - DEBUG - No entry for signal8 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,255 - DEBUG - No entry for signal9 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:08,345 - DEBUG - No entry for signal10 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:04:02
+2024-02-26 18:04:18,383 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:04:11
+2024-02-26 18:08:55,880 - DEBUG - No entry for signal8 of Instrument : US30  close : 39100.45 at BrokerTime : 2024-02-26 19:08:52
+2024-02-26 18:08:55,916 - DEBUG - No entry for signal9 of Instrument : US30  close : 39100.45 at BrokerTime : 2024-02-26 19:08:52
+2024-02-26 18:08:55,988 - DEBUG - No entry for signal10 of Instrument : US30  close : 39100.45 at BrokerTime : 2024-02-26 19:08:52
+2024-02-26 18:09:06,057 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:13:53,584 - DEBUG - No entry for signal8 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:13:53,588 - DEBUG - No entry for signal9 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:13:53,591 - DEBUG - No entry for signal10 of Instrument : US30  close : 39102.45 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:14:03,598 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:14:00
+2024-02-26 18:14:53,458 - DEBUG - No entry for signal8 of Instrument : US30  close : 39100.95 at BrokerTime : 2024-02-26 19:14:48
+2024-02-26 18:14:53,473 - DEBUG - No entry for signal9 of Instrument : US30  close : 39100.95 at BrokerTime : 2024-02-26 19:14:48
+2024-02-26 18:14:53,490 - DEBUG - No entry for signal10 of Instrument : US30  close : 39100.95 at BrokerTime : 2024-02-26 19:14:48
+2024-02-26 18:15:03,513 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-26 19:15:02

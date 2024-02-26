@@ -1,0 +1,53 @@
+2024-02-26 17:57:18,405 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.0855 at BrokerTime : 2024-02-26 18:57:16
+2024-02-26 17:57:28,473 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 18:57:28
+2024-02-26 17:59:03,798 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08539 at BrokerTime : 2024-02-26 18:59:01
+2024-02-26 17:59:13,834 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 18:59:08
+2024-02-26 18:01:16,227 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08535 at BrokerTime : 2024-02-26 19:01:15
+2024-02-26 18:02:04,779 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:02:03
+2024-02-26 18:02:04,779 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:02:03
+2024-02-26 18:02:05,629 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:02:03
+2024-02-26 18:02:05,629 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:02:03
+2024-02-26 18:02:14,945 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:02:14
+2024-02-26 18:02:14,945 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:02:14
+2024-02-26 18:02:15,784 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:02:15
+2024-02-26 18:02:15,784 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:02:15
+2024-02-26 18:03:03,989 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08538 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:03,989 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08538 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:04,559 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08538 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:04,559 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08538 at BrokerTime : 2024-02-26 19:03:03
+2024-02-26 18:03:14,154 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:03:14,154 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:03:14,603 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:03:14,603 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:03:13
+2024-02-26 18:04:08,537 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08546 at BrokerTime : 2024-02-26 19:04:00
+2024-02-26 18:04:08,537 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08546 at BrokerTime : 2024-02-26 19:04:00
+2024-02-26 18:04:08,683 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08546 at BrokerTime : 2024-02-26 19:04:00
+2024-02-26 18:04:08,683 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08546 at BrokerTime : 2024-02-26 19:04:00
+2024-02-26 18:04:18,604 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:04:18
+2024-02-26 18:04:18,604 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:04:18
+2024-02-26 18:04:18,728 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:04:18
+2024-02-26 18:04:18,728 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:04:18
+2024-02-26 18:08:55,322 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08542 at BrokerTime : 2024-02-26 19:08:48
+2024-02-26 18:08:55,322 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08542 at BrokerTime : 2024-02-26 19:08:48
+2024-02-26 18:08:55,655 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:08:48
+2024-02-26 18:08:55,655 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08541 at BrokerTime : 2024-02-26 19:08:48
+2024-02-26 18:09:05,433 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:09:05,433 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:09:05,696 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:09:05,696 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:09:00
+2024-02-26 18:13:53,230 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08555 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:13:53,230 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.08555 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:13:53,484 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08555 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:13:53,484 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.08555 at BrokerTime : 2024-02-26 19:13:53
+2024-02-26 18:14:03,254 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:14:02
+2024-02-26 18:14:03,254 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:14:02
+2024-02-26 18:14:03,521 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:14:02
+2024-02-26 18:14:03,521 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:14:02
+2024-02-26 18:14:53,650 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.0856 at BrokerTime : 2024-02-26 19:14:50
+2024-02-26 18:14:53,650 - DEBUG - No entry for signal2 of Instrument : EURUSD  close : 1.0856 at BrokerTime : 2024-02-26 19:14:50
+2024-02-26 18:14:53,664 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.0856 at BrokerTime : 2024-02-26 19:14:50
+2024-02-26 18:14:53,664 - DEBUG - No entry for signal17 of Instrument : EURUSD  close : 1.0856 at BrokerTime : 2024-02-26 19:14:50
+2024-02-26 18:15:03,663 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:15:00
+2024-02-26 18:15:03,663 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:15:00
+2024-02-26 18:15:03,679 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:15:00
+2024-02-26 18:15:03,679 - DEBUG - Function Out of EURUSD at BrokerTime : 2024-02-26 19:15:00

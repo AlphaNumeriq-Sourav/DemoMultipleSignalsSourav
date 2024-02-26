@@ -28,6 +28,7 @@ importlib.reload(sig)
 
 def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, Choices, ChoicesExitModels,EntryType, login, password, server):
     logger = logging.getLogger(symbol)
+    print(symbol,Choices)
     try:
         if EntryType == "Short":
             Execution_Short(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,
@@ -72,23 +73,27 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name, *args)
-        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        # thread.start()
-
-    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
+        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        thread.start()
+    MainSymbol = "EURUSD"
+    time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(MainSymbol).time) - timedelta(hours=HoursDelay))
     print(time1)
+    
+    
+    
     if mt5.initialize(login =login, password=password, server=server):
         MainLogger.debug(
             f'Script Started for thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav')
         while True:
             if (datetime.now().weekday()) != 5 and (datetime.now().weekday()) != 6:
                 if mt5.initialize():
-                    if ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay)).weekday()) != 6:
+                    
+                    if ((datetime.fromtimestamp(mt5.symbol_info_tick(MainSymbol).time) - timedelta(hours=HoursDelay)).weekday()) != 5 and ((datetime.fromtimestamp(mt5.symbol_info_tick(MainSymbol).time) - timedelta(hours=HoursDelay)).weekday()) != 6:
 
                         try:
                             time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(
-                                symbol).time) - timedelta(hours=HoursDelay))
-                            time2 = mt5.symbol_info_tick(symbol).time
+                                MainSymbol).time) - timedelta(hours=HoursDelay))
+                            time2 = mt5.symbol_info_tick(MainSymbol).time
                             
                         except AttributeError:
                             time.sleep(20)
@@ -112,9 +117,9 @@ def PreMain():
                         if (time1.hour == 0):
                             MainLogger.debug(f'Entered the Next Day ServerTime : {datetime.now()} BrokerTime : {time1}')
                             while True:
-                                time2 = mt5.symbol_info_tick(symbol).time
+                                time2 = mt5.symbol_info_tick(MainSymbol).time
                                 time1 = (datetime.fromtimestamp(
-                                    mt5.symbol_info_tick(symbol).time) - timedelta(hours=HoursDelay))
+                                    mt5.symbol_info_tick(MainSymbol).time) - timedelta(hours=HoursDelay))
                                 if (time2 % (3600*4)  < 50) or (time2 % (3600 *4)  <= 1200) or (time2 % (3600 *4)  <= 600):
                                     
                                     for script_name, args in script_args.items():
