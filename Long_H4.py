@@ -229,7 +229,8 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
     # Logic to Push the Market Order to the Broker One we got any signals if we don't have active trade from the signals
     # -------------------------x-----------------------x---------------------------x---------------------------x---------------------------x---------------------------
-
+    if symbol == "EURUSD":
+        pass
     for i in range(len(Choices)):
         df_open_signals = pd.read_csv(
             f'{symbol}_{script_name}_open_signals.csv')

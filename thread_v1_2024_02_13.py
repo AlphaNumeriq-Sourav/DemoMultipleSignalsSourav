@@ -27,8 +27,8 @@ importlib.reload(sig)
 
 
 def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, Choices, ChoicesExitModels,EntryType, login, password, server):
-    logger = logging.getLogger(symbol)
-    print(symbol,Choices)
+    logger = logging.getLogger(f'{symbol}_{EntryType}')
+    #print(symbol,Choices)
     try:
         if EntryType == "Short":
             Execution_Short(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,
@@ -43,7 +43,7 @@ def run_script(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPo
 '''Function to create EntrySignalCsv Files and Logger File'''
 
 
-def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,EntryType, Choices, ChoicesExitModels):
+def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, Choices, ChoicesExitModels,EntryType):
     # df_cols = ['signals','orderid','volume','price_open','TP','SL']
 
     # df_entry = pd.DataFrame(columns= df_cols)
@@ -53,7 +53,7 @@ def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint,E
     df_open_signal.to_csv(
         f'{symbol}_{script_name}_open_signals.csv', index=False)
 
-    setup_logger(f'{symbol}_BA_H4_AddedBySourav.log', symbol)
+    setup_logger(f'{symbol}_{EntryType}_BA_H4_AddedBySourav.log', f'{symbol}_{EntryType}')
 
 
 ''''Main Function to run the Signal Script File Every 4 Hour from Monday to Friday'''
@@ -73,8 +73,8 @@ def PreMain():
     for script_name, args in script_args.items():
         symbol = args[0]
         files(script_name, *args)
-        thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
-        thread.start()
+        # thread = threading.Thread(target=run_script, args=(script_name, *args , login , password , server))
+        # thread.start()
     MainSymbol = "EURUSD"
     time1 = (datetime.fromtimestamp(mt5.symbol_info_tick(MainSymbol).time) - timedelta(hours=HoursDelay))
     print(time1)
@@ -151,3 +151,5 @@ def PreMain():
 
 if __name__ == "__main__":
     PreMain()
+
+
