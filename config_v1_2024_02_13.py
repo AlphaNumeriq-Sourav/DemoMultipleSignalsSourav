@@ -24,6 +24,6 @@ thread_H4_Jan24_Signal_EURUSD_GBPUSD_NZDUSD_BySourav = {
         "Short_H4_9" : ('NZDUSD' , 1/100 , 300 , 500 ,10 , 100, [18] , ['Trail'], "Short") 
     }
 
-SkipTrades = False
+SkipTrades = True
 # 15 , 16 , 2,3,17
 

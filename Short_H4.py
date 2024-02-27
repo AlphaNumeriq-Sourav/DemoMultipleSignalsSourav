@@ -239,11 +239,13 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             f'{symbol}_{script_name}_open_signals.csv')
         signal = f'signal{Choices[i]}'
         Signal_uni_name = f"{symbol}_{Choices[i]}_Short_{ChoicesExitModels[i]}"
+        
+        if SkipTrades :
 
-        if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
-            logger.debug(
-                f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} ServerTime : {datetime.now()}')
-            continue
+            if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
+                logger.debug(
+                    f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} ServerTime : {datetime.now()}')
+                continue
 
         condition = entry_signal1(df, Choices[i], index)
 
