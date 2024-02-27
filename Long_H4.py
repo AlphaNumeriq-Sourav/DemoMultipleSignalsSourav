@@ -99,7 +99,7 @@ def close_order(ticket):
 
 
 def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, logger, Choices, ChoicesExitModels,  login, password, server):
-    HoursDelay = 1
+    HoursDelay = 3
     try:
         SL_TpRatio = mt5.symbol_info(symbol).point
         pipval = mt5.symbol_info(symbol).trade_tick_value_profit
@@ -178,6 +178,7 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
             df['AvgTrueRange_10'] = sig.AvgTrueRange(df,10,"high","low","close")
             df['CompositeSMA'] = sig.CompositeSMA(df,8,20,50,200)
             df['CompositeEMA'] = sig.CompositeEMA(df,8,20,50,200)
+            
             df['rateOfChange_close_10'] = sig.rateOfChange(df , 10  , SL_TpRatio,'close')
             df['CubeHLC'] = sig.CubeHLC(df,'high','low','close')
             df['PivotPoint'] = sig.pivotpoint(df,'high','low', 'close')
@@ -191,11 +192,12 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
             df['OHLC'] = sig.OHLC(df)
 
             # SMA
-            df['sma_5'], df['sma_20'] =\
-                sig.SMA(df, 5), sig.SMA(df, 20)
+            df['sma_5'], df['sma_10'] , df['sma_20'] =\
+                sig.SMA(df, 5), sig.SMA(df, 10) , sig.SMA(df, 20)
 
             # EMA
             df['ema_2'] = sig.EMA(df, 2)
+            df['ema_3'] = sig.EMA(df, 3)
             df['ema_1'] = sig.EMA(df, 1)
 
             # ADX

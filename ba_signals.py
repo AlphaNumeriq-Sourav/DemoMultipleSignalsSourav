@@ -45,7 +45,7 @@ def entry_signal1(data,choice,index):
         condition = (data.iloc[index-1]['ValueOpen'] > data.iloc[index-3]['ValueLow']) and \
                     (data.iloc[index-0]['ValueClose'] <= data.iloc[index-1]['ValueLow']) and \
                     (data.iloc[index-0]['AvgTrueRange_10'] <= data.iloc[index-5]['AvgTrueRange_10']) and \
-                    (data.iloc[index-0]['CompositeRSI'] >= 30) and \
+                    (data.iloc[index-0]['CompositeRSI_2_24'] >= 30) and \
                     (data.iloc[index-0]['rsi_2'] >= 10) and \
                     (data.iloc[index-0]['rateOfChange_close_10'] > data.iloc[index-4]['rateOfChange_close_10']) 
         
