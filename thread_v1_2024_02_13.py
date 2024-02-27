@@ -61,8 +61,8 @@ def files(script_name, symbol, RISK, TP, SL, TrailTPPoints,SLTrailFirstSLPoint, 
 
 def PreMain():
     HoursDelay = 3
-    login = 25094331
-    password = '1^:s^/aErD/m'
+    login = 25094353
+    password = '9oJUdO!XkAXD'
     server = 'Tickmill-Demo'
     mt5.initialize(login=login, password=password, server=server)
     setup_logger(
