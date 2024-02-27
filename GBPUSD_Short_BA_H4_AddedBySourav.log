@@ -1,0 +1,9 @@
+2024-02-27 12:25:35,941 - DEBUG - No entry for signal15 of Instrument : GBPUSD  close : 1.2679 at BrokerTime : 2024-02-27 11:25:31
+2024-02-27 12:25:36,007 - DEBUG - No entry for signal16 of Instrument : GBPUSD  close : 1.2679 at BrokerTime : 2024-02-27 11:25:31
+2024-02-27 12:25:46,070 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-27 11:25:45
+2024-02-27 12:27:10,507 - DEBUG - No entry for signal15 of Instrument : GBPUSD  close : 1.26785 at BrokerTime : 2024-02-27 11:27:09
+2024-02-27 12:27:10,621 - DEBUG - No entry for signal16 of Instrument : GBPUSD  close : 1.26785 at BrokerTime : 2024-02-27 11:27:09
+2024-02-27 12:27:20,673 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-27 11:27:18
+2024-02-27 12:28:52,193 - DEBUG - No entry for signal15 of Instrument : GBPUSD  close : 1.26802 at BrokerTime : 2024-02-27 11:28:44
+2024-02-27 12:28:52,329 - DEBUG - No entry for signal16 of Instrument : GBPUSD  close : 1.26802 at BrokerTime : 2024-02-27 11:28:44
+2024-02-27 12:29:02,389 - DEBUG - Function Out of GBPUSD at BrokerTime : 2024-02-27 11:29:02

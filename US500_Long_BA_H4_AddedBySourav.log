@@ -1,0 +1,16 @@
+2024-02-27 12:25:36,084 - DEBUG - No entry for signal5 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:25:19
+2024-02-27 12:25:36,182 - DEBUG - No entry for signal6 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:25:19
+2024-02-27 12:25:36,234 - DEBUG - No entry for signal7 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:25:19
+2024-02-27 12:25:36,255 - DEBUG - No entry for signal11 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:25:19
+2024-02-27 12:27:09,498 - DEBUG - No entry for signal5 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:27:00
+2024-02-27 12:27:09,648 - DEBUG - No entry for signal6 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:27:00
+2024-02-27 12:27:09,778 - DEBUG - No entry for signal7 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:27:00
+2024-02-27 12:27:09,889 - DEBUG - No entry for signal11 of Instrument : US500  close : 5065.2 at BrokerTime : 2024-02-27 11:27:00
+2024-02-27 12:28:51,759 - DEBUG - No entry for signal5 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:51,851 - DEBUG - No entry for signal6 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:51,930 - DEBUG - No entry for signal7 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:52,019 - DEBUG - No entry for signal11 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:52,084 - DEBUG - No entry for signal12 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:52,246 - DEBUG - No entry for signal13 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:28:52,375 - DEBUG - No entry for signal14 of Instrument : US500  close : 5064.96 at BrokerTime : 2024-02-27 11:28:50
+2024-02-27 12:29:02,404 - DEBUG - Function Out of US500 at BrokerTime : 2024-02-27 11:29:00

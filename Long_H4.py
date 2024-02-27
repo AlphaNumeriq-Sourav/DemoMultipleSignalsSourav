@@ -16,8 +16,7 @@ import warnings
 import logging
 warnings.filterwarnings("ignore")
 importlib.reload(sig)
-
-
+from config_v1_2024_02_13 import SkipTrades
 user = 'sourav@purealphaventures.com'
 pwd = 'Inno1691@1'
 skype_connect = Skype(user, pwd)
@@ -201,9 +200,9 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
             df['ema_1'] = sig.EMA(df, 1)
 
             # ADX
-            df['adx_1'],  df['adx_2'], df['adx_3'] , df['adx_4'],  df['adx_5'], df['adx_7'], df['adx_9'], df['adx_10'], df['adx_13'], df['adx_14'], df['adx_15'], df['adx_17'], df['adx_18'], df['adx_19'], df['adx_20'] = \
-                sig.ADX(df, 1), sig.ADX(df, 2), sig.ADX(df, 3) , sig.ADX(df, 4), sig.ADX(df, 5), sig.ADX(df, 7), sig.ADX(df, 9), sig.ADX(df, 10), sig.ADX(
-                    df, 13), sig.ADX(df, 14), sig.ADX(df, 15), sig.ADX(df, 17), sig.ADX(df, 18), sig.ADX(df, 19), sig.ADX(df, 20)
+            for i in range(1,22):
+                df[f'adx_{i}'] = sig.ADX(df,i)
+            
                 
                 
         except AttributeError:
@@ -238,11 +237,11 @@ def Execution_Long(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,SL
             f'{symbol}_{script_name}_open_signals.csv')
         signal = f'signal{Choices[i]}'
         Signal_uni_name = f"{symbol}_{Choices[i]}_Long_{ChoicesExitModels[i]}"
-
-        if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
-            logger.debug(
-                f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} ServerTime : {datetime.now()}')
-            continue
+        if SkipTrades == True:
+            if df_open_signals['ActiveChoice'].eq(Choices[i]).any():
+                logger.debug(
+                    f'Signal{Choices[i]} Already have an active Trade of Instrument : {symbol} ServerTime : {datetime.now()}')
+                continue
 
         condition = entry_signal1(df, Choices[i], index)
 

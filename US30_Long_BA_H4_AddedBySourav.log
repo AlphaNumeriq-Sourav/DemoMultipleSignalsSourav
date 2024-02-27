@@ -1,0 +1,12 @@
+2024-02-27 12:25:36,252 - DEBUG - No entry for signal8 of Instrument : US30  close : 39050.72 at BrokerTime : 2024-02-27 11:25:28
+2024-02-27 12:25:36,324 - DEBUG - No entry for signal9 of Instrument : US30  close : 39050.72 at BrokerTime : 2024-02-27 11:25:28
+2024-02-27 12:25:36,412 - DEBUG - No entry for signal10 of Instrument : US30  close : 39050.72 at BrokerTime : 2024-02-27 11:25:28
+2024-02-27 12:25:46,425 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-27 11:25:44
+2024-02-27 12:27:10,115 - DEBUG - No entry for signal8 of Instrument : US30  close : 39049.74 at BrokerTime : 2024-02-27 11:27:04
+2024-02-27 12:27:10,253 - DEBUG - No entry for signal9 of Instrument : US30  close : 39049.74 at BrokerTime : 2024-02-27 11:27:04
+2024-02-27 12:27:10,346 - DEBUG - No entry for signal10 of Instrument : US30  close : 39049.74 at BrokerTime : 2024-02-27 11:27:04
+2024-02-27 12:27:20,365 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-27 11:27:14
+2024-02-27 12:28:50,694 - DEBUG - No entry for signal8 of Instrument : US30  close : 39049.25 at BrokerTime : 2024-02-27 11:28:43
+2024-02-27 12:28:50,795 - DEBUG - No entry for signal9 of Instrument : US30  close : 39049.25 at BrokerTime : 2024-02-27 11:28:43
+2024-02-27 12:28:50,838 - DEBUG - No entry for signal10 of Instrument : US30  close : 39049.25 at BrokerTime : 2024-02-27 11:28:43
+2024-02-27 12:29:00,903 - DEBUG - Function Out of US30 at BrokerTime : 2024-02-27 11:28:50

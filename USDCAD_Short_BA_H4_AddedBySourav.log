@@ -1,0 +1,6 @@
+2024-02-27 12:25:34,731 - DEBUG - No entry for signal1 of Instrument : USDCAD  close : 1.35226 at BrokerTime : 2024-02-27 11:25:15
+2024-02-27 12:25:44,796 - DEBUG - Function Out of USDCAD at BrokerTime : 2024-02-27 11:25:35
+2024-02-27 12:27:07,941 - DEBUG - No entry for signal1 of Instrument : USDCAD  close : 1.3502 at BrokerTime : 2024-02-27 11:27:00
+2024-02-27 12:27:18,019 - DEBUG - Function Out of USDCAD at BrokerTime : 2024-02-27 11:27:17
+2024-02-27 12:28:50,335 - DEBUG - No entry for signal1 of Instrument : USDCAD  close : 1.3501 at BrokerTime : 2024-02-27 11:28:38
+2024-02-27 12:29:00,405 - DEBUG - Function Out of USDCAD at BrokerTime : 2024-02-27 11:29:00
