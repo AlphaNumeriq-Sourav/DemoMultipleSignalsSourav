@@ -122,7 +122,7 @@ def entry_signal1(data,choice,index):
         
         
         
-    #TODO:
+    
     # open[3] > low[5]; low[4] <= close[8]; high[7] <= high[8]; ValueOpen(5)[0] > -6; ValueLow(5)[0] <= ValueLow(5)[5]; high[0] > SMA(close;10)[0]
     # TimeFrame = H4 , Type = Long
     # Instruments = US30
@@ -268,12 +268,169 @@ def entry_signal1(data,choice,index):
                     (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
                     (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
                     (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
-        
-        
-        
-      
-      
 
+    
+    #TODO:
+    # close[0] > high[8]; close[5] > open[6]; high[7] > close[9]; ValueOpen(5)[0] <= 6; ValueLow(5)[0] > -6; KeltnerChannel(c;20;1.5)[0] < KeltnerChannel(c;20;1.5)[1]
+    # TimeFrame = H4 , Type = Short
+    # Instruments = USDCAD
+    elif choice == 19:
+        condition = (data.iloc[index-0]['close'] > data.iloc[index-8]['high']) and \
+                    (data.iloc[index-5]['close'] > data.iloc[index-6]['open']) and \
+                    (data.iloc[index-7]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-0]['ValueOpen'] <= 6 ) and \
+                    (data.iloc[index-0]['ValueLow'] > -6 ) and \
+                    (data.iloc[index-0]['KeltnerChannel'] < data.iloc[index-1]['KeltnerChannel']) 
+                    
+                    
+    # low[0] > low[2]; high[2] > high[5]; high[5] <= close[9]; AvgTrueRange(20)[0] <= AvgTrueRange(20)[2]; momentum(close;3)[0] < momentum(close;3)[2]; Stochastics(14)[0] > Stochastics(14)[5]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = USDCAD
+    elif choice == 20:
+        condition = (data.iloc[index-0]['low'] > data.iloc[index-2]['low']) and \
+                    (data.iloc[index-2]['high'] > data.iloc[index-5]['high']) and \
+                    (data.iloc[index-5]['high'] <= data.iloc[index-9]['close']) and \
+                    (data.iloc[index-0]['AvgTrueRange_20'] <= data.iloc[index-2]['AvgTrueRange_20']) and \
+                    (data.iloc[index-0]['momentum_close_3'] < data.iloc[index-2]['momentum_close_3']) and \
+                    (data.iloc[index-0]['stochastics_14'] > data.iloc[index-5]['stochastics_14']) 
+        
+        
+        
+        
+        
+    # high[7] > low[9]; ValueOpen(5)[3] > ValueClose(5)[4]; ValueLow(5)[1] <= ValueHigh(5)[3]; ValueLow(5)[2] <= ValueLow(5)[5]; close[0] > SMA(close;20)[0]; rsi(close;14)[0] >= 40
+    # TimeFrame = H4 , Type = Long
+    # Instruments = EURUSD
+    elif choice == 21:
+        condition = (data.iloc[index-7]['high'] > data.iloc[index-9]['low']) and \
+                    (data.iloc[index-3]['ValueOpen'] > data.iloc[index-4]['ValueClose']) and \
+                    (data.iloc[index-1]['ValueLow'] <= data.iloc[index-3]['ValueHigh']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+
+    
+    
+    # open[0] <= low[6]; OHLC[0] > OHLC[1]; ValueOpen(5)[2] > ValueLow(5)[3]; ValueLow(5)[1] <= ValueLow(5)[2]; ValueLow(5)[4] <= ValueClose(5)[5]; open[0] < SMA(close;5)[0]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = EURUSD
+    elif choice == 22:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+                    
+                    
+    # open[6] > close[8]; high[8] > open[9]; low[2] <= low[4]; close[2] <= open[8]; open[3] <= open[5]; ValueOpen(5)[0] > -2
+    # TimeFrame = H4 , Type = Long
+    # Instruments = AUDUSD
+    elif choice == 23:
+        condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
+                    (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
+                    (data.iloc[index-4]['low'] <= data.iloc[index-8]['high']) and \
+                    (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
+                    (data.iloc[index-0]['WinsLast'] >= 1) 
+        
+        
+        
+        
+        
+    # high[3] > low[4]; high[6] > low[9]; open[0] <= close[2]; low[0] <= close[4]; open[2] <= open[6]; close[0] crosses above EMA(close;3)[0]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = AUDUSD
+    elif choice == 24:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+
+    
+    
+    # close[1] > close[5]; open[2] <= open[7]; low[2] <= low[8]; ValueClose(5)[1] > ValueHigh(5)[2]; rateOfChange(close;5)[0] > rateOfChange(close;5)[2]; rateOfChange(close;10)[0] < rateOfChange(close;10)[1]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = GBPUSD
+    elif choice == 25:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+                    
+    # open[2] > open[3]; low[5] <= low[6]; ValueClose(5)[1] > ValueClose(5)[4]; ValueLow(5)[3] <= ValueOpen(5)[5]; ValueClose(5)[1] <= ValueHigh(5)[5]; ParbolSAR(0.02;0.2)[0] = -1
+    # TimeFrame = H4 , Type = Long
+    # Instruments = GBPUSD
+    elif choice == 26:
+        condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
+                    (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
+                    (data.iloc[index-4]['low'] <= data.iloc[index-8]['high']) and \
+                    (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
+                    (data.iloc[index-0]['WinsLast'] >= 1) 
+        
+        
+        
+        
+        
+    # close[0] > low[9]; ValueLow(5)[0] > ValueOpen(5)[2]; ValueLow(5)[0] > ValueLow(5)[4]; ValueClose(5)[2] > ValueLow(5)[3]; ValueClose(5)[2] <= ValueHigh(5)[5]; AvgTrueRange(20)[0] > AvgTrueRange(20)[3]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = GBPUSD
+    elif choice == 27:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+
+    
+    
+    # close[0] > close[4]; close[0] > low[9]; open[2] <= low[7]; close[4] <= close[6]; high[5] <= high[8]; ValueHigh(5)[4] > ValueClose(5)[5]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = USDJPY
+    elif choice == 28:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+                    
+                    
+    # low[0] <= close[6]; high[4] <= close[7]; WinsLast(close;20)[0] >= 5; AvgTrueRange(10)[0] <= AvgTrueRange(10)[1]; KaufmanEfficiencyRatio(10)[0] < KaufmanEfficiencyRatio(10)[4]; momentum(close;5)[0] > momentum(close;5)[5]
+    # TimeFrame = H4 , Type = Long
+    # Instruments = USDJPY
+    elif choice == 29:
+        condition = (data.iloc[index-2]['high'] > data.iloc[index-9]['close']) and \
+                    (data.iloc[index-5]['low'] > data.iloc[index-9]['open']) and \
+                    (data.iloc[index-6]['open'] > data.iloc[index-8]['close']) and \
+                    (data.iloc[index-4]['low'] <= data.iloc[index-8]['high']) and \
+                    (data.iloc[index-0]['ValueHigh'] <= data.iloc[index-5]['ValueOpen']) and \
+                    (data.iloc[index-0]['WinsLast'] >= 1) 
+        
+        
+        
+        
+        
+    # close[4] > close[6]; close[1] <= high[2]; CubeHLC[0] <= CubeHLC[4]; ValueHigh(5)[2] > ValueHigh(5)[5]; ValueLow(5)[3] <= ValueHigh(5)[5]; ValueClose(5)[0] <= ValueLow(5)[5]
+    # TimeFrame = H4 , Type = Short
+    # Instruments = XAUUSD
+    elif choice == 30:
+        condition = (data.iloc[index-5]['adx_4'] > data.iloc[index-1]['adx_3']) and \
+                    (data.iloc[index-4]['adx_13'] > data.iloc[index-10]['adx_9']) and \
+                    (data.iloc[index-5]['adx_14'] > data.iloc[index-3]['adx_19']) and \
+                    (data.iloc[index-6]['adx_18'] > data.iloc[index-9]['adx_17']) and \
+                    (data.iloc[index-7]['adx_7'] > data.iloc[index-7]['adx_19']) and \
+                    (data.iloc[index-9]['adx_2'] > data.iloc[index-4]['adx_20']) 
+
+    
+    
+    
         
     else:
         condition =  False

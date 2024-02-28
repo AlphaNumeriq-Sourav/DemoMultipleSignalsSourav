@@ -179,6 +179,7 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             df['CompositeATR_2_24'] = sig.CompositeATR(df, 2, 24)
             df['CompositeRSI_2_24'] = sig.CompositeRSI(df,2,24)
             df['AvgTrueRange_10'] = sig.AvgTrueRange(df,10,"high","low","close")
+            df['AvgTrueRange_20'] = sig.AvgTrueRange(df,20,"high","low","close")
             df['CompositeSMA'] = sig.CompositeSMA(df,8,20,50,200)
             df['CompositeEMA'] = sig.CompositeEMA(df,8,20,50,200)
             
@@ -186,6 +187,10 @@ def Execution_Short(script_name, symbol, PerCentageRisk, TP, SL, TrailTPPoints,S
             df['CubeHLC'] = sig.CubeHLC(df,'high','low','close')
             df['PivotPoint'] = sig.pivotpoint(df,'high','low', 'close')
             df['momentum_close_5'] = sig.momentum(df,5,'close')
+            df['momentum_close_3'] = sig.momentum(df,3,'close')
+            df['KeltnerChannel'] = sig.KeltnerChannel(df,10,1.5)
+            df['stochastics_14'] = sig.Stochastic(df,14)
+            
 
             # RSI
             df['rsi_14'] = sig.rsi(df, 14)
